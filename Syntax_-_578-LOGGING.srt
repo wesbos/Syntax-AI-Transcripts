@@ -1,0 +1,2144 @@
+1
+00:00:01,079 --> 00:00:04,169
+Announcer: Monday, Monday Monday open wide dev
+
+2
+00:00:04,169 --> 00:00:07,709
+fans yet ready to stuff your face with JavaScript
+
+3
+00:00:07,709 --> 00:00:11,159
+CSS loadmodule BBQ tip yet workflow breakdancing
+
+4
+00:00:11,309 --> 00:00:14,729
+soft skill web development hasty Yes, the crazy
+
+5
+00:00:14,729 --> 00:00:17,999
+Yes, the tasty web development traits coming in
+
+6
+00:00:17,999 --> 00:00:22,409
+hot here is where Sarah CUDA, Bob and Scott El
+
+7
+00:00:22,409 --> 00:00:25,139
+Toro long toilet ski.
+
+8
+00:00:26,640 --> 00:00:30,990
+Scott Tolinski: Oh, welcome to syntax on this
+
+9
+00:00:31,020 --> 00:00:33,870
+Monday hasty treat, we're going to be talking
+
+10
+00:00:33,900 --> 00:00:37,950
+about logging. Logging is something that well, we
+
+11
+00:00:37,980 --> 00:00:41,100
+sometimes do just to debug, and many times people
+
+12
+00:00:41,100 --> 00:00:43,860
+overlook the usefulness of having really good
+
+13
+00:00:43,860 --> 00:00:46,710
+logging within your application inside of both
+
+14
+00:00:46,710 --> 00:00:49,380
+production and development environments. So my
+
+15
+00:00:49,380 --> 00:00:51,390
+name is Scott Tolinksi. I'm a developer from
+
+16
+00:00:51,420 --> 00:00:55,530
+Denver. And with me, as always, is Wes Bos
+
+17
+00:00:55,560 --> 00:01:02,220
+Wes Bos: way weigh in. Not too much I have I've
+
+18
+00:01:02,220 --> 00:01:04,500
+been sort of taking my like logging a little bit
+
+19
+00:01:04,500 --> 00:01:08,460
+more seriously, in the last couple of months, just
+
+20
+00:01:08,460 --> 00:01:11,430
+because I had some like Gremlins in my app that I
+
+21
+00:01:11,430 --> 00:01:14,520
+couldn't figure out like, where it was coming from
+
+22
+00:01:14,520 --> 00:01:17,370
+and what would even cause this request and
+
+23
+00:01:17,370 --> 00:01:19,110
+whatnot. And like, I just didn't have enough
+
+24
+00:01:19,110 --> 00:01:22,350
+insight into like, it wasn't errors, or crashing
+
+25
+00:01:22,350 --> 00:01:25,050
+or anything, it was just like, couldn't figure it
+
+26
+00:01:25,050 --> 00:01:26,940
+out, you know. So we'll talk about like, what that
+
+27
+00:01:26,940 --> 00:01:29,370
+is. So I sort of went through and updated my
+
+28
+00:01:29,370 --> 00:01:32,130
+logging. I'm still not like, some of the stuff in
+
+29
+00:01:32,130 --> 00:01:34,350
+this episode where I talked about I'm not using
+
+30
+00:01:34,350 --> 00:01:36,810
+it. I'm mostly still just a console logger. But
+
+31
+00:01:37,950 --> 00:01:41,550
+we'll yeah, let's get on into it. Yeah. Let's talk
+
+32
+00:01:41,550 --> 00:01:45,240
+about our sponsor today, which is Sentry, Sentry
+
+33
+00:01:45,240 --> 00:01:49,140
+is the air and exception, they do so much more of
+
+34
+00:01:49,140 --> 00:01:52,050
+that they do performance, they do pro filings, and
+
+35
+00:01:52,050 --> 00:01:56,010
+now they are getting into session replay, which
+
+36
+00:01:56,010 --> 00:02:00,330
+will allow you to literally see what the user had
+
+37
+00:02:00,330 --> 00:02:03,960
+done in your application to to trace through
+
+38
+00:02:03,960 --> 00:02:05,850
+what's going on. So it's actually kind of funny
+
+39
+00:02:05,850 --> 00:02:09,030
+that we talk about logging, because a lot of the
+
+40
+00:02:09,030 --> 00:02:12,060
+stuff that Sentry does makes it so that you don't
+
+41
+00:02:12,060 --> 00:02:14,430
+necessarily have to piece together logs. And we'll
+
+42
+00:02:14,430 --> 00:02:16,800
+talk about what the difference is between those
+
+43
+00:02:16,800 --> 00:02:20,280
+types of things. But check it out at Sentry dot i
+
+44
+00:02:20,280 --> 00:02:22,950
+o use coupon code tasty treat that is going to get
+
+45
+00:02:22,950 --> 00:02:25,020
+you two months for free. Thank you Sentry for
+
+46
+00:02:25,020 --> 00:02:28,830
+sponsoring sick. All right, let's get into it.
+
+47
+00:02:28,830 --> 00:02:31,230
+What do you want to give us a start up? Like why
+
+48
+00:02:31,230 --> 00:02:33,420
+and what is logging? Yeah, so
+
+49
+00:02:33,420 --> 00:02:34,680
+Scott Tolinski: as you know, at its very most
+
+50
+00:02:34,680 --> 00:02:38,430
+basic, everybody has probably tossed a console log
+
+51
+00:02:38,460 --> 00:02:41,580
+into their code at some point to output something
+
+52
+00:02:41,580 --> 00:02:44,640
+either on the client side log or your server side
+
+53
+00:02:44,640 --> 00:02:48,960
+log. And these can be used primarily, you know, we
+
+54
+00:02:48,960 --> 00:02:51,000
+often just throw it in for a quick debug or
+
+55
+00:02:51,000 --> 00:02:54,240
+something like that. But you also probably have
+
+56
+00:02:54,240 --> 00:02:58,260
+seen logging from other frameworks or other things
+
+57
+00:02:58,260 --> 00:03:01,020
+that you've used, where you're automatically just
+
+58
+00:03:01,020 --> 00:03:03,360
+getting some things coming in on your your console
+
+59
+00:03:03,360 --> 00:03:05,850
+explaining what's happening, maybe at some given
+
+60
+00:03:05,850 --> 00:03:08,910
+point, maybe it's explaining the requests that are
+
+61
+00:03:08,910 --> 00:03:11,790
+coming in, maybe it's just saying, oh, you know, a
+
+62
+00:03:11,790 --> 00:03:14,220
+message came in at this time or whatever. It
+
+63
+00:03:14,220 --> 00:03:16,980
+depends on what system and what type of logging is
+
+64
+00:03:16,980 --> 00:03:19,350
+enabled in this types of things. And in many, even
+
+65
+00:03:19,350 --> 00:03:21,990
+like CMS has have, like baked in logging as well
+
+66
+00:03:22,020 --> 00:03:26,040
+outside of the JavaScript context. But in at the
+
+67
+00:03:26,040 --> 00:03:28,380
+end of the day logging is basically giving you
+
+68
+00:03:28,380 --> 00:03:33,120
+visibility to some action that is happening on
+
+69
+00:03:33,120 --> 00:03:36,420
+your server or your client, depending on how
+
+70
+00:03:36,420 --> 00:03:39,000
+you're doing this. But it's very most basic. It's
+
+71
+00:03:39,000 --> 00:03:42,330
+a console log. It's a I got here. But yeah, it's
+
+72
+00:03:42,330 --> 00:03:45,750
+more complex. It's a, a get request was hit to
+
+73
+00:03:45,750 --> 00:03:49,230
+this specific URL at this time. And it took this
+
+74
+00:03:49,230 --> 00:03:52,050
+amount of seconds to resolve or did not resolve or
+
+75
+00:03:52,050 --> 00:03:52,620
+whatever.
+
+76
+00:03:52,950 --> 00:03:55,650
+Wes Bos: Why might you want to log something. Logs
+
+77
+00:03:55,650 --> 00:04:00,180
+are often helpful as sort of a treasure trail to
+
+78
+00:04:00,570 --> 00:04:04,140
+figuring out what happened if you need to,
+
+79
+00:04:04,380 --> 00:04:06,570
+everywhere from just view the developer needing to
+
+80
+00:04:06,570 --> 00:04:08,970
+figure out okay, well, that shouldn't have
+
+81
+00:04:08,970 --> 00:04:12,060
+happened. Or I need to figure out why somebody
+
+82
+00:04:12,060 --> 00:04:15,660
+specifically hit this URL with what data and it
+
+83
+00:04:15,660 --> 00:04:18,120
+caused them something, you can log out that
+
+84
+00:04:18,120 --> 00:04:20,340
+information, if you just want to see what
+
+85
+00:04:20,340 --> 00:04:23,340
+endpoints are being hit with what specific data
+
+86
+00:04:23,340 --> 00:04:26,040
+you can log that, or something just as simple as
+
+87
+00:04:26,040 --> 00:04:28,890
+like an email was specifically sent. Well, we'll
+
+88
+00:04:28,890 --> 00:04:31,110
+go a little bit more into the different types of
+
+89
+00:04:31,110 --> 00:04:34,050
+logging. So it helps piecing together things helps
+
+90
+00:04:34,050 --> 00:04:37,230
+us find ability. Worst case, I've certainly not
+
+91
+00:04:37,230 --> 00:04:39,660
+had to do this before, thankfully, but I've heard
+
+92
+00:04:40,020 --> 00:04:44,820
+of things crashing databases going down whatever.
+
+93
+00:04:44,820 --> 00:04:48,360
+And often developers have to they don't have the
+
+94
+00:04:48,360 --> 00:04:51,420
+data of like maybe 10,000 sales went through, they
+
+95
+00:04:51,420 --> 00:04:53,610
+can sometimes piece that information back
+
+96
+00:04:53,610 --> 00:04:57,300
+together, or at least the important bits via logs
+
+97
+00:04:57,300 --> 00:04:59,490
+because they can parse out their logs and recreate
+
+98
+00:04:59,490 --> 00:05:00,900
+that data in the database.
+
+99
+00:05:01,050 --> 00:05:03,330
+Scott Tolinski: Yeah. And also, just to be clear
+
+100
+00:05:03,330 --> 00:05:06,480
+logging is not just for debugging, but also just
+
+101
+00:05:06,480 --> 00:05:09,330
+for general information and understanding of
+
+102
+00:05:09,330 --> 00:05:13,080
+what's going on. Right. So, yeah, you say, how is
+
+103
+00:05:13,080 --> 00:05:15,450
+this different than error handling? Because
+
+104
+00:05:15,930 --> 00:05:19,020
+basically, in regards to that same bed, how is
+
+105
+00:05:19,020 --> 00:05:21,180
+this different than just errors and what's going
+
+106
+00:05:21,180 --> 00:05:23,850
+on in your application? Sometimes it's a little
+
+107
+00:05:23,850 --> 00:05:26,700
+bit also, at the same time, more targeted and less
+
+108
+00:05:26,700 --> 00:05:30,060
+targeted, because you can have less targeted info
+
+109
+00:05:30,270 --> 00:05:33,750
+being logged, letting you know exactly what's
+
+110
+00:05:33,780 --> 00:05:36,570
+happening around what are potential errors, but
+
+111
+00:05:36,570 --> 00:05:40,350
+just what's happening in general. But also, you
+
+112
+00:05:40,350 --> 00:05:43,980
+can have more targeted to situations where you
+
+113
+00:05:43,980 --> 00:05:46,350
+think that there is going to be an error or could
+
+114
+00:05:46,350 --> 00:05:49,110
+be an error to give you more context into what
+
+115
+00:05:49,110 --> 00:05:51,270
+could be happening in that given instance?
+
+116
+00:05:51,360 --> 00:05:53,100
+Wes Bos: Yeah, yeah, like I just, I just opened up
+
+117
+00:05:53,100 --> 00:05:56,580
+my logs right now. And I'm seeing people, it's
+
+118
+00:05:56,580 --> 00:05:59,400
+kind of interesting, you are seeing people go
+
+119
+00:05:59,400 --> 00:06:03,660
+through the process of visiting the website,
+
+120
+00:06:04,560 --> 00:06:07,170
+adding a course buying the course checking out
+
+121
+00:06:07,170 --> 00:06:10,110
+adding a coupon, getting the email being sent,
+
+122
+00:06:10,950 --> 00:06:14,640
+then the email being the link in the email being
+
+123
+00:06:14,640 --> 00:06:17,970
+clicked an account being created. Somebody
+
+124
+00:06:17,970 --> 00:06:21,360
+starting to view a specific video, and then
+
+125
+00:06:21,390 --> 00:06:23,910
+progress on that video being you can see all of
+
+126
+00:06:23,910 --> 00:06:27,360
+that in your console, as it goes through. And I
+
+127
+00:06:27,360 --> 00:06:31,590
+specifically had an issue where people were going
+
+128
+00:06:31,590 --> 00:06:34,620
+to have magic links in my email, and people were
+
+129
+00:06:34,620 --> 00:06:39,000
+going to magic links. And the idea of the magic
+
+130
+00:06:39,000 --> 00:06:41,850
+Link was always undefined. It was the correct
+
+131
+00:06:41,850 --> 00:06:44,010
+magic link. And immediately after it was
+
+132
+00:06:44,010 --> 00:06:46,380
+undefined, and I could not for the life of me
+
+133
+00:06:46,380 --> 00:06:49,650
+figure out what was triggering this undefined
+
+134
+00:06:49,650 --> 00:06:52,230
+request, you know, like, it's not an error. It
+
+135
+00:06:52,230 --> 00:06:54,600
+actually it was causing no issues to anybody
+
+136
+00:06:54,600 --> 00:06:58,170
+except there was an undefined request in my log,
+
+137
+00:06:58,170 --> 00:07:00,090
+and I could not figure it out for Life Media.
+
+138
+00:07:00,090 --> 00:07:03,360
+Finally, finally trace it, trace it down. And you
+
+139
+00:07:03,360 --> 00:07:07,530
+know, what it was, what it was an image tag to
+
+140
+00:07:07,530 --> 00:07:11,010
+end, the source of the image was undefined. And it
+
+141
+00:07:11,010 --> 00:07:14,130
+was trying to just, I guess, when you have an
+
+142
+00:07:14,130 --> 00:07:17,760
+image tag, it tries to request the current URL as
+
+143
+00:07:17,760 --> 00:07:21,390
+the source. And that was triggering, because I had
+
+144
+00:07:21,600 --> 00:07:25,350
+like a catch all path setup for the ID in the URL.
+
+145
+00:07:25,380 --> 00:07:27,990
+It was, it was catching that one as well. And
+
+146
+00:07:27,990 --> 00:07:30,210
+literally, the the image pass, so I went into my
+
+147
+00:07:30,210 --> 00:07:32,760
+template, and I go, Oh, I had like a typo in my
+
+148
+00:07:32,760 --> 00:07:35,310
+template. And I fixed the image tag and whatnot.
+
+149
+00:07:35,310 --> 00:07:38,220
+But that was driving me crazy. And it was only
+
+150
+00:07:38,220 --> 00:07:43,020
+until I added additional logging. To see like,
+
+151
+00:07:43,020 --> 00:07:45,930
+okay, like, is somebody being malicious here? Is
+
+152
+00:07:45,930 --> 00:07:49,230
+this coming from the same user? Is it like a
+
+153
+00:07:49,260 --> 00:07:51,660
+browser extension, something like that, I had a
+
+154
+00:07:51,660 --> 00:07:53,400
+whole bunch more log in, then I was like, Okay, I
+
+155
+00:07:53,400 --> 00:07:54,870
+see what's happening here. And then I went through
+
+156
+00:07:54,900 --> 00:07:55,560
+a template. And
+
+157
+00:07:56,879 --> 00:08:00,329
+Scott Tolinski: it's funny. This just how much
+
+158
+00:08:00,329 --> 00:08:03,959
+logs can both pollute and save your bacon
+
+159
+00:08:03,959 --> 00:08:05,879
+sometimes, you know, sometimes, if there's too
+
+160
+00:08:05,879 --> 00:08:08,459
+much logging too much noise, you can, you know,
+
+161
+00:08:08,729 --> 00:08:12,599
+over certain things. But you know, part of what is
+
+162
+00:08:12,599 --> 00:08:15,269
+good about having logging is that, you can often
+
+163
+00:08:15,269 --> 00:08:17,609
+go ahead and paw through the logs in a more
+
+164
+00:08:17,609 --> 00:08:20,369
+structured and organized way. So you know, too
+
+165
+00:08:20,369 --> 00:08:23,369
+much information isn't necessarily a problem. So
+
+166
+00:08:23,399 --> 00:08:27,059
+what should you log here? I'm going to tell you
+
+167
+00:08:27,059 --> 00:08:30,149
+what we log. And then we can maybe talk a little
+
+168
+00:08:30,149 --> 00:08:32,879
+about what you should log. But you know, I think
+
+169
+00:08:33,659 --> 00:08:36,209
+personally, what I like to see in a log is I like
+
+170
+00:08:36,209 --> 00:08:39,929
+to see, you know, what type of what is I'm talking
+
+171
+00:08:39,929 --> 00:08:42,809
+like server side logging here specifically? Yeah,
+
+172
+00:08:42,809 --> 00:08:45,389
+one like really important thing about log is the
+
+173
+00:08:45,389 --> 00:08:48,269
+timecode, in which this thing happened. Because
+
+174
+00:08:48,269 --> 00:08:50,279
+without having the time in which something
+
+175
+00:08:50,279 --> 00:08:53,219
+happened, you going back and referencing it is
+
+176
+00:08:53,219 --> 00:08:55,199
+kind of pointless, right? You'd say at some point,
+
+177
+00:08:55,199 --> 00:08:58,259
+in some time this, this event happened. But if you
+
+178
+00:08:58,259 --> 00:09:01,379
+knew when an event happened, specifically, maybe
+
+179
+00:09:01,379 --> 00:09:04,709
+an error on your site or something happened,
+
+180
+00:09:04,709 --> 00:09:06,479
+right, and you want to investigate, so you're
+
+181
+00:09:06,479 --> 00:09:09,569
+piling into the logs, having that time code that
+
+182
+00:09:09,569 --> 00:09:11,669
+says this happened at this time, really important
+
+183
+00:09:11,669 --> 00:09:14,609
+to be able to nail down exactly when scope when
+
+184
+00:09:14,609 --> 00:09:19,919
+that happened. You know, also, I like what type of
+
+185
+00:09:19,919 --> 00:09:23,549
+request it was a get post put whatever. I like the
+
+186
+00:09:23,579 --> 00:09:27,689
+path that was requested. I like the total time of
+
+187
+00:09:27,689 --> 00:09:30,599
+the response. I like those types of things in my
+
+188
+00:09:30,599 --> 00:09:33,599
+logs. I also like to know what type of log this
+
+189
+00:09:33,599 --> 00:09:37,619
+is, is this an information log? Is it an error? Is
+
+190
+00:09:37,619 --> 00:09:40,709
+it and these can things these things can be color
+
+191
+00:09:40,709 --> 00:09:44,489
+coded accordingly, so that an error log could have
+
+192
+00:09:44,489 --> 00:09:46,889
+a red error or something so that way when you're
+
+193
+00:09:46,889 --> 00:09:49,679
+looking at your logs, the errors stand out in the
+
+194
+00:09:49,679 --> 00:09:52,169
+information once kind of hide back or any of those
+
+195
+00:09:52,169 --> 00:09:52,919
+types of things.
+
+196
+00:09:53,220 --> 00:09:56,550
+Wes Bos: Oh, that's a good idea. I so I'm half
+
+197
+00:09:56,550 --> 00:09:58,680
+excited to do this episode just so I can do a
+
+198
+00:09:58,680 --> 00:10:01,110
+little bit of improving on mine. cuz maybe we
+
+199
+00:10:01,110 --> 00:10:03,360
+should talk about that specifically, like, how do
+
+200
+00:10:03,360 --> 00:10:06,240
+we log right now. So right now what I'm doing is I
+
+201
+00:10:06,240 --> 00:10:11,400
+just had like different areas of the application.
+
+202
+00:10:11,400 --> 00:10:15,630
+So whether it is a magic URL it whether it's a
+
+203
+00:10:15,630 --> 00:10:17,970
+login, whether it's a progress update, whether
+
+204
+00:10:17,970 --> 00:10:20,640
+it's somebody has invited somebody to their team
+
+205
+00:10:20,640 --> 00:10:23,160
+account, so they can go in on it, whether somebody
+
+206
+00:10:23,160 --> 00:10:25,170
+has changed their email, all that type of stuff.
+
+207
+00:10:25,170 --> 00:10:28,020
+And I just basically have like a, an ID or a name
+
+208
+00:10:28,020 --> 00:10:30,240
+for each one, like I put it in square brackets,
+
+209
+00:10:30,240 --> 00:10:33,510
+just magic. And then I put some information along
+
+210
+00:10:33,510 --> 00:10:36,510
+in there. So things like URL, maybe query
+
+211
+00:10:36,510 --> 00:10:39,120
+parameters, maybe body parameters, if it's a form,
+
+212
+00:10:39,120 --> 00:10:44,280
+submit other information about stuff that you
+
+213
+00:10:44,280 --> 00:10:47,070
+specifically need you unfortunately, at least I
+
+214
+00:10:47,070 --> 00:10:49,230
+don't think you can't log the entire request
+
+215
+00:10:49,230 --> 00:10:52,410
+object, because that would be absolutely massive,
+
+216
+00:10:52,410 --> 00:10:56,130
+and your logs will get pretty large quickly. But I
+
+217
+00:10:56,130 --> 00:10:57,960
+think, I don't know, do people do that? Do they
+
+218
+00:10:57,960 --> 00:10:59,310
+log the entire request?
+
+219
+00:10:59,460 --> 00:11:01,590
+Unknown: I can imagine, that seems like way too
+
+220
+00:11:01,590 --> 00:11:04,590
+much text for everything. That seems like that
+
+221
+00:11:04,590 --> 00:11:08,070
+would never work in a large context, right? No,
+
+222
+00:11:08,070 --> 00:11:09,690
+because you would be like,
+
+223
+00:11:09,720 --> 00:11:13,290
+Wes Bos: I certainly have had, like log files,
+
+224
+00:11:13,290 --> 00:11:15,030
+we'll talk about what to do with these log files.
+
+225
+00:11:15,030 --> 00:11:17,640
+But I've had log files get into the gigs and gigs
+
+226
+00:11:17,640 --> 00:11:20,580
+I've once very early on, when I was just logging
+
+227
+00:11:20,580 --> 00:11:25,020
+to log files on my server, I could not figure out
+
+228
+00:11:25,020 --> 00:11:28,140
+why every couple of weeks, the server would slow
+
+229
+00:11:28,140 --> 00:11:31,830
+down until I rebooted it. And finally, I realized
+
+230
+00:11:31,830 --> 00:11:35,400
+is because I was using forever, and forever will
+
+231
+00:11:35,430 --> 00:11:37,020
+put your logs in a log file. And then when you
+
+232
+00:11:37,020 --> 00:11:38,970
+restart it, I think it deletes it or something
+
+233
+00:11:38,970 --> 00:11:41,010
+like that. And I was running out of space on my
+
+234
+00:11:41,010 --> 00:11:44,250
+server. Yeah. And it was just getting slower and
+
+235
+00:11:44,250 --> 00:11:46,290
+slower, because there's like not enough space to
+
+236
+00:11:46,290 --> 00:11:48,720
+run things. And then when I cleared out the logs,
+
+237
+00:11:48,720 --> 00:11:50,760
+they would go and that's why you have to have sort
+
+238
+00:11:50,760 --> 00:11:52,410
+of a better approach for this type of stuff.
+
+239
+00:11:52,470 --> 00:11:54,480
+Scott Tolinski: Yeah, I've certainly gotten the
+
+240
+00:11:54,510 --> 00:11:57,960
+email that says your server space is limited.
+
+241
+00:11:58,500 --> 00:12:00,630
+Because you're running out of space. And to only
+
+242
+00:12:00,630 --> 00:12:02,820
+be like, Wait, how is that possible? Oh, wait, let
+
+243
+00:12:02,820 --> 00:12:05,010
+me go check that law. Oh, boy. Yeah, big O logs.
+
+244
+00:12:05,010 --> 00:12:07,650
+And if you're logging every request that way?
+
+245
+00:12:08,010 --> 00:12:10,380
+Yeah, we often forget, as developers that like
+
+246
+00:12:10,800 --> 00:12:14,640
+text is bytes. Eight, you're saving a lot of text
+
+247
+00:12:14,640 --> 00:12:17,010
+or a lot of information. Yeah. And that's, it's
+
+248
+00:12:17,010 --> 00:12:21,300
+pretty easy to rack up actual storage space of of
+
+249
+00:12:21,300 --> 00:12:23,430
+things with just text just by writing a lot of
+
+250
+00:12:23,430 --> 00:12:23,880
+text.
+
+251
+00:12:24,030 --> 00:12:27,510
+Wes Bos: Yeah, you get 100,000 requests a day, and
+
+252
+00:12:27,510 --> 00:12:30,240
+you're, you're logging a couple lines for every
+
+253
+00:12:30,240 --> 00:12:32,370
+single person. Those add up pretty quickly.
+
+254
+00:12:32,400 --> 00:12:34,590
+Scott Tolinski: Yeah. Okay. So one thing I also
+
+255
+00:12:34,590 --> 00:12:37,470
+wanted to mention that I do, just for fun for our
+
+256
+00:12:37,530 --> 00:12:40,860
+information logging, especially in our requests, I
+
+257
+00:12:40,860 --> 00:12:44,220
+do it a little emoji based on how like long or
+
+258
+00:12:44,220 --> 00:12:48,120
+short, the total response time was. So I start
+
+259
+00:12:48,120 --> 00:12:51,420
+counting, when the request comes in. And then I
+
+260
+00:12:51,420 --> 00:12:53,790
+stopped counting when the response is going out
+
+261
+00:12:53,820 --> 00:12:57,180
+just via middleware. And I measure that time. And
+
+262
+00:12:57,180 --> 00:12:59,850
+if that time is really fast, you get a rocket
+
+263
+00:12:59,850 --> 00:13:04,320
+ship. If it's shorter, you get a bunny rabbit. And
+
+264
+00:13:04,320 --> 00:13:06,750
+if it's really long, then you get a turtle. And
+
+265
+00:13:06,750 --> 00:13:08,580
+I've been I've been thinking about expanding this
+
+266
+00:13:08,580 --> 00:13:10,920
+a little bit more. But it's really simple just to
+
+267
+00:13:10,920 --> 00:13:13,890
+see a turtle a rabbit or rocket ship in your logs,
+
+268
+00:13:13,920 --> 00:13:17,670
+it makes it like for me, just really visual in
+
+269
+00:13:17,670 --> 00:13:19,620
+terms of alright, I'm working on this one
+
+270
+00:13:19,620 --> 00:13:22,560
+component. And I've been seeing a ton of turtles
+
+271
+00:13:22,590 --> 00:13:26,460
+in development. Why am I seeing so many turtles in
+
+272
+00:13:26,460 --> 00:13:28,350
+this specific route, but not others?
+
+273
+00:13:29,880 --> 00:13:31,950
+Wes Bos: That's awesome. What else should you log
+
+274
+00:13:31,950 --> 00:13:35,040
+descriptive messages about what happened? So not
+
+275
+00:13:35,040 --> 00:13:40,620
+just login attempted but login attempted with user
+
+276
+00:13:40,620 --> 00:13:42,810
+email address, obviously, don't put passwords in,
+
+277
+00:13:43,500 --> 00:13:45,390
+in your logging in, maybe we should talk about
+
+278
+00:13:45,390 --> 00:13:48,570
+that really quickly is logging personal,
+
+279
+00:13:48,600 --> 00:13:52,410
+personally identifiable information, you certainly
+
+280
+00:13:52,410 --> 00:13:57,090
+start get to step into areas of GDPR, and all
+
+281
+00:13:57,090 --> 00:13:59,430
+these rules around private information and
+
+282
+00:13:59,430 --> 00:14:01,440
+tracking or whatnot. So you certainly make sure
+
+283
+00:14:01,440 --> 00:14:04,680
+you are up to date with all of that as well as
+
+284
+00:14:04,860 --> 00:14:08,670
+scrubbing the logs as part of when somebody does
+
+285
+00:14:08,670 --> 00:14:10,860
+request to be deleted from you, you have to think
+
+286
+00:14:10,860 --> 00:14:14,190
+about oh, like, of course you have the user and
+
+287
+00:14:14,190 --> 00:14:16,290
+purchases and things like that. But you probably
+
+288
+00:14:16,290 --> 00:14:19,290
+also have information about maybe you have that in
+
+289
+00:14:19,290 --> 00:14:21,390
+a log somewhere that also should be scrubbed.
+
+290
+00:14:21,450 --> 00:14:23,040
+Scott Tolinski: Yeah. I mean, it's important to
+
+291
+00:14:23,040 --> 00:14:24,960
+know that it could just become another attack
+
+292
+00:14:24,960 --> 00:14:29,100
+vector. So if you do have something that is
+
+293
+00:14:29,280 --> 00:14:33,090
+secure, needs to be secure in your log, and
+
+294
+00:14:33,090 --> 00:14:35,790
+someone get x gets access to your logs, then
+
+295
+00:14:35,790 --> 00:14:38,220
+that's as bad as you know, them getting access to
+
+296
+00:14:38,220 --> 00:14:40,470
+the information itself. Because yeah, that
+
+297
+00:14:40,470 --> 00:14:41,610
+information is sitting there.
+
+298
+00:14:42,059 --> 00:14:44,099
+Wes Bos: Or even like other employees that
+
+299
+00:14:44,129 --> 00:14:46,049
+shouldn't necessarily have access to that
+
+300
+00:14:46,049 --> 00:14:48,569
+information. You put all this work in permissions,
+
+301
+00:14:48,569 --> 00:14:50,369
+you have to be careful that you're not putting
+
+302
+00:14:50,369 --> 00:14:52,739
+anything in the logs that other employees could
+
+303
+00:14:52,739 --> 00:14:55,439
+have access to. Yeah, especially if it's insulting
+
+304
+00:14:55,439 --> 00:14:58,319
+to those other employees. Yeah. So we'll talk
+
+305
+00:14:58,319 --> 00:15:01,949
+about like, what about Like development, staging
+
+306
+00:15:01,979 --> 00:15:05,219
+production. A lot of people, I don't specifically
+
+307
+00:15:05,219 --> 00:15:07,619
+do this, I really only just log stuff that I think
+
+308
+00:15:07,619 --> 00:15:11,579
+I might need. But you can set different levels of
+
+309
+00:15:11,579 --> 00:15:15,209
+logging. It goes from like error warning, all the
+
+310
+00:15:15,209 --> 00:15:18,629
+way up to verbose and silly, where you sit, you
+
+311
+00:15:18,629 --> 00:15:21,749
+literally log absolutely everything. And that can
+
+312
+00:15:21,749 --> 00:15:23,549
+be actually really helpful. Specifically, like I
+
+313
+00:15:23,549 --> 00:15:27,629
+know with ES lint, es lint has like a, a silly
+
+314
+00:15:27,629 --> 00:15:30,659
+mode or verbose mode where it will log every
+
+315
+00:15:30,659 --> 00:15:33,719
+single thing that it's doing. And that could be
+
+316
+00:15:33,719 --> 00:15:37,319
+helpful to follow the request along, like at a
+
+317
+00:15:37,319 --> 00:15:41,189
+certain point, that's also what breakpoints are
+
+318
+00:15:41,189 --> 00:15:44,219
+for in your code base. But it can be nice to Nice
+
+319
+00:15:44,219 --> 00:15:45,479
+to see what it is doing.
+
+320
+00:15:45,510 --> 00:15:46,980
+Scott Tolinski: Yeah, I mean, there are times when
+
+321
+00:15:46,980 --> 00:15:51,330
+you just dump them in, to try to get it to get
+
+322
+00:15:51,780 --> 00:15:53,850
+some visibility to what's going on, especially in
+
+323
+00:15:53,850 --> 00:15:58,920
+development. But in production, you know, yeah, I
+
+324
+00:15:58,950 --> 00:16:02,760
+pretty much keep most of my normal, like
+
+325
+00:16:02,760 --> 00:16:05,520
+informational logging in production, like, it's
+
+326
+00:16:05,520 --> 00:16:08,130
+really helpful to be able to see, all right, a get
+
+327
+00:16:08,130 --> 00:16:10,590
+request came in, you know, this, this is just at a
+
+328
+00:16:10,590 --> 00:16:12,780
+glance is like is what's going on in the site. But
+
+329
+00:16:12,780 --> 00:16:16,200
+also, at a glance, even though I do use tools to
+
+330
+00:16:16,260 --> 00:16:19,380
+the evaluate my speed of the site, it's really
+
+331
+00:16:19,380 --> 00:16:22,560
+nice to see at a glance in the locks, the emoji
+
+332
+00:16:22,560 --> 00:16:24,420
+that I put in there just for fun, and these are
+
+333
+00:16:24,420 --> 00:16:26,610
+only server side. So it's not like these are, you
+
+334
+00:16:26,610 --> 00:16:29,310
+know, polluting the client side logging experience
+
+335
+00:16:29,310 --> 00:16:31,770
+or anything like that, which, honestly, you know,
+
+336
+00:16:31,770 --> 00:16:34,020
+your site probably shouldn't be outputting too
+
+337
+00:16:34,020 --> 00:16:37,050
+many things to the client in production. Unless
+
+338
+00:16:37,050 --> 00:16:39,930
+you're, you know, trying to have fun with it, but
+
+339
+00:16:39,960 --> 00:16:41,760
+you got to kind of remove some of that stuff,
+
+340
+00:16:41,789 --> 00:16:46,469
+Wes Bos: I leave probably more than I should in my
+
+341
+00:16:46,499 --> 00:16:50,279
+because sometimes I get emails from people, and
+
+342
+00:16:50,279 --> 00:16:52,319
+they'll show me their console. And I'm like, Well,
+
+343
+00:16:52,319 --> 00:16:55,679
+I'm kind of glad I stuck that in there. But on the
+
+344
+00:16:55,679 --> 00:16:59,069
+same breath, this is not part of the sponsor. But
+
+345
+00:16:59,069 --> 00:17:02,759
+one thing that I really like is if you do have an
+
+346
+00:17:02,759 --> 00:17:05,789
+error in that goes into your Sentry, or whatever.
+
+347
+00:17:06,809 --> 00:17:08,669
+Sentry has this thing called breadcrumbs, which
+
+348
+00:17:08,669 --> 00:17:10,889
+will it will show you like which functions were
+
+349
+00:17:10,889 --> 00:17:13,469
+called up to the error. But any thing that you
+
+350
+00:17:13,469 --> 00:17:16,349
+console log will also be included in the
+
+351
+00:17:16,349 --> 00:17:19,049
+breadcrumbs. And that I found is very helpful,
+
+352
+00:17:19,049 --> 00:17:22,379
+because you can see, and then I like when I was
+
+353
+00:17:22,409 --> 00:17:24,569
+having an issue with a specific thing. The other
+
+354
+00:17:24,569 --> 00:17:27,959
+day, I went in and added more logging. And then I
+
+355
+00:17:28,019 --> 00:17:30,119
+go to the breadcrumbs. Okay, okay, now I have a
+
+356
+00:17:30,119 --> 00:17:32,939
+little bit more insight into to what is happening.
+
+357
+00:17:32,939 --> 00:17:34,889
+So that was super handy, too.
+
+358
+00:17:34,920 --> 00:17:36,360
+Scott Tolinski: Yeah, we often talk about the name
+
+359
+00:17:36,360 --> 00:17:38,880
+of the game being visibility, and debugging,
+
+360
+00:17:38,910 --> 00:17:40,920
+right, knowing what you're trying to fix. Yeah.
+
+361
+00:17:40,920 --> 00:17:42,630
+And that's just really where logging comes into
+
+362
+00:17:42,630 --> 00:17:44,910
+play here. And one thing I really love seeing come
+
+363
+00:17:44,910 --> 00:17:47,430
+into my logs is that somebody tried to access WP
+
+364
+00:17:47,430 --> 00:17:48,600
+admin and got it.
+
+365
+00:17:50,760 --> 00:17:52,950
+Wes Bos: Yeah, that's the other thing is like bot
+
+366
+00:17:52,950 --> 00:17:58,350
+logs as well. So bots will try to hit common
+
+367
+00:17:58,350 --> 00:18:01,680
+endpoint spots will try to submit forms with with
+
+368
+00:18:01,680 --> 00:18:03,720
+random data. I had a bot the other day tried to
+
+369
+00:18:03,720 --> 00:18:08,700
+submit a bunch of like Postgres SQL injections
+
+370
+00:18:08,700 --> 00:18:12,450
+into a form. And it's hilarious because I don't
+
+371
+00:18:12,450 --> 00:18:14,640
+use Postgres literally anywhere. So that wouldn't
+
+372
+00:18:14,640 --> 00:18:16,650
+have worked. But like, it's not somebody sitting
+
+373
+00:18:16,650 --> 00:18:19,890
+there trying to do it. It's, it's a bot trying? I
+
+374
+00:18:19,890 --> 00:18:21,480
+don't know, I think I think it was something like
+
+375
+00:18:22,380 --> 00:18:25,680
+it went on for about six or seven hours until I
+
+376
+00:18:25,710 --> 00:18:28,020
+until I jumped in and go Oh, like this form should
+
+377
+00:18:28,020 --> 00:18:30,870
+probably have have a CAPTCHA on it so that the bot
+
+378
+00:18:30,870 --> 00:18:34,230
+can't do that. But it was kind of funny watching.
+
+379
+00:18:34,500 --> 00:18:37,260
+The requests come in every two seconds with the
+
+380
+00:18:37,290 --> 00:18:39,750
+new piece of information that they're sent in. And
+
+381
+00:18:39,930 --> 00:18:42,240
+they don't do it. They do it just enough that it
+
+382
+00:18:42,240 --> 00:18:45,690
+doesn't hit any, like throttling. Yeah, rate
+
+383
+00:18:45,690 --> 00:18:47,250
+limiting that. So that's another thing you should
+
+384
+00:18:47,250 --> 00:18:49,470
+be logging is any throttling or rate limiting that
+
+385
+00:18:49,470 --> 00:18:53,820
+happens in the app level? You can log that to show
+
+386
+00:18:53,820 --> 00:18:56,370
+but the bots are smart enough to figure out what
+
+387
+00:18:56,370 --> 00:18:58,950
+is the limit for this website. And even if it
+
+388
+00:18:58,950 --> 00:19:02,940
+takes six days to get all of the possible combos
+
+389
+00:19:02,940 --> 00:19:04,680
+through, they can do that.
+
+390
+00:19:04,740 --> 00:19:06,780
+Scott Tolinski: Yeah, I actually, it's funny. I
+
+391
+00:19:06,780 --> 00:19:08,670
+was just writing something the other day to do
+
+392
+00:19:08,670 --> 00:19:11,790
+like automating browser tasks. And I had a little
+
+393
+00:19:11,790 --> 00:19:14,220
+set timeout in a loop because I knew that if I
+
+394
+00:19:14,220 --> 00:19:16,560
+didn't Yeah, then it would get hit by the rate
+
+395
+00:19:16,560 --> 00:19:18,510
+limiting. So I was just like, alright, if I set
+
+396
+00:19:18,510 --> 00:19:22,440
+this set timeout loop to be 200 milliseconds, all
+
+397
+00:19:22,440 --> 00:19:25,080
+right, it fails after the first one, I set it to
+
+398
+00:19:25,080 --> 00:19:28,830
+300 fails or 400 succeeds. Alright. 400 is my
+
+399
+00:19:28,830 --> 00:19:32,520
+number. So you can like dial in exactly what the
+
+400
+00:19:32,820 --> 00:19:33,780
+rate limiting is.
+
+401
+00:19:33,870 --> 00:19:35,850
+Wes Bos: Let's talk about where to put logs. So at
+
+402
+00:19:35,850 --> 00:19:40,080
+the very basic, either your service will handle
+
+403
+00:19:40,080 --> 00:19:42,270
+the logs for you, they'll stream them in and you
+
+404
+00:19:42,270 --> 00:19:44,490
+can just go to logs in the dashboard. Or if you're
+
+405
+00:19:44,490 --> 00:19:48,150
+just on like a like a like a straight up VPN or
+
+406
+00:19:48,150 --> 00:19:51,060
+VPS server Linode Digital Ocean something like
+
+407
+00:19:51,060 --> 00:19:54,240
+that will generally have log files in there that
+
+408
+00:19:54,240 --> 00:19:57,360
+you can. You can go in and download and whatnot.
+
+409
+00:19:57,360 --> 00:20:01,560
+Generally these log files are massive. so they
+
+410
+00:20:01,620 --> 00:20:04,950
+they can't, you can and like, back in the day, it
+
+411
+00:20:04,950 --> 00:20:07,050
+used to be hard to just open them up in your text
+
+412
+00:20:07,050 --> 00:20:10,380
+editor. Text Editors are very good at opening up
+
+413
+00:20:10,380 --> 00:20:13,470
+files that are two gigs and searching through them
+
+414
+00:20:13,470 --> 00:20:17,370
+now. So it's not so much of an issue. But most
+
+415
+00:20:17,520 --> 00:20:21,060
+services that do hosting will allow you to do
+
+416
+00:20:21,060 --> 00:20:23,970
+what's called log drains, meaning that okay, we'll
+
+417
+00:20:23,970 --> 00:20:27,420
+keep logs for we'll keep the last 10,000 logs, or
+
+418
+00:20:27,420 --> 00:20:30,180
+we'll keep the last week worth of logs. And then
+
+419
+00:20:30,180 --> 00:20:33,360
+after that they're deleted, because at some point,
+
+420
+00:20:33,360 --> 00:20:35,280
+you should, you shouldn't keep logs around for
+
+421
+00:20:35,280 --> 00:20:38,220
+that much longer. But if you do need to keep them
+
+422
+00:20:38,220 --> 00:20:40,440
+for a little bit longer than you have to port them
+
+423
+00:20:40,440 --> 00:20:43,230
+into something else. So whether that is as simple
+
+424
+00:20:43,230 --> 00:20:48,690
+as a text file on AWS, or there's lots of services
+
+425
+00:20:48,690 --> 00:20:52,740
+out there that are specific log drains, and they
+
+426
+00:20:52,740 --> 00:20:55,110
+are really helpful because you can do things like
+
+427
+00:20:55,530 --> 00:20:58,590
+search for specific words, you get syntax
+
+428
+00:20:58,590 --> 00:21:01,980
+highlighting, you can filter sorting filters, or
+
+429
+00:21:02,010 --> 00:21:05,430
+all that type of stuff and graphs and all Yeah, I
+
+430
+00:21:05,430 --> 00:21:07,620
+don't do any of this. Because sometimes I look at
+
+431
+00:21:07,620 --> 00:21:11,160
+the the prices of these things. I'm like, I don't
+
+432
+00:21:11,310 --> 00:21:13,890
+know, another 22 hours a month for something like
+
+433
+00:21:13,890 --> 00:21:16,110
+this, you know, but I look at it like specifically
+
+434
+00:21:16,110 --> 00:21:19,890
+is one better stack? Log tail looks nice.
+
+435
+00:21:19,980 --> 00:21:21,240
+Scott Tolinski: Yeah, log tail is great. You know,
+
+436
+00:21:21,240 --> 00:21:25,350
+I've used I've used log tail, I've used paper
+
+437
+00:21:25,350 --> 00:21:28,410
+trail. Those are two of the big ones. Some of the
+
+438
+00:21:28,410 --> 00:21:34,740
+other ones are sumo logic log DNA logs.io,
+
+439
+00:21:34,920 --> 00:21:38,880
+sematext, logs, data, dog has logging logic
+
+440
+00:21:38,880 --> 00:21:41,970
+monitor has logging Dynatrace has lot like there's
+
+441
+00:21:41,970 --> 00:21:45,300
+a lot, right? Yeah, this is like a big a big thing
+
+442
+00:21:45,300 --> 00:21:47,400
+where some of these do more than just logging,
+
+443
+00:21:47,550 --> 00:21:51,120
+right? But, you know, we're talking, the big boys
+
+444
+00:21:51,120 --> 00:21:53,760
+for just straight up locking log tail and paper
+
+445
+00:21:53,760 --> 00:21:56,190
+trail are probably the two biggest ones. I've used
+
+446
+00:21:56,190 --> 00:21:59,250
+both of them, both of them, you know, they were
+
+447
+00:21:59,250 --> 00:22:02,040
+great to have, especially as diagnostic tools when
+
+448
+00:22:02,040 --> 00:22:04,950
+you were looking for, like a specific instance
+
+449
+00:22:04,950 --> 00:22:07,920
+that happened, I found it to be way easier to find
+
+450
+00:22:08,040 --> 00:22:11,730
+specific instances or specific issues, or really
+
+451
+00:22:11,730 --> 00:22:13,770
+dive into the logs a little bit more with these
+
+452
+00:22:13,770 --> 00:22:15,900
+tools. But at the end of the day, like you said,
+
+453
+00:22:15,900 --> 00:22:19,410
+they're they're just kind of unneeded expenses for
+
+454
+00:22:19,410 --> 00:22:22,350
+our level of what yeah, what we're working with,
+
+455
+00:22:22,380 --> 00:22:25,020
+you know, I can dive into the log files, no
+
+456
+00:22:25,020 --> 00:22:26,880
+problem and still get access to the same
+
+457
+00:22:26,880 --> 00:22:29,550
+information. So I probably shouldn't be paying a
+
+458
+00:22:29,550 --> 00:22:32,820
+service just to be making it a little bit easier.
+
+459
+00:22:32,820 --> 00:22:35,310
+But if I was on a big project with a big team with
+
+460
+00:22:35,430 --> 00:22:37,500
+more requests than what I'm dealing with right
+
+461
+00:22:37,500 --> 00:22:38,910
+now, I think something like this would be
+
+462
+00:22:38,910 --> 00:22:42,660
+essential. I just I you know, I don't need it for
+
+463
+00:22:42,660 --> 00:22:43,860
+our size. So
+
+464
+00:22:43,860 --> 00:22:46,350
+Wes Bos: when you actually go ahead and log, I
+
+465
+00:22:46,350 --> 00:22:48,690
+said earlier, I'm simply just using straight up
+
+466
+00:22:48,690 --> 00:22:52,080
+console log. But there are lots of other packages
+
+467
+00:22:52,080 --> 00:22:55,140
+that will do these for you. Winston is the big one
+
+468
+00:22:55,140 --> 00:22:58,560
+that's usually included in Express apps and no GS
+
+469
+00:22:58,560 --> 00:23:02,130
+base. They allow you to do different types of logs
+
+470
+00:23:02,130 --> 00:23:04,920
+and pass context to it and all kinds of good stuff
+
+471
+00:23:04,920 --> 00:23:07,470
+like that. I've never liked that because I liked
+
+472
+00:23:07,470 --> 00:23:11,190
+the idea of that. But I hate having to import a
+
+473
+00:23:11,190 --> 00:23:13,950
+package in every file, which it's I think, maybe
+
+474
+00:23:13,950 --> 00:23:16,260
+less of an issue now with the auto import and VS
+
+475
+00:23:16,260 --> 00:23:18,600
+code. So maybe I should take another look, do you
+
+476
+00:23:18,600 --> 00:23:19,860
+use a specific package.
+
+477
+00:23:20,070 --> 00:23:23,340
+Scott Tolinski: I always used a Pino before pi n o
+
+478
+00:23:23,340 --> 00:23:28,140
+from you know, the awesome Matteo Kalina. And this
+
+479
+00:23:28,140 --> 00:23:30,240
+was the one I used to because it came with FASTA,
+
+480
+00:23:30,240 --> 00:23:34,350
+phi, and Mercurius. And I really like it. There's,
+
+481
+00:23:34,350 --> 00:23:37,440
+it's a really, it's really robust, it does a lot
+
+482
+00:23:37,440 --> 00:23:41,040
+for you. low overhead, it's, uh, overall, a super
+
+483
+00:23:41,040 --> 00:23:44,070
+nice logging package. But, you know, I would
+
+484
+00:23:44,070 --> 00:23:47,100
+probably, instead of trying to use this in a
+
+485
+00:23:47,100 --> 00:23:49,530
+sense, where you're dropping in like a console
+
+486
+00:23:49,530 --> 00:23:51,960
+log, if something like this, like a service, I
+
+487
+00:23:51,960 --> 00:23:55,590
+would probably try to like intercept, intercept
+
+488
+00:23:55,590 --> 00:23:58,560
+errors or intercept requests and do this in more
+
+489
+00:23:58,560 --> 00:24:01,770
+of like a middleware type of way. And then just
+
+490
+00:24:01,770 --> 00:24:03,480
+use straight up console log everything else, I
+
+491
+00:24:03,480 --> 00:24:06,150
+Wes Bos: guess. Oh, yeah. Yeah, that makes sense.
+
+492
+00:24:06,240 --> 00:24:08,370
+We should do a show on middleware. I don't think
+
+493
+00:24:08,370 --> 00:24:09,150
+we've ever done that.
+
+494
+00:24:09,150 --> 00:24:10,350
+Scott Tolinski: Yeah, I just wrote a little
+
+495
+00:24:10,350 --> 00:24:12,900
+middleware that I added to it. I had been using
+
+496
+00:24:13,470 --> 00:24:17,100
+Intel kit to automatically parse foreign data from
+
+497
+00:24:17,100 --> 00:24:19,740
+our forms and make them just available and spell
+
+498
+00:24:19,740 --> 00:24:20,460
+kit form action.
+
+499
+00:24:20,489 --> 00:24:22,349
+Wes Bos: I saw that you published it. Yeah, I
+
+500
+00:24:22,350 --> 00:24:23,250
+Scott Tolinski: published it. It's like I've had
+
+501
+00:24:23,250 --> 00:24:25,260
+this thing in my codebase for a little while. I
+
+502
+00:24:25,260 --> 00:24:26,910
+actually have a few of those. Like, I have a spell
+
+503
+00:24:26,910 --> 00:24:29,430
+kit logging one and I have our it's like, Hannah,
+
+504
+00:24:29,430 --> 00:24:31,740
+she did take me a couple of minutes to put this up
+
+505
+00:24:31,740 --> 00:24:33,300
+live somewhere. So yeah,
+
+506
+00:24:33,330 --> 00:24:35,520
+Wes Bos: yeah, I specifically the one thing that
+
+507
+00:24:35,520 --> 00:24:37,890
+has gotten me with the middleware I use tons of
+
+508
+00:24:37,890 --> 00:24:40,560
+middleware, but I never like I wish that the
+
+509
+00:24:40,590 --> 00:24:44,910
+TypeScript types would update for requests that
+
+510
+00:24:44,910 --> 00:24:47,250
+are after the middleware, you know, like before
+
+511
+00:24:47,250 --> 00:24:48,990
+the middleware you know that it's not going to be
+
+512
+00:24:48,990 --> 00:24:52,110
+there and after the middleware and like, wherever
+
+513
+00:24:52,110 --> 00:24:54,030
+they are, they you always have to do like an if
+
+514
+00:24:54,030 --> 00:24:55,830
+statement to check if it's specifically there,
+
+515
+00:24:55,830 --> 00:24:58,350
+which is probably better type practice, but it
+
+516
+00:24:58,350 --> 00:25:01,740
+would be nice if somehow you could You would know
+
+517
+00:25:01,770 --> 00:25:04,200
+if the middleware was run before and it's kind of
+
+518
+00:25:04,200 --> 00:25:06,420
+hard because you don't know the functions where
+
+519
+00:25:06,420 --> 00:25:09,510
+they are, you know? Yeah, totally. But But well,
+
+520
+00:25:09,510 --> 00:25:11,310
+we'll throw that on the Bucks middleware. What's
+
+521
+00:25:11,310 --> 00:25:13,110
+coming up? What else do we have here about logs?
+
+522
+00:25:13,140 --> 00:25:14,550
+Scott Tolinski: I think that might be it. Yeah,
+
+523
+00:25:14,580 --> 00:25:16,800
+Wes Bos: I think that's it. It's helpful to log
+
+524
+00:25:16,890 --> 00:25:19,110
+log stuff that you think you need put them in,
+
+525
+00:25:19,140 --> 00:25:21,540
+because sometimes you're going to need that
+
+526
+00:25:21,540 --> 00:25:26,190
+information after and you realize, oh, shoot, I
+
+527
+00:25:26,190 --> 00:25:27,810
+probably should have had better logging in place.
+
+528
+00:25:27,810 --> 00:25:30,330
+So take a take a couple of minutes and maybe add
+
+529
+00:25:30,330 --> 00:25:32,070
+some better logging to your app. Yeah,
+
+530
+00:25:32,100 --> 00:25:32,820
+Scott Tolinski: absolutely.
+
+531
+00:25:33,180 --> 00:25:34,620
+Wes Bos: All right. Thanks for tuning in. Catch
+
+532
+00:25:34,620 --> 00:25:37,020
+you on Wednesday. Bruce, who's
+
+533
+00:25:38,880 --> 00:25:41,490
+Scott Tolinski: head on over to syntax.fm for a
+
+534
+00:25:41,490 --> 00:25:44,640
+full archive of all of our shows. And don't forget
+
+535
+00:25:44,640 --> 00:25:47,430
+to subscribe in your podcast player, or drop a
+
+536
+00:25:47,430 --> 00:25:49,170
+review if you liked this show.
+

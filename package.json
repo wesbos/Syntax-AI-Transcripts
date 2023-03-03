@@ -1,0 +1,21 @@
+{
+  "name": "transcripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx gpt.ts"
+  },
+  "author": "Wes Bos",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.14.4",
+    "dotenv": "^16.0.3",
+    "gpt-3-encoder": "^1.1.4",
+    "i": "^0.3.7",
+    "npm": "^9.6.0",
+    "openai": "^3.2.1",
+    "tsx": "^3.12.3"
+  }
+}

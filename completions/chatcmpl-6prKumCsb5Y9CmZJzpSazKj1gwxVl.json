@@ -1,0 +1,184 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant that summarizes web development podcasts"
+      },
+      {
+        "role": "user",
+        "content": "Syntax is a podcast about web development. Available at https://Syntax.fm"
+      },
+      {
+        "role": "user",
+        "content": "Here is a transcript of Episode 578 entitled \"Logging\":"
+      },
+      {
+        "role": "user",
+        "content": "0:26 Scott Tolinski \n \n\nThe article discusses the importance of having good logging within an application in both production and development environments. The author, Scott Tolinski, introduces the topic and is accompanied by developer Wes Bos."
+      },
+      {
+        "role": "user",
+        "content": "0:55 Wes Bos \n The speaker discusses their recent focus on improving their logging methods, as they were experiencing issues with their app and needed more insight into the problems. They mention using console logging mostly, but also mention their sponsor, Sentry, which offers error and performance tracking, as well as session replay. The speaker goes on to explain what logging is and its importance in understanding errors and issues in an application."
+      },
+      {
+        "role": "user",
+        "content": "2:33 Scott Tolinski \n Logging is a tool used to output information on either the client side or server side of code. It is primarily used for debugging, but can also be used by frameworks to output information automatically. CMS systems often have baked-in logging. Logging provides visibility to actions happening on the client or server and can range from basic console logs to more complex information like request details and resolution time."
+      },
+      {
+        "role": "user",
+        "content": "3:52 Wes Bos \n Logging is useful for developers to track what happened in a system, from finding errors to understanding why a certain URL was hit with specific data. Different types of logging help in piecing together information and finding the ability, and can even help recreate lost data in databases."
+      },
+      {
+        "role": "user",
+        "content": "5:01 Scott Tolinski \n \n\nLogging is not only for debugging, but also for general information and understanding of what's happening in your application. It can provide both less targeted and more targeted information, allowing you to know what's happening around potential errors and giving you more context into what could be happening in specific instances."
+      },
+      {
+        "role": "user",
+        "content": "5:51 Wes Bos \n The author is discussing their experience with examining website logs, specifically when tracing an issue with undefined requests in their log. They discovered that the issue was caused by a typo in an image tag within their template and resolved it through additional logging and fixing the template. The logs allowed them to trace the interactions of users visiting the website, adding courses, applying coupons, and creating accounts."
+      },
+      {
+        "role": "user",
+        "content": "7:56 Scott Tolinski \n Logs are important for structured and organized information, although too much information can be a problem at times. Server-side logging is crucial and should include a time code, the type of request, the requested path, and the total response time. It is also important to differentiate between information and error logs, which can be color-coded accordingly for easier management."
+      },
+      {
+        "role": "user",
+        "content": "9:53 Wes Bos \n The author discusses their logging process and explains how they label different areas of the application with IDs or names in square brackets, adding information such as URLs, query parameters, and body parameters. They mention that logging the entire request object would make logs too large quickly. They also express excitement about improving their logging process in the future."
+      },
+      {
+        "role": "user",
+        "content": "10:59 Unknown Speaker \n The text discusses the issue of excessive amount of text in a large context and suggests that it is not a problem as long as the text is well-organized and properly structured. It emphasizes the importance of using headings, subheadings, and bullet points to make the text more digestible for readers."
+      },
+      {
+        "role": "user",
+        "content": "11:09 Wes Bos \n The author discusses their experience with log files, including a situation where the log files on their server caused it to slow down until they cleared them out, emphasizing the need for a better approach to handling log files."
+      },
+      {
+        "role": "user",
+        "content": "11:52 Scott Tolinski \n The text discusses the issue of limited server space and how it can be caused by logging every request, which results in saving a lot of text and information that takes up storage space. The author mentions the importance of developers remembering that text is bytes and how it can add up quickly."
+      },
+      {
+        "role": "user",
+        "content": "12:24 Wes Bos \n \n\nThe text highlights that the volume of requests a website receives can quickly generate a substantial amount of log data."
+      },
+      {
+        "role": "user",
+        "content": "12:32 Scott Tolinski \n \n\nThe author of the text likes to use emojis to track the response time for requests they receive. They count the time from when the request arrives to when the response goes out through middleware. They use a rocket ship emoji for very fast responses, a bunny rabbit emoji for shorter responses, and a turtle emoji for really long responses. The author finds it helpful in identifying components that may require attention if they consistently receive turtle emojis in their logs."
+      },
+      {
+        "role": "user",
+        "content": "13:29 Wes Bos \n It is important to log descriptive messages about what happened during events such as login attempts, but care must also be taken to avoid logging personally identifiable information as this is subject to GDPR regulations. When scrubbing logs, not only user and purchase information but also any personally identifiable information should be considered."
+      },
+      {
+        "role": "user",
+        "content": "14:21 Scott Tolinski \n \n\nThe text highlights the importance of securing logs as they could become another attack vector. If secure information is stored in logs and someone gains access to them, it could be as bad as gaining access to the information itself. Therefore, it is crucial to secure logs properly."
+      },
+      {
+        "role": "user",
+        "content": "14:42 Wes Bos \n The text discusses the importance of being cautious when setting permissions for logging information and making sure that sensitive information is not accessible to other employees. The author suggests setting different levels of logging from error warning to verbose and silly, which can be helpful in tracking requests and following code. The use of breakpoints in the code base is also mentioned as a way to track actions."
+      },
+      {
+        "role": "user",
+        "content": "15:45 Scott Tolinski \n In development, some logging can be used for visibility purposes, but in production, informational logging is useful to see what is happening on the site. Tools to evaluate the speed of the site can be used, but the locks with server-side emojis are helpful for a quick glance. Outputting too many things to the client in production should be avoided."
+      },
+      {
+        "role": "user",
+        "content": "16:41 Wes Bos \n The author explains that they sometimes leave console logs in their code, which has led to helpful insights when people show them errors. They mention a feature called \"breadcrumbs\" in Sentry that includes console logs in the error breadcrumbs, providing more insight into what is happening. The author found this feature to be very helpful when troubleshooting specific issues."
+      },
+      {
+        "role": "user",
+        "content": "17:34 Scott Tolinski \n \n\nLogging is essential for visibility and debugging in identifying issues. WP admin access attempts are meaningful logs that can be useful in addressing security issues."
+      },
+      {
+        "role": "user",
+        "content": "17:50 Wes Bos \n The text describes the occurrence of bots trying to submit forms with random data or Postgres SQL injections. The speaker finds it funny that the bot kept trying for six to seven hours until they realized adding CAPTCHA could stop the bot from trying. The speaker suggests monitoring and logging any throttling or rate limiting that happens on the app level to prevent bots from repeatedly trying to access the site."
+      },
+      {
+        "role": "user",
+        "content": "19:04 Scott Tolinski \n The text is about automating browser tasks by using a set timeout in a loop to avoid being hit by rate limiting. The author suggests setting the set timeout loop to a specific number of milliseconds to find the optimal time and avoid getting blocked by rate limiting."
+      },
+      {
+        "role": "user",
+        "content": "19:33 Wes Bos \n The article discusses where to put logs for services or servers. If a service handles the logs, they can be accessed through the dashboard, or if using a VPN or VPS server, log files can be downloaded. These log files are usually massive, but most hosting services allow log drains to keep the last 10,000 logs or the last week of logs. After that, logs need to be ported into something else, such as a text file or log drain service that provides syntax highlighting"
+      },
+      {
+        "role": "user",
+        "content": "21:19 Scott Tolinski \n The author discusses various logging tools, including log tail and paper trail, which they have used for diagnostics when looking for specific instances or issues. They acknowledge that while these tools are helpful for large projects with significant traffic, they may not be necessary for smaller projects. The author ultimately concludes that while logging tools are beneficial, they are an unnecessary expense for their current needs."
+      },
+      {
+        "role": "user",
+        "content": "22:43 Wes Bos \n \n\nThe text discusses the use of console logging in code and mentions the availability of other packages, such as Winston, for logging. The author expresses their preference for using console log over importing a package in every file, but suggests taking another look at Winston due to possible improvements in auto import in VS code. The author also asks the reader if they use a specific package for logging."
+      },
+      {
+        "role": "user",
+        "content": "23:20 Scott Tolinski \n The author discusses their use of the Pino logging package, which they find robust and helpful with various features. They suggest using it in a middleware type of way rather than dropping it into a console log. They also mention using console log for everything else."
+      },
+      {
+        "role": "user",
+        "content": "24:03 Wes Bos \n \n\nThe speaker suggests doing a show on middleware, as it has not been covered before."
+      },
+      {
+        "role": "user",
+        "content": "24:08 Scott Tolinski \n \n\nThe author mentions creating a middleware that was added to their Intel kit to parse foreign data from forms and make it available as a spell kit form action. No further details are provided."
+      },
+      {
+        "role": "user",
+        "content": "24:20 Wes Bos \n Sorry, the given text does not provide enough context or information to create a summary. Could you please provide the full text or more details?"
+      },
+      {
+        "role": "user",
+        "content": "24:22 Scott Tolinski \n The author mentions having some code saved in their codebase, including a spell kit logging one. They also mention it took some time to publish it live."
+      },
+      {
+        "role": "user",
+        "content": "24:32 Wes Bos \n The speaker mentions using a lot of middleware and expresses a desire for TypeScript types to update for requests that come after the middleware. They note that currently, an if statement is needed to check for the presence of the middleware, but it would be helpful to know if it has already been run. They mention discussing this with the Bucks middleware team and move on to discussing logs."
+      },
+      {
+        "role": "user",
+        "content": "25:13 Scott Tolinski \n There is no text provided to summarize."
+      },
+      {
+        "role": "user",
+        "content": "25:14 Wes Bos \n The author emphasizes the importance of logging information in an application to avoid missing valuable data. They encourage taking the time to improve logging practices to ensure important information is collected and available when needed."
+      },
+      {
+        "role": "user",
+        "content": "25:32 Scott Tolinski \n \n\nThere is no text provided, therefore no summary can be created."
+      },
+      {
+        "role": "user",
+        "content": "25:33 Wes Bos \n This text is incomplete and cannot be summarized without additional information."
+      },
+      {
+        "role": "user",
+        "content": "25:38 Scott Tolinski \n \n\nGo to syntax.fm for a complete collection of all episodes of the show, subscribe in your podcast player, and leave a review if you enjoyed it."
+      },
+      {
+        "role": "user",
+        "content": "Provide these three things:\n1. A short summary of the entire episode in about two sentences.\n1. Summarize the podcast into bullet points with time stamps\n1. Produce a list of 5 hashtags that would be relevant to the episode\n\nHere is the podcast transcript:\n    "
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6prKumCsb5Y9CmZJzpSazKj1gwxVl",
+    "object": "chat.completion",
+    "created": 1677817772,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 2359,
+      "completion_tokens": 418,
+      "total_tokens": 2777
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "Summary: \nIn this episode, Scott Tolinski and Wes Bos discuss logging in web development, including its importance in troubleshooting and understanding user interactions. They also share their experiences with various logging tools and best practices for effective logging.\n\nBullet points with time stamps:\n\n- 0:26: Scott Tolinski introduces the topic of logging in web development and is joined by Wes Bos.\n- 0:55: Wes Bos shares their recent focus on improving logging methods for their app and mentions using console logging and Sentry for error tracking.\n- 2:33: Scott Tolinski defines logging and its importance in providing visibility and context for both client and server-side code.\n- 5:01: Scott and Wes discuss their experiences with examining logs to troubleshoot issues in their apps.\n- 7:56: Scott explains the importance of organized logs and differentiating between information and error logs.\n- 9:53: Wes discusses labeling different areas of the application in logs and the importance of careful handling of personal information.\n- 11:09: The hosts discuss issues with log file size and the need for better management.\n- 12:32: Scott emphasizes the amount of log data that can be generated and the potential issue of limited server space.\n- 14:21: Wes discusses permissions and different levels of logging, as well as the importance of securing logs.\n- 17:34: Scott discusses how logs can be useful in identifying security issues such as WP admin access attempts.\n- 19:33: Wes suggests monitoring and logging any throttling or rate limiting that happens on the app level to prevent bots from repeatedly trying to access the site.\n- 22:43: Scott and Wes discuss the use of console logging and other logging packages such as Pino and Winston.\n- 24:08: The hosts briefly mention middleware and express interest in doing a show on it.\n- 25:14: Wes emphasizes the importance of effective logging practices for gathering valuable data in the app.\n\nHashtags:\n#webdevelopment #logging #debugging #security #middleware"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

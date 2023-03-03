@@ -1,0 +1,602 @@
+[
+  {
+    "speaker": "Wes Bos",
+    "time": "0:10",
+    "lines": "Welcome to syntax. This is a podcast about web development. Today we're talking about the Warp terminal. This is a new terminal app that is honestly very refreshing. It's super awesome. I'm a big fan of it. And today we are going to peel I was asked like, like, how is it good? What's better about it? And then it's just like, Well, I wouldn't big questions like that get asked because it's just like, I can't I can rattle off a few things, but like, we literally need a whole hour to explain why we like it and whatnot. So we're recording this thing and getting on into it. I think I've been using it for about a year now. And I've just been been absolutely loving it. There's I've got a handful of gripes so we'll go over those as well, because certainly isn't perfect just yet. How are you doing today? Scott, you are you big warp fan as well.",
+    "summary": "The Syntax podcast discusses the Warp terminal app, which is a new and refreshing option for web development"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "0:59",
+    "lines": "Big warp fan. Actually, they sent me a t shirt a little while ago. And I'm a big fan of that T shirt as well. No, I've been using work now for a little bit. And honestly, it takes some it takes a lot to get me off of my item setup because I it's one of those things that I've finely crafted over the the many years that I've been using it but you know, work was really it, especially now that it's opened up a little bit more than the fact that you can make your own themes and it definitely feels maybe a little bit more solid than when I first started using it. So now I am a huge, huge fan of warm. Also, I'm gonna apologize to anyone out there I'm getting over what seems to be like the worst cold known to man, I have no idea what's going on. I have been I've had like the worst cough every single day for the past like seven days. It's so much to the point where it's been keeping me up. So it's like you're coughing all day. You're coughing all night. You can't sleep because you're coughing and then how are you ever gonna get better? So? Yeah, it has been just like, relentless, so I'm gonna do my very best to not sound super sick today. It seems like I sound pretty decent right now, but I will make sure I do not cough into mic. Alright, Chris will cut that out for us anyways, but",
+    "summary": "The author is a big fan of Work, a software program that they have been using for a"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "2:11",
+    "lines": "yeah, awesome. I should also say, This is not sponsored by Worf. This seems to be a thing lately is whenever you like a company or a product or anything like that, and you say good things about it. People say like, Oh, are they paying you? How much should they pay you to say that? Nothing they did. They sent me a water bottle. But that was only because I was complaining about warp on on Twitter about how the the the Autocomplete is not as good as fig. And I was like, this needs to get better. And the founder of it. We had a call and he's like, he kind of he's kind of like, oh, yeah, like we're that's some low hanging fruit. We're definitely gonna fix that type of stuff. And it's cool. He was the principal dev on Google Docs. So I certainly would like to have him on the show as well, just to talk about both like, how do you make Google Docs like That's unreal. As well as a, sorry, the warp terminal is built in Rust, which is very interesting. I remember when it first came out. I was like, Oh, this thing is for sure. Built in HTML, CSS, and I went looking for the CSS file, so I could tweak it. And I couldn't find it. Like I almost can always find the CSS file behind these apps. Yeah, right. So far in the Resources folder. Yeah, there is no CSS file, because it's not built in that it's built in OpenGL or something like that. So that's, that's kind of a cool thing. So let's talk about terminals in general, real quick. Oh, sorry.",
+    "summary": "The author discusses his positive experience with using Warp, a terminal built in Rust. He clarifies"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "3:35",
+    "lines": "before? Yeah, before we get too into depth, the years you said, you know, how do you build Google? Google Docs or whatever? That was actually one of my interview questions when I interviewed at Google was really if you if you were going to be making a Google Doc, and you are tasked with building Google Docs, like where would you start? What would what what element? Would you make the canvas out of what how would you communicate with the server? And I was just like, every single answer I gave, I was like, I feel like this is totally I feel like this is a bad answer. I wish I could look at Google Google Docs right now and actually paw through it because it was just like I did not trust any of my answers. But that was Yeah. Interesting interview question there.",
+    "summary": "The author recalls being asked a difficult interview question about building Google Docs while interviewing for a job at"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "4:17",
+    "lines": "Let's talk about the terminal in general. The terminal has been around forever and it's way back and it really hasn't evolved all that much over the years. There's so many annoyances that I have with the terminal at the very basic you can't click where you want your cursor to go in most terminals. You have to use your arrow keys and I know that some terminals have you hold down a key and click on it and and that's a little bit better but like I've always said for the longest time like Will somebody please vs codify the terminal, because that's the that's the experience that I want inside of the terminal. So that skipping via keyboard I want to be able to use the same keyboard shortcuts at ease and VS code to skip to the front Have a line on something like that the design in the UI of terminals has improved quite a bit over the years like you can get I turned to you can get looking really nice. Oh, hyper looks really nice and warp itself looks really nice. So that's been a big one. The minimal features, we've sort of been packing features in via prompts and Zetas, H and all that. And it's just been kind of clunky. So warp is kind of here to modernize what the terminal will look like and how you experience this type of thing. Because quite honestly, especially for web developers, when you're learning web development, we sort of just throw you into this whole new world, of what the terminal is and how to change files and folders and how to move around and you can't have spaces in some in it. Sometimes in Windows, it's a whole nother world of pain and all that type of stuff. So I'm very happy that work is here solving at least some of those. It is currently only for Mac, as all good tools. People always say like, oh, yeah, you can do web development on any anything. And then like, Oh, why do people who have Mac's love mac so much. And it's because of stuff like this, this happens, literally with every tool is that the best tools are always for Mac only, at least to begin with. And then they will roll out. So there is a sign up, we'll put it in the link for Windows and Linux. So I assume since this thing is built in Rust, it will eventually hit Windows and Linux as well. Yeah, I",
+    "summary": "The author discusses the annoyances they have with the terminal such as not being able to click where"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "6:33",
+    "lines": "could never be a Windows user Linux shirt maybe. But as an Android user for a long time, that was like always the worst thing about App announcements you'd always have like tempered, like, oh, this wonderful new app. And I know I'm probably not going to see it for who knows how long even Instagram took like, a year to get for Android. I mean, it's just one of those things.",
+    "summary": "\n\nThe author, an Android user, expresses frustration with the delay between app announcements and their availability for"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "6:55",
+    "lines": "Alright, some of the terminals. Now, we'll talk about what we have used and have used in the past I was on I term for I turned to for probably six or seven years. I did a like a two year stint with hyper. I was pretty excited about that. But over time, hyper I was just was it was good. I really liked it. And it looked nice, but it I was not using any of the plugins and whatnot, a couple here and there. But then they broke and I didn't feel like fixing it. And hyper itself was so if you don't know, hyper, it was like a react based terminal that you can download for your desktop. It's from Marcel. They've since stopped development on it for probably a year or two now. But there's one guy, I went and looked at one, one guy maintaining it and keeping it going. So it's still a good option. But I certainly I probably would not pick it off today.",
+    "summary": "The author discusses their past experiences using different terminal programs. They mention using I term for 6"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "7:48",
+    "lines": "Yeah. And also, you know, the performance was never great for me, I picked it up. And I always had like a little bit of like, I did the classic, install all the plugins right away, and then be like, Yeah, this thing slow that I stopped using it. But then I term actually had ended up getting a lot of the same sort of plugins that you had in hyper anyways, like being able to see your CPU and those kinds of things in the bottom toolbar and adding little little niceties. So I wasn't missing too much by not using hyper, you know, whatever you gain from cool little fun little things you're losing in performance anyways, totally, you know, for Windows, a lot of people recommended to me the windows terminal, because they recently kind of got a new version of this thing. I don't know how long ago but at first, I wasn't super impressed. But you know, when I dove into it, and you're able to tweak things pretty significantly, it does feel a lot like aI term. It's not maybe, you know, coming from the Mac world, we're terminals. Even AI term has been around for a long time. But beyond AI term, we've had like a lot of nice terminals and XO, the windows terminal being like acceptable to me was like, Okay, this is fine. But a lot of people Windows world we're saying like this is that this is the thing, and it's fine, it's good. But I wouldn't necessarily say it holds a flame to work here.",
+    "summary": "The author discusses their experience with different terminal applications, including Hyper, iTerm, and the Windows"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "9:12",
+    "lines": "Other ones are the Mac terminal that's built in. Honestly, a lot of people use it, it's fine. It's fine. Allah Kriti I don't use this, you put this one in there. What's that? Yeah,",
+    "summary": "The text briefly mentions the use of the Mac terminal, stating that many people use it and it"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "9:23",
+    "lines": "illiquidity is another one. You know, a little while ago, I did the deep dive into the different apps people were using and illiquidity was one that a lot of people seem to use. And I gotta really wonder why it doesn't necessarily seem like it's doing anything super special. It's OpenGL based. It's fine again, it it doesn't feel super modern. But when there's other options, it it feels like there there are other options. This one Yeah, people use a lot in Windows. And yeah, I guess now that the windows terminal itself is way better. Maybe that was the whole point. Maybe this thing was the maybe This was the option before Windows terminal got better. Oh, yeah,",
+    "summary": "The author discusses the app Illiquidity and wonders why it is popular despite not appearing to be"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "10:03",
+    "lines": "I also wonder if people are using that to run vim because a lot of people run their editor literally inside their terminal. And that's why some of these terminals don't even have tabs. That's because all of that is part of the in itself. Yeah. And then the last one, probably most popular, maybe most popular is vs. Codes terminal. So VS code has its own terminal built right in, I have never been able to get into using the VS code terminal simply because maybe this has changed. I don't want it part of my editor, I want it to pop out, I want to be able to tab over to I don't want to put it on a different monitor. And I want to I want it to be its own thing. So the one thing that keeps making me want to go back to the or go to the VS code terminal is the they have like automatic debug attaching, where you can put breakpoints and whatnot. And that's pretty nice. You don't have to set up the whole VS code debug thing. But other than that now, yeah, there",
+    "summary": "The article discusses various terminals used by programmers, including iTerm2, Terminal.app, and VS"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "10:57",
+    "lines": "are times but like, you know, VS code is like slow enough for me as it is like I don't want to Imbert in it anymore. And typically, I think the apps that are handling command, command line stuff, terminal apps, they're Yeah, they're they could be not electron apps. And I'm happy with that. Yeah,",
+    "summary": "The author expresses dissatisfaction with using VS code due to its slow performance and does not want to add"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "11:15",
+    "lines": "let's go through some of the terms, the terms terminal terms here. Because we can sometimes say these words, you don't know what part of it is. And also, like, often people say, like, how do you get your terminal to look like yours. And first of all, I have an entire course because people asked me that all the time command line power user.com. But also, like, it's a couple things, you know, it's a lot of things put together. So the first one is a shell. The shell is the software that runs in your terminal, it's the actual software that is running on your computer. And that is generally going to be zisha, that sh or Z sh for all y'all Americans. And that's the one that's built into Mac OS now. And that's the one that I would say most web developers use. But there also is fish. Bash was the most popular one for many, many years probably is, if you saw you sign into literally anything, any server, you're getting a bash prompt. Then on Windows, we have command prompt, there's PowerShell. And then likely you the developer listening to us should be using it's called with WsL Windows subsystem Linux, so that literally runs Linux on your Windows computer, so that you get a Linux environment or a Unix environment for your shell. And you can run all the stuff that we're talking about on it as well. You don't have to figure out oh, what's the? What's the equivalent to delete a directory in Windows? Or how do you copy something in Windows? You know, like, what's the equivalent? You don't have to know the equivalent? It's the same everywhere? If you're Yeah, WsL",
+    "summary": "This article discusses different terminal terms and software commonly used by web developers, including shells like zsh"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "12:52",
+    "lines": "PowerShell? Not something I've invested any time in learning myself. Next is the prompt. And the prompt is like a lot of what people see when they ask like, how do you make it look cool. The prompt is the prompt. It's the thing that says, hey, it's that little piece of text above where you start typing that shows you your context shows you all sorts of information. Sometimes if you're using a setup like Oh, my Z, sh, or, Oh, my fish, or starship, or there's another one called Oh, my posh is the one that I'm using. These different types of prompts they give you access to being able to style them in various ways you can give contextual information about where you are currently, if you're in a git branch, what you know what branch it's on, if the branch has been is dirty, it needs to be pushed or whatever. You can get all kinds of information inside of the prompt. And basically, you want to use a prompt that coincides with the shell you're using right like oh my Z sh is for Z sh as a shell. Oh, my fish is the prompt for fish. starship is starship only CSH. Let's see. I don't know starship.rs. It's the classic built in rest. Crawl. Oh, it's a cross shell prompt. Okay, so it is not just Z sh if it's cross shell. Yeah, looks like you can use it with fish bash or Z sh power shell or ion, which we haven't talked about ion and honestly, I don't know anything about it.",
+    "summary": "The article discusses prompts, which are the pieces of text above where you start typing that provide contextual"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "14:22",
+    "lines": "No, along with these. Oh, my fish. Oh my Z sh. That's the one I use. Oh, my Oh my Z sh. They also include aside from the prompt, which is what you see in there. They also give you aliases. So like, the one that I use most often is dot dot dot, which is a CD three levels up. But there's all kinds of really handy ones unzip, you know, like, I don't have to know the untarred X W's that are F whatever. I just run unzip, and it figures it out. So these are just collections of functions",
+    "summary": "The article discusses additional features of command prompts, such as aliases, that can be found in addition"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "14:55",
+    "lines": "that tar x ZCF. Maybe it depends",
+    "summary": "\n\nThe text is incomplete and lacks context or meaning. It appears to be a fragment of a command"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "14:59",
+    "lines": "on what it is and Like if it's a, if it's a seven Z file, or if it's a dot zip, and if it's a Windows zip and all those things is kind of annoying. So all my SSH comes with those. And that comes with a bunch of like plugins as well. So if you want to do something like upload a file, change your Spotify, literally anything, there's often like really cool plugins that you just add to your config, and you get it going.",
+    "summary": "\n\nThe author of the text finds it annoying to constantly have to identify file types such as seven Z"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "15:23",
+    "lines": "Yeah, yeah, those things are super handy. I love plugins. I love aliases, I use them quite frequently. And I honestly love designing my own prompt. That's why Oh, my posh is really nice. It's a nice one, there's a ton of options there. I like that level of customization. And typically, what you're doing is you're getting into a config file, and you're just quickly adding in an alias, plugin, or whatever, they're usually all pretty easy to add in. And these things are all systems kind of onto their own, where you have to go to their own documentation and follow the rules for setting them up. A little small sidebar here of shells ion we haven't talked about ion, I said, I didn't know what it was a second ago. And now I know what it is it ion is a modern shell, that is written in rust. So it's, we have her our the full circle here of rust tools ion is a rust based shell. Oh, cool.",
+    "summary": "The author discusses their appreciation for plugins, aliases, and designing their own prompt, highlighting the benefits"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "16:15",
+    "lines": "That's probably not something I would ever, ever have to get into so many of these tools just to work, it's not something I would ever enjoy is going to be the default. Next year, everyone is going to move on to it, it was a pretty big deal that Mac OS changed. The default shell from YouTube is Sh which which was like, I was like, wow, my apple cares about developers. So that was pretty cool. The last one we have here is the terminal. So it just talked about all the different terminals in there. So the terminal is the window, the GUI that actually appears into your shell. So again, your shell is the software that's running your Zed sh Oh, mais sh is is a bunch of add ons into that in the terminal is the window into the shell that's running on your computer or on your server or whatever. And your terminal allows you to type text into it and copy paste things. And sometimes drag and drop files into it and complete the path and all that stuff. So that's what warp is warp is a terminal. However, it does also step on some of these things that we talked about earlier, specifically the prompt and, and whatnot. So it's sort of extending its reach past, just being a terminal application, and putting a little bit of custom sauce into there, which is really nice. So let's talk about what warp is the basic features of warp. You can click wherever you want, it seems mind blowing. But sometimes, especially when I'm teaching beginners, you see like, oh, you spelt that thing wrong. And they take their mouse and they try to click where the spelling mistake is and it doesn't work. Or there's like a puts block cursor, and they're not used to using a block cursor. So little things like that jumping word, jumping by sentence, I don't know about you, but I use like command arrow to jump by sentence. And option, option arrow to jump by word like crazy. And like that's in war in Libya in literally every application. Yeah. And when it doesn't work in an application. I'm just like, why? Like this is this is part of my workflow.",
+    "summary": "The text discusses different tools and features related to coding, including shells, terminals, and the new"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "18:21",
+    "lines": "Yeah, I know what why do you have to memorize command a two? Or is it CTRL? A, it's Ctrl. A, I believe that was like the standard item one or the normal terminal one. Yeah. And for so long, like all these terminal labs, were just saying I want to do it the standard way. And that was a big hang up for me when I got into command line, especially like coming from somebody who's like really into UI based things. I do like command line a lot. I use it like 24/7. But I remember when I was first learning it, like those hang ups were kind of a big deal to me and like why? Why can I not click around this thing? Why is it intentionally so obtuse? Like why are there? It seems like the apps trying to make itself not user friendly in a lot of like basic ways, just because that's just the way it's always been done. Right? Yeah. And",
+    "summary": "The text discusses the frustration of learning command line interfaces and the apparent lack of user-friendliness"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "19:12",
+    "lines": "like, that's just how terminals work. Right? And it's really frustrating, but it's nice that like warp builds a layer on top that allows you to to have a lot of these nicety features. There's a multiple cursors as well, I don't use that one a whole lot. But I imagine if you were a can you use Vim and warp? I don't even know. But like, even just your NPM installing something or you're trying to copy a bunch of values from an output multiple cursors can be really helpful to to edit it right. Yeah, totally. Yeah. Next up is the autocomplete. This is really nice. So when you hit tabs on something we've always been limited in the terminal to things like ghost texts or giving you a bunch of lines but because there is no UI in the terminal, it's just text, and you can color text, and you can do tabs and whatnot. But now, work gives you pretty good autocomplete. So if you type git space, it will give you a list of all your Git commands. If you do git checkout, it will give you a list of all of your commits, or all of the branches and whatnot that you can go to. And it also will give you a little bit of documentation in line. And this is the same type of feeling that I had when I moved to vs. Code is like, okay, yeah, a text editor is for editing text. But I also, I want a little bit of gooey on top of that, to give me a little bit more context, a little bit more help and whatnot, and being able to add that nicety on top of it is really good. The autocomplete in work is a little bit weak, I would say. Because, yeah, you get the pop up. But it's not it. First of all, it breaks a lot of autocomplete from other tools. So like, specifically, I use z, I use tree, I use a PN PM. All of those things just work in literally every other terminal, and you just hit Tab, and it will give you a list of autocompletes and whatnot. Because I guess because warp is stepping in and stepping over top of this functionality is they only support things that they support. And this is not this is probably my biggest gripe with it right now is that I use PN PM. And if you use NPM, the auto completion is pretty good. But if you use P NPM, it literally doesn't know anything about it when the reality is these these tools have their own autocomplete already. So there needs to be something where either we open source the plugins on warp, the community can take care of them, or just use the autocomplete that the tool gives you. In the other ones, because it's not nearly as good as some of them. Man, I've",
+    "summary": "The text discusses the features of the terminal app called Warp, and how it provides a layer on"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "22:00",
+    "lines": "been using pm pm for so long now that I didn't even know there was a nice NPM version. In warping. I just thought that this was all like this, it is funny because you know you, you can get around in warp and have it feel a very similar to AI term or any of these other ones where you're not utilizing any of these things. And it will just feel like a command line. So if like command line with a GUI scares you like that, for the most part, it can just feel like a normal terminal without having to stress too hard about that. But also, I think some developers do take the lack of a GUI is like a bit of like a gatekeeping badge of honor. Like I yeah, he's just this thing that's just text to watch me do this. And when it's, you know, sometimes a little bit of gooeys Nice. Sometimes we all need a little bit of helpers, and little bit of extra features here. And there. I found the autocomplete overall to be better than what I was using. And maybe I have no complaints there fate fig to me had some issues. So like I didn't get too deep into it. So I don't know what a better autocomplete looks like to be honest,",
+    "summary": "The author has been using \"pm\" for a long time and was unaware of the existence of"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "23:03",
+    "lines": "the fig Autocomplete is way better. So it's more information dense. That's the the word like Autocomplete is like really big. And like a lot of times people I find this all the time, like I got a new Apple Watch. And it's not as information dense as my Garmin was and a lot of people were like, Oh, the garments ugly. I'm like, I don't care if it's ugly. I want the info, you know, like horses, good design and stuff like that. But like I want I want more information density and like the icons in figure are way nicer. It does things like fake, we'll do NPM, uninstall, and then it will give you a list of all of your packages, which is so nice. I don't want to have to like go into my package json, copy it, paste it into the thing, like so it just knows a little bit more about the in the fig also hooks up to the NPM REST API. So if you type in a package, it will try to like give you a list of the packages that you want. So much prefer the fig one whoever fig is a autocomplete for all terminals, except for warp. They don't play well together again, because warps doing some special sauce in here. Yeah. So like I'm at a point now where the niceties of warp outweighs the autocomplete of fig, but ideally, I would have both.",
+    "summary": "The author prefers the fig Autocomplete over other options, finding it more information dense and having nicer"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "24:23",
+    "lines": "Yeah, you know, you want to know how we're different. You know, we spend so much time talking about how similar we are. I'm the guy who broke fig by trying to make it larger. And you're like, sure, like, warp isn't large. And error isn't a small margin is yeah, it's too large. And for me, it was like too, too small and too information dense for me. So I was like, I'm gonna bump up some of this stuff. And then it like broke the UI. So",
+    "summary": "The author highlights the importance of acknowledging differences between things, rather than solely focusing on similarities. The"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "24:50",
+    "lines": "yeah. Oh, that's actually really funny that that happens. I often find myself literally with everything. The new Tweet Deck is like that. I'm like, Just give me give me more I don't want to have to scroll 1000 times to see all my directories, I want to see eight directories at once instead of three. Next one is sticky header. This is honestly the best if you run if you run a command, and you get tons of output, lots of console logs, something is streaming in. Work will stick the prompt and the command that you run at the top and stream all the data underneath it into what's called a block. And honestly, that's the best because you can see what was run for that specific thing. And you don't have to scroll all the way to the top of that specific command.",
+    "summary": "The author shares two productivity tips for computer users. The first one is to use applications that allow"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "25:35",
+    "lines": "Yeah. Now, you know, one thing that I will say with these features, you can also do you know, standard terminal features like like you say tabs, but also split split panes, where you can split a pane horizontally and vertically. Now what I don't like about warp is that you know, an item, you can click and drag and move them around and move them to new spaces and stuff like that with warp you if you segment your window, your current tab, you can't move those around at all, you're kind of just like, alright, this is the this is the way they are. Yeah, I can't, you can't manipulate them after the fact, which I found to be a bummer. But I'm sure it's something that they'll improve upon at some point here totally.",
+    "summary": "The text discusses the features of a terminal program, including tabs and split panes that allow users"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "26:12",
+    "lines": "Next one is this idea of blocks. So a block in your terminal or in warp is the output of a command. So you run npm start, you got a whole bunch of stuff streaming in maybe a big error, all of the output from that is encapsulated into a specific block. And a block will show you what your prompt was, what you ran, and all of the output from that specific block. And that's nice, because if you're trying to search for a specific output, if you want to share the output of a specific command, if you want to literally do any, if you want to scroll to the top of a block, like how many times have you done that are like, Okay, I need to find where the start of this thing was run in work, you just press the up arrow and it jumps you right to the top of that block and everything else you need to scroll through 10,000 lines of text, and find where the that command had started, which is really frustrating. So I liked this feature a lot, especially because you can toggle blocks, you can you can search within them, you can share them with a friend. I'm a big fan of this specific approach to running commands.",
+    "summary": "The text discusses the concept of blocks in a terminal or in Warp, which is the output of"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "27:26",
+    "lines": "Yeah, likewise, I think it was a nice, nice addition, overall,",
+    "summary": "The text is too short to be summarized as it is incomplete and lacks context."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "27:29",
+    "lines": "there's a live search in the block as well. So something I was running the other day, I needed to like, I was like console logging, like a massive request. And you know, like a request has, it's an object with 1000 properties in it. And I just needed to search inside of that. And first of all, that's really handy because you can, you can search for like params, and it will go right to it, you don't have to search through the entire request. But you can also do live searches, meaning that like I just I just hit Command F and did a search for params. And then as the data was streaming into my console, because it was running every cent every single time I refreshed my route, it was dumping it in, and we would highlight it automatically in my terminal. And I could see it and was like, Oh, this is so nice. I don't have to like close the search and rerun it every single time. It's just every time it updates, it updates the searches as well.",
+    "summary": "The text discusses the benefits of a live search feature which allows users to easily search for specific information"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "28:24",
+    "lines": "I'm finding that I'm learning about features within warp just constantly stuff not using that I you know, I got pretty deep into i term, but warp it at a at a glance, it's very simple. And then once you get into some of this cool stuff like live search, I did not know that this existed, it's",
+    "summary": "The author is constantly learning about features within the Warp framework and was previously focused on the use of"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "28:45",
+    "lines": "it's so handy. You can pin blocks as well or bookmark them, if you want to be able to come back to them. And that's really handy. Like let's say you cat a file a catting a file will output the contents into it like okay, I need to see that. What I might do in the past is I would copy paste it into a tab in my text editor, but you could just pin it or bookmark it and come back to that at a later point. That's why we're doing this podcast honestly, is that there's so many little features inside of these things that people don't necessarily know about. Yeah, myself included prompt, you can hit Command R, and that will or sorry, Ctrl R. And what that will do is open up this little tab, it'll say command search, are you looking for something in your history like and that will give you a list of commands that you have previously run. And it's massive, you can look back six, seven days worth of commands that you had previously run. Or you can do workflows. We'll talk about that in a second or you can run an AI command search. We'll talk about that as well. So the prompt in there is is super handy. And one thing it will do is if you accidentally run a command that is incorrect It will do a very good job at saying Did you mean XY and Z. And then you just hit your right arrow to autocomplete it. And I've become as a chronic type over. And n o m install. It's so handy to have that you just hit the arrow and rerun it. Yeah,",
+    "summary": "The text discusses the usefulness of certain features in command prompts such as pinning and bookmarking blocks"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "30:19",
+    "lines": "I'm a big fan of Did you mean? Because yeah, we both misspell things. And that's a big save your bacon, there's nothing worse than hitting Enter and being like, Oh, shoot. Okay, let me go. And then you have to hit the arrow keys to get exactly where that typo is. And yeah, I love them. The modern terminal for fixing some of these things dries. Yeah, that the next thing is this sharing blocks, you know, I've done any of these sessions features or anything like that, have you used in these live session features?",
+    "summary": "\n\nThe author of the text is a fan of the \"Did you mean?\" feature that helps correct"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "30:46",
+    "lines": "I haven't used the live session. So this is this is a paid feature. I'm not a paid user. But you can. So what you can do is you can share a block, meaning that that's part of that's a free one. So if, if you have an error in your console, and I say I'm I'm the tutorial provider, and I say Alright, well, what's your console saying? Like the thing that kills me, everybody sends me a screenshot. And it's so hard to go through the tiny little screenshot that's been blurred sideways or Instagram, give me text, I want text, that's way easier if I could copy paste an actual error, and do a quick search on your specific error. So you in Word, you can right click a block and say share a block. And that will then make sure there's nothing sensitive in there. But that will upload the output of that block to the Work website and almost like a GitHub Gist. And you can just send that over to somebody and see it. So that's, that's handy with a package json, if you need to show me more you have or output of a command or anything like that. Yeah, that seems super useful. There's live sessions as well, which is this is not something I've used either, but I can see being super handy for debugging an issue on someone's computer. So say, Scott says, Hey, Wes, I can't get your VT plugin working on my terminal, then we could share our session. And I can go in and like this, these are paid features, because I think that this is kind of where they're trying to make their money. And running it on multiple computers. So sharing a session is, I guess, like pair pair programming, right?",
+    "summary": "The author discusses two paid features of the Word website, including the ability to share a block of"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "32:26",
+    "lines": "Yeah, that's, uh, I mean, a lot of these things do to feel like if you were part of a group or team, they would just be even better. You know, this feature that is next is the AI command search. This is super cool. And it's kind of similar to something that you were saying that you wanted, even a few episodes ago, I do notice that in their like, tweet where they were showing off how to use it, you've linked to that in the show notes, the the shout out Wes Bos directly. So it's very fun that you were you were involved in potentially like asking for this type of thing. But what this is, is is basic way that you can use natural language to write commands. And, you know, you kind of at least have to know a little bit about what you're doing here. Because you know, when you get into Terminal, you could hit enter and potentially nuke out some stuff in your file system. So just running commands without knowing what they are is probably not a great strategy. But using the AI command search or command, you can use natural language to do the things that you might not think to be able to do or be able to do, or maybe you just don't want to spend time to look it up. I want to SSH into this thing or whatever. It can help you with the specifics of certain prompts and certain command line utilities and ways that you work or on the command line that you might not have thought of at any given second or want to dive into the Yeah, what what's the manual is it man? There's many pages,",
+    "summary": "The upcoming AI command search feature for Terminal allows users to input natural language commands in order to perform"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "33:54",
+    "lines": "I use it mostly for, like, I've got 10 files, and I need to rename them and put a number at the end. I don't know that the bash command for that the amount of times that I just write a little note script, instead of writing a bash command because I don't know the crazy bash syntax. So this is great because you just type in that or I do it all the time. I type in Git undo and then it gives me an instead of having to search what's the git reset head tilde, the one dash hard, whatever, then you could just type git undo last few commits, or get merged last two commits, or loop over these three files and rename them and join them into one text file. And I found I even did one I said, download the script of the movie and it did it for me. Yeah,",
+    "summary": "The text discusses the use of a note-taking app for simplifying commands in place of learning and"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "34:47",
+    "lines": "that's amazing. I just typed in just to see you know, just for fun here. I typed in find all markdown files. Find it has given me the command right here and put command let's go find all markdown files. That's like the type of link In which you can give this thing, but the B movie thing is very funny. I love that it actually gave that gave that to you. That's super good.",
+    "summary": "\n\nThe author is excited to share that they typed in a command to find all markdown files and received"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "35:08",
+    "lines": "I just wrote fine all markdown files that start with S, and end in 400. And then it gives you the entire command for that with all the flags and whatnot. And again, you have to, you have to kind of know what you're doing here. Don't just go paste some random stuff in there. But the AI command search is super helpful. And it's the same kind of stuff you get with chat GPT. But instead of having to go to chat, GPT and sign in, because chat GPD always signs you out for some reason. You can just do it directly from from there. And also GitHub is going to be rolling this type of thing out as well. So we'll see where that lands.",
+    "summary": "The author explains how they used an AI command search to write all markdown files that start with S"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "35:46",
+    "lines": "Yeah, yeah, just don't delete system 32 or whatever if it tells you to do. Yeah.",
+    "summary": "\n\nThe text advises not to delete system 32 or perform any similar actions if prompted to do so"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "35:52",
+    "lines": "Remote SSH, this is another super handy thing is that sometimes you get your whole terminal setup, your whole prompt, everything all nice and cozy set up in your local development. But then as soon as he SSH into a box, you literally lose all of that stuff, you lose your shortcuts and everything. So what warp does is when you SSH into a box, you get to still use all of your customizations and features into it. And how they do that is you can use a custom prompt with warm with warp. And I do, there's a setting called Custom ps1. That's how I get my existing SSH prompt. But if you don't, out of the box, it gives you a really nice prompt that has get integrated. And that's great for people who are learning because you don't have to go through the whole rigmarole of setting things up. It just is a really nice UI right from the get go instead of like, like the default one in Bash is just a tilde. You know, it's just like good luck. That's what it is. It's yeah, type pwd in npm install and you don't know where you are. It's just a bad bad experience from the start. So work will give you that stuff from the get go which is really nice and SSH into a remote box and having all of these niceties, being able to click where you want the cursor to go on a remote boxes is amazing.",
+    "summary": "Warp is a tool that enables users to access their customizations and features while SSHing into"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "37:22",
+    "lines": "Yeah, I see that it doesn't play super nice with my Oh, my posh like it comes in correctly, it gives me the right data, but like the formatting is kind of off. So my I need to spend some time like running some updates to see if that can get fixed here. Or if I need to,",
+    "summary": "\n\nThe author is experiencing issues with the formatting of their data while using Oh My Posh. They"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "37:37",
+    "lines": "I lost my arrow on my prompt. Yeah,",
+    "summary": "The text is not a complete sentence and therefore cannot be summarized."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "37:41",
+    "lines": "I lost the cute things is what I asked. Yeah,",
+    "summary": "The text is incomplete and does not provide enough information to create a detailed summary."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "37:44",
+    "lines": "but I was like, whatever. I'm not not looking into how to how to figure this type of thing out. Everything else still works great. So not not a big deal. Yeah, window management, you've kind of talked about this, you can split windows up and down, you can have launch configs, which is you can say like, Okay, now I'm working on boss monster, I have a front end tab, I have a back end tab, I have my MongoDB and another tab and I have them split in a certain way. You can just save that as a config. And then when you go to that project, you can reinstate all of that in a matter of seconds. And that's really nice to just get up and running and comfortable to terminal.",
+    "summary": "The author of the text is not concerned about a certain issue and is discussing window management in VS"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "38:21",
+    "lines": "Yeah, I do wish this was better. This is like the one thing that I think warp is losing out on compared to I term. Yeah, but it has actually, I have noticed that in the time that I've been using warp the past few months here, there have been updates to some of these things that have improved it. But it's still not a super, super duper customizable",
+    "summary": "\n\nThe speaker expresses their dissatisfaction with the customization options of 'warp' compared to 'I term"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "38:43",
+    "lines": "workflows. This is a list, I don't use this feature myself. But a lot of a lot of teams who have commands that are long, you need to migrate a database, you need to do a dump, you need to rename a whole bunch of file and dump, you need to do a dump. I just used to save these commands in like a markdown folder, or in one password or somewhere related to the project. And it's nice to put them in specific in a workflow because there's a nice UI, you can click on the one you want. It'll autofill it in there. And this is really I think, where teams are going to see benefits for this type of thing where all right, you got 14 developers, and they all need to run the same kit. Oh, what's the command to deploy this thing to production? And for me, I mostly stick those things in NPM scripts, but scripts or write a custom script. Yeah. But it's nice to have them and workflows. I think I don't fig launch something like this as well, recently, which is pretty cool. Yeah,",
+    "summary": "The article discusses the usefulness of workflows, particularly for teams who have many complex commands to run."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "39:42",
+    "lines": "I'm gonna go ahead and say that this is probably something that I would not put in my terminal ever. Just even with teams. To me it makes more sense to keep that in the, you know, the program itself. Yeah, yeah, I could see it being useful especially for things outside of For the program, or",
+    "summary": "\n\nThe speaker does not recommend using a certain command in their terminal, even with teams. They think"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "40:01",
+    "lines": "maybe Docker commands or networking steps, things like that, yeah, I could see where this would be interesting. I have a couple of those in my thing where I run it a couple times a year. And I have to like, push the up arrow for three days looking for that one command that I wrote.",
+    "summary": "\n\nThe speaker acknowledges that sharing Docker commands or networking steps could be interesting, as they often forget and"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "40:17",
+    "lines": "Just keep holding up until you get there. Next up, let's talk about the command palette. Honestly, the more apps that come out with the command palette, my life just keeps on getting better and better. I gotta say that the command palette and arc browser is like quickly become my favorite browser feature ever. The command palette in VS code, something you cannot get around without being like really good at or being proficient at or utilizing correctly. And this is no different where the command palette is really here to save your bacon, I do kind of wish, maybe I could set this up to be my own different keyboard shortcut, I guess the command P is probably fine for the command palette, but it is command P or ctrl P and I guess there's no window. So command P, you can just start typing or whatever split pane do basically any of the activities that you'd want to do, if you're the type of person who's keyboard focused rather than, you know, clicking on gooeys, or remembering keyboard shortcuts, just about everything's in here. And it's a nice command palette, it's no raycast by any means. But it's nice enough where it will quickly get you what you need, and also show you the keyboard shortcut, just in case you want to memorize that keyboard shortcut for later.",
+    "summary": "The command palette is discussed as a useful feature found in many apps, including VS code and arc"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "41:24",
+    "lines": "Yeah, I love that. And also the command shift P will give you a list of all of your tabs. And I love this because often your tab is way too small to show you what's going on. And all you see is like a glimpse of the folder. So the command shift P will show you a list of all of your tabs, but it will show you the the working directory last last time that that session had run the git status running. If it's currently running what the current session is, it's a great way if you have multiple tabs open, I tried to keep my tabs open to four or five and pass that you should probably clean a few up. But yeah, I find it really handy.",
+    "summary": "The text describes the use of the command shift P for users who have multiple tabs open. By"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "42:09",
+    "lines": "It's handy because I like to run things like my Redis and my Mongo DB instance and stuff like that. I like to run those in. You know, some people just run them in the background, but I like to run them in, in tabs on my terminal just to be able to have them open. So it is nice to be able to do Command Shift P and Z. All right, Mongo running dot dot dot Redis. Yeah, running dot, dot dot, you know, I could see that those services and I'm having to worry about them. Yeah,",
+    "summary": "The author finds it helpful to run programs like Redis and Mongo DB in different tabs on their terminal"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "42:34",
+    "lines": "big fan of that. Let's talk about how do they make money. This is one thing you should be aware of. Anytime. The there was like a funny tweet going around a couple of months ago is the CEO of my terminal messaged me. Because it's, it's funny that lots of things that you would think are just a simple terminal is now a possibly something that you could pay monthly for. So I think they're, they're going hard on the warp for teams, which is probably how they're going to make their money. You got 30 developers, or I've talked to people that have 5000 developers, and you need to be able to share configs across them, I think the money is in when there are major scale issues with this type of thing. I have no problem just having a markdown file or whatever, for some of these things. But once you get into major scale, I could see that certainly, and also things like, like auditing, like, could you use this to stop your developers from running stuff that they shouldn't be able to? Do you know, or should you be able to see what commands a developer is running in a specific terminal? So there's probably some stuff around that that could be useful as well. I don't think they do any of that type of stuff. But I imagine that would be helpful. You do sign in this is people I got mad about this initially is that you cannot use work without an account. Seems a bit silly. And then they think, Okay, well, like, what are they tracking? Are they logging, everything like that. And they also had tellement tree, which is they send stats about how you're using warp back to the mothership, they now have given you the ability to turn off the elementary, but you do still have to sign in. I trust them. I've certainly trust them a lot. I really liked the product. But that is something that everybody everybody talks about. And if I didn't mention it, we will get 1000 tweets from people",
+    "summary": "The CEO of terminal is focusing on how to make money from the platform, specifically by targeting large"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "44:33",
+    "lines": "about that. Yeah, you know, it's a weird thing for me, you know, I live in the 2023 world where I just assume that an account is required for everything. And if I want that ease of use, and I want that luxury of using this thing. I'm going to have to give them an email, whether it's my email or the email that Apple generates or whatever. I'm going to have to create an account and I personally Only don't see the big deal in that. You know, some people when I posted Ark, the browser, you would not believe just every other comment is you have to create an account. No thanks. Like, I don't want an account. I'm like, I I don't know if that account for Firefox I have one for Apple. I have one for Chrome like that, to me is not something that bugs me that much. I don't know. Yeah, I think it's maybe even different from a web browser to a terminal, but like, Man, I'd maybe maybe I'm just not doing anything that I feel like I don't you know, I don't care if warp sees that I'm running NPM run dev or whatever, even though I doubt they are still the same regard. I",
+    "summary": "The author expresses their perspective on creating accounts for online services, stating that they live in a world"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "45:45",
+    "lines": "just do not care that I have to make an account for this. It's yeah, I do. I would care if they see what I'm running. But I especially as your your terminal has secrets in it. But at a certain point, even NPM packages, literally all software you run you have to trust the people who are making that software. Right. And the fact that they have an account or not, I don't think changes that type of thing. Totally. Yeah. Let's talk about our annoyances in wish list items that are in there. Probably top of the thing for me is better autocomplete, I think there is a major, major opportunity to be had here to make amazing autocomplete amazing GUI stuff like that for for web developers. And I think and I think that they could go a long way if they opened up the spec or allowed us to contribute or just something plugin ecosystem, something in there to have better, better autocomplete inside of it.",
+    "summary": "The author expresses annoyance about having to make an account for certain software and being concerned about their terminal"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "46:43",
+    "lines": "Yeah, totally. I want profiles. You know, one cool thing about iTerm is profiles, you can set up different appearances, different automatic, like commands and stuff that can be run on the start of a profile. Like for instance, I have a profile to SSH into my Synology. So the profile is just Synology. I open that thing up, it sets the background color it automatically SSH is me and I just hit enter or whatever. Yeah, that's me. And so you know, I like those things. I don't know if I have to have them. But it's something that I miss for my term. Definitely.",
+    "summary": "The author expresses a desire for profiles in their terminal application, citing iTerm's use of profiles"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "47:19",
+    "lines": "Yeah. Especially if you are terminalling, somewhere that you think you are. And it's very sensitive, it's probably a good idea to make the background yellow be like you are in the production database right now. Don't careful. Because certainly I've run commands where I thought I was where I was, and I wasn't, you know, so you got to be careful",
+    "summary": "\n\nIt is important to be cautious when using a terminal to avoid accidentally running commands on sensitive data."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "47:41",
+    "lines": "sidebar, if you're coloring things. How do you color them? What's the color that you use for production? And what's the color that you use for dev?",
+    "summary": "\n\nThe text briefly raises the question of how to color things in production and development, without providing any"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "47:48",
+    "lines": "I don't I don't do production dev only because like I don't SSH into many things other than my",
+    "summary": "The text is incomplete and does not provide a clear message or information to summarize. Please provide a"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "47:54",
+    "lines": "salon. I'm not talking about terminal specifically, I'm just saying in Joe, you Oh, you have to like put up a warning for yourself that you're in production or dev or, like, for instance, our database software that we use to log in, you can give the shortcuts colors to identify. Yeah, yeah,",
+    "summary": "\n\nThe text suggests implementing warning systems for identifying different environments such as production or development, and using shortcuts"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "48:11",
+    "lines": "I do on I do green for my admin. And I do red for production, which is maybe not great. And then I do when I do red for production to my VS code, I do. No, I do the other way to green for bet for production and red for local. And then I do pink for back end and yellow for front end. If I'm splitting those things up. In in a project I'll use the VS code settings in vs. Code work works, what's called the.vs code workspace workspace folder work, I'll color it not that's really handy, especially when I'm doing tutorials. People need to know, okay, what are you working on right now, you know, if you have NPM a front end back end open separately, it's nice to be able to show show them that I use",
+    "summary": "The text discusses how the author uses different colored settings in VS code to distinguish between admin, production"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "49:00",
+    "lines": "purple for development just because it's our brand color. Yeah, I use green for staging and I use red for prod just because it's like warning dangerous red. Yeah.",
+    "summary": "\n\nThe writer uses different colors to represent different stages of development, such as purple for development, green"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "49:11",
+    "lines": "Other things. background processes are currently broken. And literally, like, probably six minutes ago, I got a GitHub notification that they are working on this. So One annoyance I have with warp is if you have a process and those those processes will spew stuff into what's called standard out or standard error and that's that's the text that comes on it and sometimes those processes you kill them and warp thinks the process is done. And it still dumps something in I specifically how this with caddy server so if I run caddy stop, it will immediately put me back on my terminal and then a couple seconds later when Katie actually is done shutting down It'll dump a bunch of stuff. And then that goes into the input of my next terminal. So it's all vulnerable. And also if you use, like background processes in on the terminal, so sometimes I will be running a node process, and I want to npm install something, you can background that process. By hitting, I forgot, I have a tick tock tip on this. You can background it npm install and then foregrounded, and you don't have to stop the process in between. But you can go back to your prompt, a lot of people just open up a new tab, which, which is a good good option as well. But work doesn't like that. Because if your background process is emitting text that goes into your prompt that it's impossible to use. So they said they're working on it. They said, it's a tricky problem to solve. So we'll see.",
+    "summary": "There is currently a problem with background processes in the Warp application, where if a process is killed"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "50:49",
+    "lines": "Yeah, you have make console log work just like the browser. Yeah. So that sounds something that that any terminal does, right? Or at least no terminal that I know does, right?",
+    "summary": "\n\nThe author is discussing the need to make console log work like it does in the browser in a"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "51:00",
+    "lines": "No, no, this is I want this. So if you want to console log, something from a node app, or JavaScript app, yep, Object Object, you have two options, you got your object, or you gotta like set the depth of it, or it's just a massive string. And it's annoying, right. And if you want to work with it, it's a copy paste it. So the other option is you use the dash dash inspect flag, and then you open up Chrome Dev Tools, and you open that up and or you use the VS code, you can set breakpoints and whatnot. But like, honestly, I just want to console log something. I don't want to set all that up. I don't want to apps open to to cut to see my console logs. Wouldn't it be cool? If you console logged values in warp? And you could like open, you could see it as an object. And you could open it with like an arrow, or you could like right click copy object or something like that, like witness? Yeah. Or like, Would it be cool if you like, could hover over an image file, and it gives you a preview, you know, like, like, I hate having to jump into finder for simple things like that, you know, like, when, like, is that the next step of this type of thing? I don't know any of that? I don't? I don't think so. But I think that would be so cool. If you could take the console a little bit further into what the browser console gives you. Yeah.",
+    "summary": "The author discusses the limitations of console logging in node and JavaScript apps, and notes that using the"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "52:29",
+    "lines": "And I largely agree that we need to like, you know, I think I've mentioned this enough in this episode. But I think we need to get out of the headspace of, you know, terminal should be bare bones possible and like, give you absolutely no help whatsoever. So",
+    "summary": "The author agrees that terminal applications should not be limited to bare bones and provide no help. They"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "52:45",
+    "lines": "I agree. And I think people are probably screaming being like, that's what your IDE is for. And maybe it is, but I also I just love my terminal so much. And I want my console logs showing up as objects. I want",
+    "summary": "The author expresses their love for using the terminal and desires for console logs to be displayed as objects"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "52:58",
+    "lines": "my terminal. And I want to do to do what I wanted to do. Yeah.",
+    "summary": "\n\nThere is no text to summarize. The provided statement is incomplete and lacks context or content."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "53:04",
+    "lines": "A web version of this would be really cool. I don't know how that they could probably make it work. I don't know, it's built in Ross, maybe we'll have Zack on to talk about that. But I think it's inevitable that we are going to start doing these types of things in the browser. So that would be cool to sort of think ahead like, imagine you could have all the stuff we just talked about. But anywhere you want, you wouldn't have to set it up for every single computer, that would be sick. Yeah,",
+    "summary": "The author suggests that a web version of a certain technology would be cool, but is unsure about"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "53:33",
+    "lines": "I'll take it AI based auto completion, which honestly, I think is something that we're all going to start to see a little bit more of AI based anything I saw on Twitter the other day was like, here's an AI tool for that automatically writes your commit messages based on what files you've changed and how. And I was like thinking, Yeah, this is kind of kind of where these little AI things are gonna come into play here. But any sort of AI based auto completion and kind of knows a little bit more beyond just like, oh, last time you were in this spot, you ran this command? Yeah, these following commands is kind of how it currently does it right. So like, I want you to be able to better predict exactly what I want to do.",
+    "summary": "\n\nThe author predicts an increase in the use of AI-based tools such as auto-completion in various"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "54:11",
+    "lines": "The most basic example for me, is I CD between the root of my project and one of my mono repo routes. And when I'm in the mono repo route, it shouldn't suggest me to cd into the mono repo route that is doesn't exist, or no",
+    "summary": "\n\nThe author describes a basic example of using CD (change directory) between the root of their project"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "54:33",
+    "lines": "package commands from exactly the mono repo, right? Yeah.",
+    "summary": "\n\nThere is no discernible content or context to this text. Therefore, no summary can be provided"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "54:37",
+    "lines": "Or it should know, like, you use P NPM. For this project, and you're running an NPM script. And I know you can overwrite NPM for that type of stuff. But like, Wouldn't it be nice if it just stepped in and said, Hey, you're What are you trying to do cd or like you often run this command. In this folder, you've run NPM run Dev 10,000 times In this other project, you always run NPM, run, develop, you know, like, yeah, those types of things where it's just come on, make it a little bit easier. And I bet that's what we'll start to see whether it's work or GitHub or whoever is coming out next with this type of thing. I bet that's going to be the next thing.",
+    "summary": "The article discusses the possibility of a tool that can automatically suggest and run commonly used commands for developers"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "55:18",
+    "lines": "Yeah. Yeah. Can you make it easy for me better themes.",
+    "summary": "\n\nThe text is a fragment of a conversation and only includes a short sentence. It seems that someone"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "55:24",
+    "lines": "But I've made cobalt too for warp. But it's pretty limited. There's like four colors you can set on this type of thing. So if you put a gradient, if you color your tabs, it like puts this like awful gradient on the tab. And like, a gradient really? Oh, at least with my blue? It doesn't look good. And it's not the same. Is it the same yellow? Maybe it is? So",
+    "summary": "The author discusses their experience with creating cobalt for warp, but notes its limitations in only offering"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "55:52",
+    "lines": "I see what you're saying. Yeah, cuz you have your own theme? No, I'm using the cyber wave theme, which is one of the default ones that come in. And as like a default themes go this thing has really great default themes. There's a lot of really cool default themes in here. I do want to make my own. I'm the type of person who like will say, I'm not going to make my own, I'm not going to make my own. And next thing, you know, I'm writing CSS for a home assistant dashboard last week. So yeah, you know, it's only a matter of time before I start writing my own for this. But right now, the one I'm using is pretty good.",
+    "summary": "The speaker is discussing their use of the default cyber wave theme and its quality compared to other default"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "56:27",
+    "lines": "Yeah, really cool themes. And I also, I put a border on my hyper that was like a pink border. And I freaking loved having that border on it. Because it was very clear that this was my terminal, and people who took my courses could see that it was not part of the editor. And I just want a border on the terminal. You know, like, it's, that's why I went hunting for the CSS file. So a little bit better hardware, a little bit better seeming support would be would be really nice. I don't know how you do that, though. Because it's, it's not divs and stuff like that. How do you even make a UI in OpenGL or whatever it's built in? I don't know. Ah,",
+    "summary": "The author of the text talks about the desire to change the appearance of their terminal by adding a"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "57:02",
+    "lines": "yeah, I'm gonna go ahead and say I don't know either.",
+    "summary": "\n\nThe text contains only one sentence in which the writer states that they do not know something. There"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "57:07",
+    "lines": "Last one we have here is command clicking links, is very good. If you have like, if you have stack traces, and you command click a link, you can set work to open in VS code. And then it will open up that error in your VS code. That's really nice. But you have to command click a link. And it used to just be click it. And they change it for some reason. But I want to just be able to click it. I don't want to come in and click it.",
+    "summary": "\n\nThe speaker discusses the usefulness of command clicking links, especially for opening errors in VS code. However"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "57:33",
+    "lines": "Yeah, I just want to click it. Let me put the link if it hasn't, well, they don't always have an underlying but yeah, you know what, one thing I do like is that when you click I found, it almost always opens up in my correct editor, the correct file in the correct project that I'm working on. It does a good job of that, which honestly, there's nothing worse than you click a file. And it's like, let me open up a new project. In VS code, you're like No, don't do that.",
+    "summary": "The text discusses the author's preference for the way VS code handles file links. They appreciate that"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "57:58",
+    "lines": "It must do something. Because sometimes you get like a linting error. And it doesn't give you the full path of the linting error. But it always knows which file to open up. Like almost always. And I don't know if that was the same thing and other terminals, but I'm always pleasantly surprised.",
+    "summary": "\n\nThe text discusses how sometimes there are linting errors, and while the full path of the error"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "58:15",
+    "lines": "Yeah. I'm always pleasantly surprised as well. Cool. Well, that should be it on warp here. Give it a try. Let us know what you think. I'm sorry, windows, folks. You know, hopefully this is something that doesn't stay Mac forever, as you know, just like many of these tools. So that's it for warp. Now. Let's get into sick pics and shameless plugs. Wes, do you have anything that you would like to sick pick?",
+    "summary": "\n\nThe text contains a brief mention of a tool called \"warp\" which is apparently only available"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "58:38",
+    "lines": "Yes. Oh, man, I have so many things. I keep forgetting to put them on.",
+    "summary": "\n\nThe text is a brief statement expressing the author's forgetfulness in creating tasks or to-do lists"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "58:41",
+    "lines": "I know me too.",
+    "summary": "\n\nThere is no text to summarize."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "58:43",
+    "lines": "I do have one every time I'm upstairs. I'm like, Oh, this thing is awesome. I got one in this is a iPad sorter. It's made. So all of our kids have an iPad. And all of our kids have a set of Bluetooth headphones now. So like the whole charging infrastructure is, is it's a bit of a job now.",
+    "summary": "\n\nThe speaker enjoys using an iPad sorter that organizes iPads and Bluetooth headphones for their children's"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "59:05",
+    "lines": "And it's the you have to call IT infrastructure. Yeah, it's a lot.",
+    "summary": "\n\nThe text is a short phrase that states that the term for calling IT infrastructure is \"a lot"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "59:09",
+    "lines": "And it's really frustrating because like I don't frickin Lightning cables don't work half the time and our kids break them all the time and whatnot. And it's it was always a mess. We're just stacking them on top of each other. So I got this little iPad sorter, which is basically like a dish rack. It's made out of bamboo and then underneath it has like a little you can take the top off which is the rack and then underneath you can put like a charger. I know that there's ones that are they have like USB ports in them but I've seen too many tick tock videos where those things catch on fire that I'm never touching Oh yeah. cheap, cheap charging infrastructure ever again. So I put like a nice anchor, eight port USB charger underneath. And then you you get tiny little light Eating and USB C cables. And then they all just come out the sides. And you can plug them in and so much that our oldest daughter can now go collect all the iPads, put them in and plug them all in. So they're all charging at once. And it's just made life so much easier. So it's I'll put the link in the show notes for it, you can find them on Amazon or whatever. It's just a bamboo tablet sorting machine. It also came with like a little hook for the Apple Watch, and a couple of smaller ones for things like air pods and whatnot. But we're not using it for that.",
+    "summary": "The author discusses their frustration with Lightning cables not working and constantly being broken by their kids. They"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "1:00:32",
+    "lines": "Yeah, we have one iPad for the kids to share right now. And yeah, that thing causes a lot of trouble when they're fighting over a door. You know, the amount of time they can spend on it. But there are some really neat things. We have a couple of coding apps in, you know, educational stem apps for the kids. Maybe we can do a roundup at some point of things that might be useful there for free",
+    "summary": "\n\nThe writer admits to having only one iPad for their kids to share, causing arguments and excessive screen"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "1:00:54",
+    "lines": "should, as I've talked about this a lot on on Twitter and to my friends and whatnot. It's there's so much garbage out there. And there's so much awful stuff in all these. There's so many apps that are like, they like bait the kids to buy them or they throw ads up in front of them. And you can tell they are targeting exhausted parents who just want their kids to be quiet, which is not me. Don't tell me I'm an iPad parent. Right? Yeah, right. Yeah. People also, like how much time do you give them? Do you have screen time? Like, do you let them we have to really remove YouTube Kids entirely.",
+    "summary": "\n\nThe text discusses the issue of harmful and inappropriate content on children's apps, as well as the"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "1:01:30",
+    "lines": "Yeah, YouTube Kids can can go right in the trash as far as I'm concerned as though the the worst app. Honestly, my my son is so addicted to like watching other people play Legos on it. I'm like, I'm gonna set your screen time on it to 10 minutes. I don't want you watching any more than that. It's too much. already.",
+    "summary": "\n\nThe author thinks that YouTube Kids is the worst app and wants to limit her son's screen time"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "1:01:48",
+    "lines": "It's awful. Like I first I thought, Oh, this is awesome. Like, it's it's YouTube kids. It's like a walled garden of just amazing stuff that kids and my kids love it. They love watching a kid make slime or something like that. And then a couple months in or just like, our kids are like, can we go buy slime? Can we go buy a toy? I want to lol doll and I'm like this is this is how these toy companies are ruling the world is they have all these YouTube kids that open toys 24/7 It's not useful or anything like that. So we we told our kids that YouTube shut down until you're 18. Yeah,",
+    "summary": "Parents are finding it concerning that YouTube Kids, a platform meant for child-friendly content, is contributing"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "1:02:26",
+    "lines": "I don't know if this is just like healthy skepticism or whatever. But like, I'm instantly kind of skeptical of an adult who is like, their whole thing is making a channel of themselves playing with toys. Like there's so many of those out there where it's just like I'm on a playing with toys. And there's no it says it's like a wild world. I get it. But there's so many of them out there. And they have so many views and the kids go nuts for watching other people play. But like me, yeah, if it's kids playing with it, fine. That's a very different situation than like, a couple of adults doing. Yeah, here to me.",
+    "summary": "The author is skeptical of adults who create YouTube channels focused on playing with toys, as there are"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "1:02:58",
+    "lines": "That's very, very, very, very bizarre. World. Yeah.",
+    "summary": "\n\nThere is no text provided to create a summary."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "1:03:02",
+    "lines": "All right. My sick pick is going to be something also kid based here. It's a pack of 50 Pokeyman cards for $5. Let me tell you, man, our kids are incentive based. They like incentives, and stickers, sure, whatever. Those are fine. But let me tell you what gets them going. Pokemon cards, they love Pokemon cards. My son is at the age where he is just like, he's five. And he's like, What? There's 900 different Pokemon, and he doesn't know what they are. So it's not like he's like, he's not like, give me this one. Give me that one, whatever. So what I've done is I've bought a pack. And now I've ended up buying three packs of these. Because it's five bucks, you get 50 cards. And like, we'll say, if you can go to bed tonight without fighting with your sister, when you wake up tomorrow, we got a brand new shiny for you. And what we'll do is we'll have six I'll do I'll do like a draw of six of them. I'll randomly draw six of them. So you can pick one of these six, which one do you want? I'll take it and then he gets really excited for what other possible ones are there. My daughter's into it. And as far as like incentive based anything goes, Man, you can't beat 50 for five bucks, especially like you don't have stickers all around the house. They'll really like treasure them. They're putting them in there things are talking about them. They're getting excited about it. And yeah, I thought this was fun.",
+    "summary": "The author recommends buying a pack of 50 Pokemon cards for $5 as an incentive for kids"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "1:04:23",
+    "lines": "Oh, that's great. I should maybe try it. I've also heard that kids love just gems like little plastic gems as a reward structures and whatnot. We've been doing like stickers where you can like save 30 stickers and we should we should do. How to Raise the world's best kids. Oh, yeah. We should have accordion for that. Yeah, no, or 20 ways we've screwed our kids up.",
+    "summary": "\n\nThe text briefly discusses different reward structures for children such as using plastic gems or stickers. The speaker"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "1:04:48",
+    "lines": "Yeah, my wife taught a course on on human development. So I just if I need anything, she actually taught a course a master's level course on human development. And I just say, Hey, uh, I, what do I do? What do I do? What's the situation? Or like, I'll do something in parenting and she'll be like, Yeah, I don't think you took that one the right way. Dad. I think you could have done that one a little bit different. Like, Oh, shoot.",
+    "summary": "\n\nThe speaker's wife is knowledgeable about human development, having taught a master's level course on the"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "1:05:15",
+    "lines": "Oh, yeah, that's good. That's good. I I popped one of my kids balls the other day because they were not getting along. And they were not listening to me. They threw a ball straight on my face. And I carry a pocket knife and I just popped it right. Maybe not. Maybe not the best approach but I very clearly remember my dad doing that to me when I was he got put the basketball in the flower bed or something like that. And I remember to this day, I didn't do it again.",
+    "summary": "\n\nThe speaker popped one of their kids' balls because they were misbehaving and not listening."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "1:05:46",
+    "lines": "My kids threw a stuffed animal on me and I ripped his head off.",
+    "summary": "\n\nThe author's children threw a stuffed animal at them, and in the process, they accidentally ripped"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "1:05:51",
+    "lines": "Oh, I can't do that. By the way, don't ya don't don't come from a shameless plugs. Wes bos.com forward slash courses for a list of all the courses that I offer. If you want to take one or grab a free one get on into it. If you do buy a paid one use coupon code syntax that'll get you 10 bucks off.",
+    "summary": "\n\nThe text contains a shameless plug for the courses offered at wesbos.com/courses. The"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "1:06:07",
+    "lines": "I'm gonna shamelessly plug level up dot video we have a new course on spelt and TypeScript and lots of spelt ins felt kit content.",
+    "summary": "\n\nThe author is promoting their website, levelup.video, which offers a new course on Spelt"
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "1:06:17",
+    "lines": "All right. Thanks for tuning in. Catch you later, boos.",
+    "summary": "The text is a farewell greeting and contains no further information."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "1:06:21",
+    "lines": "Head on over to syntax.fm for a full archive of all of our shows. And don't forget to subscribe in your podcast player or drop a review if you liked this show.\n",
+    "summary": "The text encourages the reader to visit syntax.fm, where they can access all of the show's"
+  }
+]

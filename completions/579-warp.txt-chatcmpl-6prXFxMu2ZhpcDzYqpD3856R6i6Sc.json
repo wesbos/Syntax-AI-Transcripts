@@ -1,0 +1,444 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant that summarizes web development podcasts"
+      },
+      {
+        "role": "user",
+        "content": "Syntax is a podcast about web development. Available at https://Syntax.fm"
+      },
+      {
+        "role": "user",
+        "content": "Here is a transcript of Episode 578 entitled \"Logging\":"
+      },
+      {
+        "role": "user",
+        "content": "0:10 Wes Bos \n The Syntax podcast discusses the Warp terminal app, which is a new and refreshing option for web development"
+      },
+      {
+        "role": "user",
+        "content": "0:59 Scott Tolinski \n The author is a big fan of Work, a software program that they have been using for a"
+      },
+      {
+        "role": "user",
+        "content": "2:11 Wes Bos \n The author discusses his positive experience with using Warp, a terminal built in Rust. He clarifies"
+      },
+      {
+        "role": "user",
+        "content": "3:35 Scott Tolinski \n The author recalls being asked a difficult interview question about building Google Docs while interviewing for a job at"
+      },
+      {
+        "role": "user",
+        "content": "4:17 Wes Bos \n The author discusses the annoyances they have with the terminal such as not being able to click where"
+      },
+      {
+        "role": "user",
+        "content": "6:33 Scott Tolinski \n \n\nThe author, an Android user, expresses frustration with the delay between app announcements and their availability for"
+      },
+      {
+        "role": "user",
+        "content": "6:55 Wes Bos \n The author discusses their past experiences using different terminal programs. They mention using I term for 6"
+      },
+      {
+        "role": "user",
+        "content": "7:48 Scott Tolinski \n The author discusses their experience with different terminal applications, including Hyper, iTerm, and the Windows"
+      },
+      {
+        "role": "user",
+        "content": "9:12 Wes Bos \n The text briefly mentions the use of the Mac terminal, stating that many people use it and it"
+      },
+      {
+        "role": "user",
+        "content": "9:23 Scott Tolinski \n The author discusses the app Illiquidity and wonders why it is popular despite not appearing to be"
+      },
+      {
+        "role": "user",
+        "content": "10:03 Wes Bos \n The article discusses various terminals used by programmers, including iTerm2, Terminal.app, and VS"
+      },
+      {
+        "role": "user",
+        "content": "10:57 Scott Tolinski \n The author expresses dissatisfaction with using VS code due to its slow performance and does not want to add"
+      },
+      {
+        "role": "user",
+        "content": "11:15 Wes Bos \n This article discusses different terminal terms and software commonly used by web developers, including shells like zsh"
+      },
+      {
+        "role": "user",
+        "content": "12:52 Scott Tolinski \n The article discusses prompts, which are the pieces of text above where you start typing that provide contextual"
+      },
+      {
+        "role": "user",
+        "content": "14:22 Wes Bos \n The article discusses additional features of command prompts, such as aliases, that can be found in addition"
+      },
+      {
+        "role": "user",
+        "content": "14:55 Scott Tolinski \n \n\nThe text is incomplete and lacks context or meaning. It appears to be a fragment of a command"
+      },
+      {
+        "role": "user",
+        "content": "14:59 Wes Bos \n \n\nThe author of the text finds it annoying to constantly have to identify file types such as seven Z"
+      },
+      {
+        "role": "user",
+        "content": "15:23 Scott Tolinski \n The author discusses their appreciation for plugins, aliases, and designing their own prompt, highlighting the benefits"
+      },
+      {
+        "role": "user",
+        "content": "16:15 Wes Bos \n The text discusses different tools and features related to coding, including shells, terminals, and the new"
+      },
+      {
+        "role": "user",
+        "content": "18:21 Scott Tolinski \n The text discusses the frustration of learning command line interfaces and the apparent lack of user-friendliness"
+      },
+      {
+        "role": "user",
+        "content": "19:12 Wes Bos \n The text discusses the features of the terminal app called Warp, and how it provides a layer on"
+      },
+      {
+        "role": "user",
+        "content": "22:00 Scott Tolinski \n The author has been using \"pm\" for a long time and was unaware of the existence of"
+      },
+      {
+        "role": "user",
+        "content": "23:03 Wes Bos \n The author prefers the fig Autocomplete over other options, finding it more information dense and having nicer"
+      },
+      {
+        "role": "user",
+        "content": "24:23 Scott Tolinski \n The author highlights the importance of acknowledging differences between things, rather than solely focusing on similarities. The"
+      },
+      {
+        "role": "user",
+        "content": "24:50 Wes Bos \n The author shares two productivity tips for computer users. The first one is to use applications that allow"
+      },
+      {
+        "role": "user",
+        "content": "25:35 Scott Tolinski \n The text discusses the features of a terminal program, including tabs and split panes that allow users"
+      },
+      {
+        "role": "user",
+        "content": "26:12 Wes Bos \n The text discusses the concept of blocks in a terminal or in Warp, which is the output of"
+      },
+      {
+        "role": "user",
+        "content": "27:26 Scott Tolinski \n The text is too short to be summarized as it is incomplete and lacks context."
+      },
+      {
+        "role": "user",
+        "content": "27:29 Wes Bos \n The text discusses the benefits of a live search feature which allows users to easily search for specific information"
+      },
+      {
+        "role": "user",
+        "content": "28:24 Scott Tolinski \n The author is constantly learning about features within the Warp framework and was previously focused on the use of"
+      },
+      {
+        "role": "user",
+        "content": "28:45 Wes Bos \n The text discusses the usefulness of certain features in command prompts such as pinning and bookmarking blocks"
+      },
+      {
+        "role": "user",
+        "content": "30:19 Scott Tolinski \n \n\nThe author of the text is a fan of the \"Did you mean?\" feature that helps correct"
+      },
+      {
+        "role": "user",
+        "content": "30:46 Wes Bos \n The author discusses two paid features of the Word website, including the ability to share a block of"
+      },
+      {
+        "role": "user",
+        "content": "32:26 Scott Tolinski \n The upcoming AI command search feature for Terminal allows users to input natural language commands in order to perform"
+      },
+      {
+        "role": "user",
+        "content": "33:54 Wes Bos \n The text discusses the use of a note-taking app for simplifying commands in place of learning and"
+      },
+      {
+        "role": "user",
+        "content": "34:47 Scott Tolinski \n \n\nThe author is excited to share that they typed in a command to find all markdown files and received"
+      },
+      {
+        "role": "user",
+        "content": "35:08 Wes Bos \n The author explains how they used an AI command search to write all markdown files that start with S"
+      },
+      {
+        "role": "user",
+        "content": "35:46 Scott Tolinski \n \n\nThe text advises not to delete system 32 or perform any similar actions if prompted to do so"
+      },
+      {
+        "role": "user",
+        "content": "35:52 Wes Bos \n Warp is a tool that enables users to access their customizations and features while SSHing into"
+      },
+      {
+        "role": "user",
+        "content": "37:22 Scott Tolinski \n \n\nThe author is experiencing issues with the formatting of their data while using Oh My Posh. They"
+      },
+      {
+        "role": "user",
+        "content": "37:37 Wes Bos \n The text is not a complete sentence and therefore cannot be summarized."
+      },
+      {
+        "role": "user",
+        "content": "37:41 Scott Tolinski \n The text is incomplete and does not provide enough information to create a detailed summary."
+      },
+      {
+        "role": "user",
+        "content": "37:44 Wes Bos \n The author of the text is not concerned about a certain issue and is discussing window management in VS"
+      },
+      {
+        "role": "user",
+        "content": "38:21 Scott Tolinski \n \n\nThe speaker expresses their dissatisfaction with the customization options of 'warp' compared to 'I term"
+      },
+      {
+        "role": "user",
+        "content": "38:43 Wes Bos \n The article discusses the usefulness of workflows, particularly for teams who have many complex commands to run."
+      },
+      {
+        "role": "user",
+        "content": "39:42 Scott Tolinski \n \n\nThe speaker does not recommend using a certain command in their terminal, even with teams. They think"
+      },
+      {
+        "role": "user",
+        "content": "40:01 Wes Bos \n \n\nThe speaker acknowledges that sharing Docker commands or networking steps could be interesting, as they often forget and"
+      },
+      {
+        "role": "user",
+        "content": "40:17 Scott Tolinski \n The command palette is discussed as a useful feature found in many apps, including VS code and arc"
+      },
+      {
+        "role": "user",
+        "content": "41:24 Wes Bos \n The text describes the use of the command shift P for users who have multiple tabs open. By"
+      },
+      {
+        "role": "user",
+        "content": "42:09 Scott Tolinski \n The author finds it helpful to run programs like Redis and Mongo DB in different tabs on their terminal"
+      },
+      {
+        "role": "user",
+        "content": "42:34 Wes Bos \n The CEO of terminal is focusing on how to make money from the platform, specifically by targeting large"
+      },
+      {
+        "role": "user",
+        "content": "44:33 Scott Tolinski \n The author expresses their perspective on creating accounts for online services, stating that they live in a world"
+      },
+      {
+        "role": "user",
+        "content": "45:45 Wes Bos \n The author expresses annoyance about having to make an account for certain software and being concerned about their terminal"
+      },
+      {
+        "role": "user",
+        "content": "46:43 Scott Tolinski \n The author expresses a desire for profiles in their terminal application, citing iTerm's use of profiles"
+      },
+      {
+        "role": "user",
+        "content": "47:19 Wes Bos \n \n\nIt is important to be cautious when using a terminal to avoid accidentally running commands on sensitive data."
+      },
+      {
+        "role": "user",
+        "content": "47:41 Scott Tolinski \n \n\nThe text briefly raises the question of how to color things in production and development, without providing any"
+      },
+      {
+        "role": "user",
+        "content": "47:48 Wes Bos \n The text is incomplete and does not provide a clear message or information to summarize. Please provide a"
+      },
+      {
+        "role": "user",
+        "content": "47:54 Scott Tolinski \n \n\nThe text suggests implementing warning systems for identifying different environments such as production or development, and using shortcuts"
+      },
+      {
+        "role": "user",
+        "content": "48:11 Wes Bos \n The text discusses how the author uses different colored settings in VS code to distinguish between admin, production"
+      },
+      {
+        "role": "user",
+        "content": "49:00 Scott Tolinski \n \n\nThe writer uses different colors to represent different stages of development, such as purple for development, green"
+      },
+      {
+        "role": "user",
+        "content": "49:11 Wes Bos \n There is currently a problem with background processes in the Warp application, where if a process is killed"
+      },
+      {
+        "role": "user",
+        "content": "50:49 Scott Tolinski \n \n\nThe author is discussing the need to make console log work like it does in the browser in a"
+      },
+      {
+        "role": "user",
+        "content": "51:00 Wes Bos \n The author discusses the limitations of console logging in node and JavaScript apps, and notes that using the"
+      },
+      {
+        "role": "user",
+        "content": "52:29 Scott Tolinski \n The author agrees that terminal applications should not be limited to bare bones and provide no help. They"
+      },
+      {
+        "role": "user",
+        "content": "52:45 Wes Bos \n The author expresses their love for using the terminal and desires for console logs to be displayed as objects"
+      },
+      {
+        "role": "user",
+        "content": "52:58 Scott Tolinski \n \n\nThere is no text to summarize. The provided statement is incomplete and lacks context or content."
+      },
+      {
+        "role": "user",
+        "content": "53:04 Wes Bos \n The author suggests that a web version of a certain technology would be cool, but is unsure about"
+      },
+      {
+        "role": "user",
+        "content": "53:33 Scott Tolinski \n \n\nThe author predicts an increase in the use of AI-based tools such as auto-completion in various"
+      },
+      {
+        "role": "user",
+        "content": "54:11 Wes Bos \n \n\nThe author describes a basic example of using CD (change directory) between the root of their project"
+      },
+      {
+        "role": "user",
+        "content": "54:33 Scott Tolinski \n \n\nThere is no discernible content or context to this text. Therefore, no summary can be provided"
+      },
+      {
+        "role": "user",
+        "content": "54:37 Wes Bos \n The article discusses the possibility of a tool that can automatically suggest and run commonly used commands for developers"
+      },
+      {
+        "role": "user",
+        "content": "55:18 Scott Tolinski \n \n\nThe text is a fragment of a conversation and only includes a short sentence. It seems that someone"
+      },
+      {
+        "role": "user",
+        "content": "55:24 Wes Bos \n The author discusses their experience with creating cobalt for warp, but notes its limitations in only offering"
+      },
+      {
+        "role": "user",
+        "content": "55:52 Scott Tolinski \n The speaker is discussing their use of the default cyber wave theme and its quality compared to other default"
+      },
+      {
+        "role": "user",
+        "content": "56:27 Wes Bos \n The author of the text talks about the desire to change the appearance of their terminal by adding a"
+      },
+      {
+        "role": "user",
+        "content": "57:02 Scott Tolinski \n \n\nThe text contains only one sentence in which the writer states that they do not know something. There"
+      },
+      {
+        "role": "user",
+        "content": "57:07 Wes Bos \n \n\nThe speaker discusses the usefulness of command clicking links, especially for opening errors in VS code. However"
+      },
+      {
+        "role": "user",
+        "content": "57:33 Scott Tolinski \n The text discusses the author's preference for the way VS code handles file links. They appreciate that"
+      },
+      {
+        "role": "user",
+        "content": "57:58 Wes Bos \n \n\nThe text discusses how sometimes there are linting errors, and while the full path of the error"
+      },
+      {
+        "role": "user",
+        "content": "58:15 Scott Tolinski \n \n\nThe text contains a brief mention of a tool called \"warp\" which is apparently only available"
+      },
+      {
+        "role": "user",
+        "content": "58:38 Wes Bos \n \n\nThe text is a brief statement expressing the author's forgetfulness in creating tasks or to-do lists"
+      },
+      {
+        "role": "user",
+        "content": "58:41 Scott Tolinski \n \n\nThere is no text to summarize."
+      },
+      {
+        "role": "user",
+        "content": "58:43 Wes Bos \n \n\nThe speaker enjoys using an iPad sorter that organizes iPads and Bluetooth headphones for their children's"
+      },
+      {
+        "role": "user",
+        "content": "59:05 Scott Tolinski \n \n\nThe text is a short phrase that states that the term for calling IT infrastructure is \"a lot"
+      },
+      {
+        "role": "user",
+        "content": "59:09 Wes Bos \n The author discusses their frustration with Lightning cables not working and constantly being broken by their kids. They"
+      },
+      {
+        "role": "user",
+        "content": "1:00:32 Scott Tolinski \n \n\nThe writer admits to having only one iPad for their kids to share, causing arguments and excessive screen"
+      },
+      {
+        "role": "user",
+        "content": "1:00:54 Wes Bos \n \n\nThe text discusses the issue of harmful and inappropriate content on children's apps, as well as the"
+      },
+      {
+        "role": "user",
+        "content": "1:01:30 Scott Tolinski \n \n\nThe author thinks that YouTube Kids is the worst app and wants to limit her son's screen time"
+      },
+      {
+        "role": "user",
+        "content": "1:01:48 Wes Bos \n Parents are finding it concerning that YouTube Kids, a platform meant for child-friendly content, is contributing"
+      },
+      {
+        "role": "user",
+        "content": "1:02:26 Scott Tolinski \n The author is skeptical of adults who create YouTube channels focused on playing with toys, as there are"
+      },
+      {
+        "role": "user",
+        "content": "1:02:58 Wes Bos \n \n\nThere is no text provided to create a summary."
+      },
+      {
+        "role": "user",
+        "content": "1:03:02 Scott Tolinski \n The author recommends buying a pack of 50 Pokemon cards for $5 as an incentive for kids"
+      },
+      {
+        "role": "user",
+        "content": "1:04:23 Wes Bos \n \n\nThe text briefly discusses different reward structures for children such as using plastic gems or stickers. The speaker"
+      },
+      {
+        "role": "user",
+        "content": "1:04:48 Scott Tolinski \n \n\nThe speaker's wife is knowledgeable about human development, having taught a master's level course on the"
+      },
+      {
+        "role": "user",
+        "content": "1:05:15 Wes Bos \n \n\nThe speaker popped one of their kids' balls because they were misbehaving and not listening."
+      },
+      {
+        "role": "user",
+        "content": "1:05:46 Scott Tolinski \n \n\nThe author's children threw a stuffed animal at them, and in the process, they accidentally ripped"
+      },
+      {
+        "role": "user",
+        "content": "1:05:51 Wes Bos \n \n\nThe text contains a shameless plug for the courses offered at wesbos.com/courses. The"
+      },
+      {
+        "role": "user",
+        "content": "1:06:07 Scott Tolinski \n \n\nThe author is promoting their website, levelup.video, which offers a new course on Spelt"
+      },
+      {
+        "role": "user",
+        "content": "1:06:17 Wes Bos \n The text is a farewell greeting and contains no further information."
+      },
+      {
+        "role": "user",
+        "content": "1:06:21 Scott Tolinski \n The text encourages the reader to visit syntax.fm, where they can access all of the show's"
+      },
+      {
+        "role": "user",
+        "content": "Provide these three things:\n1. A short summary of the entire episode in about two sentences.\n1. Summarize the podcast into bullet points with time stamps\n1. Produce a list of 5 hashtags that would be relevant to the episode\n\nHere is the podcast transcript:\n    "
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6prXFxMu2ZhpcDzYqpD3856R6i6Sc",
+    "object": "chat.completion",
+    "created": 1677818537,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 3191,
+      "completion_tokens": 515,
+      "total_tokens": 3706
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "Summary:\nIn this episode, Wes Bos and Scott Tolinski discuss logging, terminal apps and workflows, command-line interfaces, and parenting struggles. They also touched on the features of different shells and text editors.\n\nBullet Points with Time Stamps:\n- 0:10: The episode opens with Wes Bos discussing Warp, a new and refreshing terminal app.\n- 2:11: Wes Bos shares his positive experience with using Warp, and Scott Tolinski chimes in with his love for Work.\n- 3:35: Scott talks about a difficult interview question he was asked in the past about building Google Docs.\n- 6:33: Scott expresses frustration with the delay between app announcements and their availability on Android.\n- 7:48: Wes and Scott discuss their experiences using different terminal applications, including Hyper, iTerm, and the Windows Terminal.\n- 12:52: They discuss prompts, aliases, and designing their own prompts, highlighting the benefits of customization.\n- 15:23: The article discusses the usefulness of workflows, particularly for teams who have many complex commands to run.\n- 23:03: Wes talks about their preference for fig Autocomplete over other options, finding it more information-dense and having nicer visuals.\n- 28:45: They speculate on the possibilities that could arise with an AI command search feature for terminals.\n- 30:19: Scott shares a command tip using Did you mean? feature that helps correct errors in typing.\n- 33:54: Wes highlights the importance of being cautious when using a terminal to avoid accidentally running commands on sensitive data.\n- 39:42: They discuss the possibility of a tool that can automatically suggest and run commonly used commands for developers.\n- 49:11: They discuss the benefits of using different colors to represent different stages of development in their text editors.\n- 54:37: They discuss issues with formatting data while using Oh My Posh and the need to make console logs work more like the browser.\n- 56:27: They discuss the desire to change the appearance of their terminal by adding a background image.\n- 59:05: They discuss the issue of harmful and inappropriate content on children's apps, as well as the challenge of limiting screen time for kids.\n- 1:05:15: They share personal anecdotes about parenting struggles, including discipline tactics.\n \n5 Relevant Hashtags:\n- #terminalapps\n- #parentingstruggles\n- #workflow\n- #loggingsystems\n- #customization"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "speaker": "Scott Tolinski",
+    "time": "0:26",
+    "lines": "Oh, welcome to syntax on this Monday hasty treat, we're going to be talking about logging. Logging is something that well, we sometimes do just to debug, and many times people overlook the usefulness of having really good logging within your application inside of both production and development environments. So my name is Scott Tolinksi. I'm a developer from Denver. And with me, as always, is Wes Bos",
+    "summary": "\n\nThe article discusses the importance of having good logging within an application in both production and development environments. The author, Scott Tolinski, introduces the topic and is accompanied by developer Wes Bos."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "0:55",
+    "lines": "way weigh in. Not too much I have I've been sort of taking my like logging a little bit more seriously, in the last couple of months, just because I had some like Gremlins in my app that I couldn't figure out like, where it was coming from and what would even cause this request and whatnot. And like, I just didn't have enough insight into like, it wasn't errors, or crashing or anything, it was just like, couldn't figure it out, you know. So we'll talk about like, what that is. So I sort of went through and updated my logging. I'm still not like, some of the stuff in this episode where I talked about I'm not using it. I'm mostly still just a console logger. But we'll yeah, let's get on into it. Yeah. Let's talk about our sponsor today, which is Sentry, Sentry is the air and exception, they do so much more of that they do performance, they do pro filings, and now they are getting into session replay, which will allow you to literally see what the user had done in your application to to trace through what's going on. So it's actually kind of funny that we talk about logging, because a lot of the stuff that Sentry does makes it so that you don't necessarily have to piece together logs. And we'll talk about what the difference is between those types of things. But check it out at Sentry dot i o use coupon code tasty treat that is going to get you two months for free. Thank you Sentry for sponsoring sick. All right, let's get into it. What do you want to give us a start up? Like why and what is logging? Yeah, so",
+    "summary": "The speaker discusses their recent focus on improving their logging methods, as they were experiencing issues with their app and needed more insight into the problems. They mention using console logging mostly, but also mention their sponsor, Sentry, which offers error and performance tracking, as well as session replay. The speaker goes on to explain what logging is and its importance in understanding errors and issues in an application."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "2:33",
+    "lines": "as you know, at its very most basic, everybody has probably tossed a console log into their code at some point to output something either on the client side log or your server side log. And these can be used primarily, you know, we often just throw it in for a quick debug or something like that. But you also probably have seen logging from other frameworks or other things that you've used, where you're automatically just getting some things coming in on your your console explaining what's happening, maybe at some given point, maybe it's explaining the requests that are coming in, maybe it's just saying, oh, you know, a message came in at this time or whatever. It depends on what system and what type of logging is enabled in this types of things. And in many, even like CMS has have, like baked in logging as well outside of the JavaScript context. But in at the end of the day logging is basically giving you visibility to some action that is happening on your server or your client, depending on how you're doing this. But it's very most basic. It's a console log. It's a I got here. But yeah, it's more complex. It's a, a get request was hit to this specific URL at this time. And it took this amount of seconds to resolve or did not resolve or whatever.",
+    "summary": "Logging is a tool used to output information on either the client side or server side of code. It is primarily used for debugging, but can also be used by frameworks to output information automatically. CMS systems often have baked-in logging. Logging provides visibility to actions happening on the client or server and can range from basic console logs to more complex information like request details and resolution time."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "3:52",
+    "lines": "Why might you want to log something. Logs are often helpful as sort of a treasure trail to figuring out what happened if you need to, everywhere from just view the developer needing to figure out okay, well, that shouldn't have happened. Or I need to figure out why somebody specifically hit this URL with what data and it caused them something, you can log out that information, if you just want to see what endpoints are being hit with what specific data you can log that, or something just as simple as like an email was specifically sent. Well, we'll go a little bit more into the different types of logging. So it helps piecing together things helps us find ability. Worst case, I've certainly not had to do this before, thankfully, but I've heard of things crashing databases going down whatever. And often developers have to they don't have the data of like maybe 10,000 sales went through, they can sometimes piece that information back together, or at least the important bits via logs because they can parse out their logs and recreate that data in the database.",
+    "summary": "Logging is useful for developers to track what happened in a system, from finding errors to understanding why a certain URL was hit with specific data. Different types of logging help in piecing together information and finding the ability, and can even help recreate lost data in databases."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "5:01",
+    "lines": "Yeah. And also, just to be clear logging is not just for debugging, but also just for general information and understanding of what's going on. Right. So, yeah, you say, how is this different than error handling? Because basically, in regards to that same bed, how is this different than just errors and what's going on in your application? Sometimes it's a little bit also, at the same time, more targeted and less targeted, because you can have less targeted info being logged, letting you know exactly what's happening around what are potential errors, but just what's happening in general. But also, you can have more targeted to situations where you think that there is going to be an error or could be an error to give you more context into what could be happening in that given instance?",
+    "summary": "\n\nLogging is not only for debugging, but also for general information and understanding of what's happening in your application. It can provide both less targeted and more targeted information, allowing you to know what's happening around potential errors and giving you more context into what could be happening in specific instances."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "5:51",
+    "lines": "Yeah, yeah, like I just, I just opened up my logs right now. And I'm seeing people, it's kind of interesting, you are seeing people go through the process of visiting the website, adding a course buying the course checking out adding a coupon, getting the email being sent, then the email being the link in the email being clicked an account being created. Somebody starting to view a specific video, and then progress on that video being you can see all of that in your console, as it goes through. And I specifically had an issue where people were going to have magic links in my email, and people were going to magic links. And the idea of the magic Link was always undefined. It was the correct magic link. And immediately after it was undefined, and I could not for the life of me figure out what was triggering this undefined request, you know, like, it's not an error. It actually it was causing no issues to anybody except there was an undefined request in my log, and I could not figure it out for Life Media. Finally, finally trace it, trace it down. And you know, what it was, what it was an image tag to end, the source of the image was undefined. And it was trying to just, I guess, when you have an image tag, it tries to request the current URL as the source. And that was triggering, because I had like a catch all path setup for the ID in the URL. It was, it was catching that one as well. And literally, the the image pass, so I went into my template, and I go, Oh, I had like a typo in my template. And I fixed the image tag and whatnot. But that was driving me crazy. And it was only until I added additional logging. To see like, okay, like, is somebody being malicious here? Is this coming from the same user? Is it like a browser extension, something like that, I had a whole bunch more log in, then I was like, Okay, I see what's happening here. And then I went through a template. And",
+    "summary": "The author is discussing their experience with examining website logs, specifically when tracing an issue with undefined requests in their log. They discovered that the issue was caused by a typo in an image tag within their template and resolved it through additional logging and fixing the template. The logs allowed them to trace the interactions of users visiting the website, adding courses, applying coupons, and creating accounts."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "7:56",
+    "lines": "it's funny. This just how much logs can both pollute and save your bacon sometimes, you know, sometimes, if there's too much logging too much noise, you can, you know, over certain things. But you know, part of what is good about having logging is that, you can often go ahead and paw through the logs in a more structured and organized way. So you know, too much information isn't necessarily a problem. So what should you log here? I'm going to tell you what we log. And then we can maybe talk a little about what you should log. But you know, I think personally, what I like to see in a log is I like to see, you know, what type of what is I'm talking like server side logging here specifically? Yeah, one like really important thing about log is the timecode, in which this thing happened. Because without having the time in which something happened, you going back and referencing it is kind of pointless, right? You'd say at some point, in some time this, this event happened. But if you knew when an event happened, specifically, maybe an error on your site or something happened, right, and you want to investigate, so you're piling into the logs, having that time code that says this happened at this time, really important to be able to nail down exactly when scope when that happened. You know, also, I like what type of request it was a get post put whatever. I like the path that was requested. I like the total time of the response. I like those types of things in my logs. I also like to know what type of log this is, is this an information log? Is it an error? Is it and these can things these things can be color coded accordingly, so that an error log could have a red error or something so that way when you're looking at your logs, the errors stand out in the information once kind of hide back or any of those types of things.",
+    "summary": "Logs are important for structured and organized information, although too much information can be a problem at times. Server-side logging is crucial and should include a time code, the type of request, the requested path, and the total response time. It is also important to differentiate between information and error logs, which can be color-coded accordingly for easier management."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "9:53",
+    "lines": "Oh, that's a good idea. I so I'm half excited to do this episode just so I can do a little bit of improving on mine. cuz maybe we should talk about that specifically, like, how do we log right now. So right now what I'm doing is I just had like different areas of the application. So whether it is a magic URL it whether it's a login, whether it's a progress update, whether it's somebody has invited somebody to their team account, so they can go in on it, whether somebody has changed their email, all that type of stuff. And I just basically have like a, an ID or a name for each one, like I put it in square brackets, just magic. And then I put some information along in there. So things like URL, maybe query parameters, maybe body parameters, if it's a form, submit other information about stuff that you specifically need you unfortunately, at least I don't think you can't log the entire request object, because that would be absolutely massive, and your logs will get pretty large quickly. But I think, I don't know, do people do that? Do they log the entire request?",
+    "summary": "The author discusses their logging process and explains how they label different areas of the application with IDs or names in square brackets, adding information such as URLs, query parameters, and body parameters. They mention that logging the entire request object would make logs too large quickly. They also express excitement about improving their logging process in the future."
+  },
+  {
+    "speaker": "Unknown Speaker",
+    "time": "10:59",
+    "lines": "I can imagine, that seems like way too much text for everything. That seems like that would never work in a large context, right? No, because you would be like,",
+    "summary": "The text discusses the issue of excessive amount of text in a large context and suggests that it is not a problem as long as the text is well-organized and properly structured. It emphasizes the importance of using headings, subheadings, and bullet points to make the text more digestible for readers."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "11:09",
+    "lines": "I certainly have had, like log files, we'll talk about what to do with these log files. But I've had log files get into the gigs and gigs I've once very early on, when I was just logging to log files on my server, I could not figure out why every couple of weeks, the server would slow down until I rebooted it. And finally, I realized is because I was using forever, and forever will put your logs in a log file. And then when you restart it, I think it deletes it or something like that. And I was running out of space on my server. Yeah. And it was just getting slower and slower, because there's like not enough space to run things. And then when I cleared out the logs, they would go and that's why you have to have sort of a better approach for this type of stuff.",
+    "summary": "The author discusses their experience with log files, including a situation where the log files on their server caused it to slow down until they cleared them out, emphasizing the need for a better approach to handling log files."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "11:52",
+    "lines": "Yeah, I've certainly gotten the email that says your server space is limited. Because you're running out of space. And to only be like, Wait, how is that possible? Oh, wait, let me go check that law. Oh, boy. Yeah, big O logs. And if you're logging every request that way? Yeah, we often forget, as developers that like text is bytes. Eight, you're saving a lot of text or a lot of information. Yeah. And that's, it's pretty easy to rack up actual storage space of of things with just text just by writing a lot of text.",
+    "summary": "The text discusses the issue of limited server space and how it can be caused by logging every request, which results in saving a lot of text and information that takes up storage space. The author mentions the importance of developers remembering that text is bytes and how it can add up quickly."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "12:24",
+    "lines": "Yeah, you get 100,000 requests a day, and you're, you're logging a couple lines for every single person. Those add up pretty quickly.",
+    "summary": "\n\nThe text highlights that the volume of requests a website receives can quickly generate a substantial amount of log data."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "12:32",
+    "lines": "Yeah. Okay. So one thing I also wanted to mention that I do, just for fun for our information logging, especially in our requests, I do it a little emoji based on how like long or short, the total response time was. So I start counting, when the request comes in. And then I stopped counting when the response is going out just via middleware. And I measure that time. And if that time is really fast, you get a rocket ship. If it's shorter, you get a bunny rabbit. And if it's really long, then you get a turtle. And I've been I've been thinking about expanding this a little bit more. But it's really simple just to see a turtle a rabbit or rocket ship in your logs, it makes it like for me, just really visual in terms of alright, I'm working on this one component. And I've been seeing a ton of turtles in development. Why am I seeing so many turtles in this specific route, but not others?",
+    "summary": "\n\nThe author of the text likes to use emojis to track the response time for requests they receive. They count the time from when the request arrives to when the response goes out through middleware. They use a rocket ship emoji for very fast responses, a bunny rabbit emoji for shorter responses, and a turtle emoji for really long responses. The author finds it helpful in identifying components that may require attention if they consistently receive turtle emojis in their logs."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "13:29",
+    "lines": "That's awesome. What else should you log descriptive messages about what happened? So not just login attempted but login attempted with user email address, obviously, don't put passwords in, in your logging in, maybe we should talk about that really quickly is logging personal, personally identifiable information, you certainly start get to step into areas of GDPR, and all these rules around private information and tracking or whatnot. So you certainly make sure you are up to date with all of that as well as scrubbing the logs as part of when somebody does request to be deleted from you, you have to think about oh, like, of course you have the user and purchases and things like that. But you probably also have information about maybe you have that in a log somewhere that also should be scrubbed.",
+    "summary": "It is important to log descriptive messages about what happened during events such as login attempts, but care must also be taken to avoid logging personally identifiable information as this is subject to GDPR regulations. When scrubbing logs, not only user and purchase information but also any personally identifiable information should be considered."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "14:21",
+    "lines": "Yeah. I mean, it's important to know that it could just become another attack vector. So if you do have something that is secure, needs to be secure in your log, and someone get x gets access to your logs, then that's as bad as you know, them getting access to the information itself. Because yeah, that information is sitting there.",
+    "summary": "\n\nThe text highlights the importance of securing logs as they could become another attack vector. If secure information is stored in logs and someone gains access to them, it could be as bad as gaining access to the information itself. Therefore, it is crucial to secure logs properly."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "14:42",
+    "lines": "Or even like other employees that shouldn't necessarily have access to that information. You put all this work in permissions, you have to be careful that you're not putting anything in the logs that other employees could have access to. Yeah, especially if it's insulting to those other employees. Yeah. So we'll talk about like, what about Like development, staging production. A lot of people, I don't specifically do this, I really only just log stuff that I think I might need. But you can set different levels of logging. It goes from like error warning, all the way up to verbose and silly, where you sit, you literally log absolutely everything. And that can be actually really helpful. Specifically, like I know with ES lint, es lint has like a, a silly mode or verbose mode where it will log every single thing that it's doing. And that could be helpful to follow the request along, like at a certain point, that's also what breakpoints are for in your code base. But it can be nice to Nice to see what it is doing.",
+    "summary": "The text discusses the importance of being cautious when setting permissions for logging information and making sure that sensitive information is not accessible to other employees. The author suggests setting different levels of logging from error warning to verbose and silly, which can be helpful in tracking requests and following code. The use of breakpoints in the code base is also mentioned as a way to track actions."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "15:45",
+    "lines": "Yeah, I mean, there are times when you just dump them in, to try to get it to get some visibility to what's going on, especially in development. But in production, you know, yeah, I pretty much keep most of my normal, like informational logging in production, like, it's really helpful to be able to see, all right, a get request came in, you know, this, this is just at a glance is like is what's going on in the site. But also, at a glance, even though I do use tools to the evaluate my speed of the site, it's really nice to see at a glance in the locks, the emoji that I put in there just for fun, and these are only server side. So it's not like these are, you know, polluting the client side logging experience or anything like that, which, honestly, you know, your site probably shouldn't be outputting too many things to the client in production. Unless you're, you know, trying to have fun with it, but you got to kind of remove some of that stuff,",
+    "summary": "In development, some logging can be used for visibility purposes, but in production, informational logging is useful to see what is happening on the site. Tools to evaluate the speed of the site can be used, but the locks with server-side emojis are helpful for a quick glance. Outputting too many things to the client in production should be avoided."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "16:41",
+    "lines": "I leave probably more than I should in my because sometimes I get emails from people, and they'll show me their console. And I'm like, Well, I'm kind of glad I stuck that in there. But on the same breath, this is not part of the sponsor. But one thing that I really like is if you do have an error in that goes into your Sentry, or whatever. Sentry has this thing called breadcrumbs, which will it will show you like which functions were called up to the error. But any thing that you console log will also be included in the breadcrumbs. And that I found is very helpful, because you can see, and then I like when I was having an issue with a specific thing. The other day, I went in and added more logging. And then I go to the breadcrumbs. Okay, okay, now I have a little bit more insight into to what is happening. So that was super handy, too.",
+    "summary": "The author explains that they sometimes leave console logs in their code, which has led to helpful insights when people show them errors. They mention a feature called \"breadcrumbs\" in Sentry that includes console logs in the error breadcrumbs, providing more insight into what is happening. The author found this feature to be very helpful when troubleshooting specific issues."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "17:34",
+    "lines": "Yeah, we often talk about the name of the game being visibility, and debugging, right, knowing what you're trying to fix. Yeah. And that's just really where logging comes into play here. And one thing I really love seeing come into my logs is that somebody tried to access WP admin and got it.",
+    "summary": "\n\nLogging is essential for visibility and debugging in identifying issues. WP admin access attempts are meaningful logs that can be useful in addressing security issues."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "17:50",
+    "lines": "Yeah, that's the other thing is like bot logs as well. So bots will try to hit common endpoint spots will try to submit forms with with random data. I had a bot the other day tried to submit a bunch of like Postgres SQL injections into a form. And it's hilarious because I don't use Postgres literally anywhere. So that wouldn't have worked. But like, it's not somebody sitting there trying to do it. It's, it's a bot trying? I don't know, I think I think it was something like it went on for about six or seven hours until I until I jumped in and go Oh, like this form should probably have have a CAPTCHA on it so that the bot can't do that. But it was kind of funny watching. The requests come in every two seconds with the new piece of information that they're sent in. And they don't do it. They do it just enough that it doesn't hit any, like throttling. Yeah, rate limiting that. So that's another thing you should be logging is any throttling or rate limiting that happens in the app level? You can log that to show but the bots are smart enough to figure out what is the limit for this website. And even if it takes six days to get all of the possible combos through, they can do that.",
+    "summary": "The text describes the occurrence of bots trying to submit forms with random data or Postgres SQL injections. The speaker finds it funny that the bot kept trying for six to seven hours until they realized adding CAPTCHA could stop the bot from trying. The speaker suggests monitoring and logging any throttling or rate limiting that happens on the app level to prevent bots from repeatedly trying to access the site."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "19:04",
+    "lines": "Yeah, I actually, it's funny. I was just writing something the other day to do like automating browser tasks. And I had a little set timeout in a loop because I knew that if I didn't Yeah, then it would get hit by the rate limiting. So I was just like, alright, if I set this set timeout loop to be 200 milliseconds, all right, it fails after the first one, I set it to 300 fails or 400 succeeds. Alright. 400 is my number. So you can like dial in exactly what the rate limiting is.",
+    "summary": "The text is about automating browser tasks by using a set timeout in a loop to avoid being hit by rate limiting. The author suggests setting the set timeout loop to a specific number of milliseconds to find the optimal time and avoid getting blocked by rate limiting."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "19:33",
+    "lines": "Let's talk about where to put logs. So at the very basic, either your service will handle the logs for you, they'll stream them in and you can just go to logs in the dashboard. Or if you're just on like a like a like a straight up VPN or VPS server Linode Digital Ocean something like that will generally have log files in there that you can. You can go in and download and whatnot. Generally these log files are massive. so they they can't, you can and like, back in the day, it used to be hard to just open them up in your text editor. Text Editors are very good at opening up files that are two gigs and searching through them now. So it's not so much of an issue. But most services that do hosting will allow you to do what's called log drains, meaning that okay, we'll keep logs for we'll keep the last 10,000 logs, or we'll keep the last week worth of logs. And then after that they're deleted, because at some point, you should, you shouldn't keep logs around for that much longer. But if you do need to keep them for a little bit longer than you have to port them into something else. So whether that is as simple as a text file on AWS, or there's lots of services out there that are specific log drains, and they are really helpful because you can do things like search for specific words, you get syntax highlighting, you can filter sorting filters, or all that type of stuff and graphs and all Yeah, I don't do any of this. Because sometimes I look at the the prices of these things. I'm like, I don't know, another 22 hours a month for something like this, you know, but I look at it like specifically is one better stack? Log tail looks nice.",
+    "summary": "The article discusses where to put logs for services or servers. If a service handles the logs, they can be accessed through the dashboard, or if using a VPN or VPS server, log files can be downloaded. These log files are usually massive, but most hosting services allow log drains to keep the last 10,000 logs or the last week of logs. After that, logs need to be ported into something else, such as a text file or log drain service that provides syntax highlighting"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "21:19",
+    "lines": "Yeah, log tail is great. You know, I've used I've used log tail, I've used paper trail. Those are two of the big ones. Some of the other ones are sumo logic log DNA logs.io, sematext, logs, data, dog has logging logic monitor has logging Dynatrace has lot like there's a lot, right? Yeah, this is like a big a big thing where some of these do more than just logging, right? But, you know, we're talking, the big boys for just straight up locking log tail and paper trail are probably the two biggest ones. I've used both of them, both of them, you know, they were great to have, especially as diagnostic tools when you were looking for, like a specific instance that happened, I found it to be way easier to find specific instances or specific issues, or really dive into the logs a little bit more with these tools. But at the end of the day, like you said, they're they're just kind of unneeded expenses for our level of what yeah, what we're working with, you know, I can dive into the log files, no problem and still get access to the same information. So I probably shouldn't be paying a service just to be making it a little bit easier. But if I was on a big project with a big team with more requests than what I'm dealing with right now, I think something like this would be essential. I just I you know, I don't need it for our size. So",
+    "summary": "The author discusses various logging tools, including log tail and paper trail, which they have used for diagnostics when looking for specific instances or issues. They acknowledge that while these tools are helpful for large projects with significant traffic, they may not be necessary for smaller projects. The author ultimately concludes that while logging tools are beneficial, they are an unnecessary expense for their current needs."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "22:43",
+    "lines": "when you actually go ahead and log, I said earlier, I'm simply just using straight up console log. But there are lots of other packages that will do these for you. Winston is the big one that's usually included in Express apps and no GS base. They allow you to do different types of logs and pass context to it and all kinds of good stuff like that. I've never liked that because I liked the idea of that. But I hate having to import a package in every file, which it's I think, maybe less of an issue now with the auto import and VS code. So maybe I should take another look, do you use a specific package.",
+    "summary": "\n\nThe text discusses the use of console logging in code and mentions the availability of other packages, such as Winston, for logging. The author expresses their preference for using console log over importing a package in every file, but suggests taking another look at Winston due to possible improvements in auto import in VS code. The author also asks the reader if they use a specific package for logging."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "23:20",
+    "lines": "I always used a Pino before pi n o from you know, the awesome Matteo Kalina. And this was the one I used to because it came with FASTA, phi, and Mercurius. And I really like it. There's, it's a really, it's really robust, it does a lot for you. low overhead, it's, uh, overall, a super nice logging package. But, you know, I would probably, instead of trying to use this in a sense, where you're dropping in like a console log, if something like this, like a service, I would probably try to like intercept, intercept errors or intercept requests and do this in more of like a middleware type of way. And then just use straight up console log everything else, I",
+    "summary": "The author discusses their use of the Pino logging package, which they find robust and helpful with various features. They suggest using it in a middleware type of way rather than dropping it into a console log. They also mention using console log for everything else."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "24:03",
+    "lines": "guess. Oh, yeah. Yeah, that makes sense. We should do a show on middleware. I don't think we've ever done that.",
+    "summary": "\n\nThe speaker suggests doing a show on middleware, as it has not been covered before."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "24:08",
+    "lines": "Yeah, I just wrote a little middleware that I added to it. I had been using Intel kit to automatically parse foreign data from our forms and make them just available and spell kit form action.",
+    "summary": "\n\nThe author mentions creating a middleware that was added to their Intel kit to parse foreign data from forms and make it available as a spell kit form action. No further details are provided."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "24:20",
+    "lines": "I saw that you published it. Yeah, I",
+    "summary": "Sorry, the given text does not provide enough context or information to create a summary. Could you please provide the full text or more details?"
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "24:22",
+    "lines": "published it. It's like I've had this thing in my codebase for a little while. I actually have a few of those. Like, I have a spell kit logging one and I have our it's like, Hannah, she did take me a couple of minutes to put this up live somewhere. So yeah,",
+    "summary": "The author mentions having some code saved in their codebase, including a spell kit logging one. They also mention it took some time to publish it live."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "24:32",
+    "lines": "yeah, I specifically the one thing that has gotten me with the middleware I use tons of middleware, but I never like I wish that the TypeScript types would update for requests that are after the middleware, you know, like before the middleware you know that it's not going to be there and after the middleware and like, wherever they are, they you always have to do like an if statement to check if it's specifically there, which is probably better type practice, but it would be nice if somehow you could You would know if the middleware was run before and it's kind of hard because you don't know the functions where they are, you know? Yeah, totally. But But well, we'll throw that on the Bucks middleware. What's coming up? What else do we have here about logs?",
+    "summary": "The speaker mentions using a lot of middleware and expresses a desire for TypeScript types to update for requests that come after the middleware. They note that currently, an if statement is needed to check for the presence of the middleware, but it would be helpful to know if it has already been run. They mention discussing this with the Bucks middleware team and move on to discussing logs."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "25:13",
+    "lines": "I think that might be it. Yeah,",
+    "summary": "There is no text provided to summarize."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "25:14",
+    "lines": "I think that's it. It's helpful to log log stuff that you think you need put them in, because sometimes you're going to need that information after and you realize, oh, shoot, I probably should have had better logging in place. So take a take a couple of minutes and maybe add some better logging to your app. Yeah,",
+    "summary": "The author emphasizes the importance of logging information in an application to avoid missing valuable data. They encourage taking the time to improve logging practices to ensure important information is collected and available when needed."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "25:32",
+    "lines": "absolutely.",
+    "summary": "\n\nThere is no text provided, therefore no summary can be created."
+  },
+  {
+    "speaker": "Wes Bos",
+    "time": "25:33",
+    "lines": "All right. Thanks for tuning in. Catch you on Wednesday. Bruce, who's",
+    "summary": "This text is incomplete and cannot be summarized without additional information."
+  },
+  {
+    "speaker": "Scott Tolinski",
+    "time": "25:38",
+    "lines": "head on over to syntax.fm for a full archive of all of our shows. And don't forget to subscribe in your podcast player, or drop a review if you liked this show.",
+    "summary": "\n\nGo to syntax.fm for a complete collection of all episodes of the show, subscribe in your podcast player, and leave a review if you enjoyed it."
+  }
+]
