@@ -1,0 +1,44 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant formats dates from natural language. These dates may be absolute or relative. The current date is Tue Mar 21 2023 10:40:57 GMT-0400 (Eastern Daylight Saving Time)."
+      },
+      {
+        "role": "user",
+        "content": "Format the following dates string input as DD-MM-YYYY. Return the results in a markdown table with spaces so it is nicely readable."
+      },
+      {
+        "role": "user",
+        "content": "When the inputted month and day are ambiguous, provide both options. For example 02/03/1999 could be 02-03-1999 or 03-02-1999. Do not provide any clarifications."
+      },
+      {
+        "role": "user",
+        "content": "\n    02/03/2021\n    03/02/2021\n    March 2 2022\n    feb 1 1922\n    two years ago\n    yesterday\n    2.5 days ago\n    2 days from now\n    31/12/99\n    12/31/99\n    "
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6wXSTjpmClD5T7wjhbQ96KcuuH6Vw",
+    "object": "chat.completion",
+    "created": 1679409657,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 219,
+      "total_tokens": 439
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "| Date                          | Formatted Date        |\n| -----------------------------|----------------------|\n| 02/03/2021                   | 02-03-2021 or 03-02-2021 |\n| 03/02/2021                   | 03-02-2021 or 02-03-2021 |\n| March 2 2022                 | 02-03-2022 or 03-02-2022 |\n| feb 1 1922                   | 01-02-1922             |\n| two years ago                | 21-03-2021 or 21-03-2020 |\n| yesterday                    | 20-03-2023             |\n| 2.5 days ago                 | 18-03-2023             |\n| 2 days from now              | 23-03-2023             |\n| 31/12/99                     | 31-12-1999             |\n| 12/31/99                     | 31-12-1999             |"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant formats dates from natural language."
+      },
+      {
+        "role": "user",
+        "content": "Format the following dates string input as DD-MM-YYYY. Return the results in a markdown table with spaces so it is nicely readable."
+      },
+      {
+        "role": "user",
+        "content": "When the inputted month and day are ambiguous, provide both options. For example 02/03/1999 could be 02-03-1999 or 03-02-1999. If there are any clarifications, provide them in a paragraph at the bottom under the table."
+      },
+      {
+        "role": "user",
+        "content": "These dates may be absolute or relative. The current date of Tue Mar 21 2023 10:48:18 GMT-0400 (Eastern Daylight Saving Time) should be used for relative times that do not provide context. "
+      },
+      {
+        "role": "user",
+        "content": "\n    jan 1 1999\n    the first of july nineteen ninety nine\n    02/03/2021\n    03/02/2021\n    March 2 2022\n    feb 1 1922\n    two years ago\n    yesterday\n    2.5 days ago\n    2 days from now\n    31/12/99\n    12/31/99\n    a fortnight ago\n    2/12/88\n    18/5/88\n    6 years in the future from Jan 2 2021\n    nine months after the blue jays won the world series for the second time\n    "
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6wXZanSmrNqLFKBHDtqKaRZ42yztC",
+    "object": "chat.completion",
+    "created": 1679410098,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 482,
+      "total_tokens": 804
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "| Input                                           | Output                             |\n|-------------------------------------------------|------------------------------------|\n| jan 1 1999                                      | 01-01-1999                         |\n| the first of july nineteen ninety nine          | 01-07-1999 or 07-01-1999           |\n| 02/03/2021                                      | 02-03-2021                         |\n| 03/02/2021                                      | 02-03-2021 or 03-02-2021           |\n| March 2 2022                                    | 02-03-2022                         |\n| feb 1 1922                                      | 01-02-1922                         |\n| two years ago                                   | 21-03-2021 or 21-03-2020           |\n| yesterday                                       | 20-03-2023                         |\n| 2.5 days ago                                    | 18-03-2023                         |\n| 2 days from now                                 | 23-03-2023                         |\n| 31/12/99                                        | 31-12-1999                         |\n| 12/31/99                                        | 31-12-1999                         |\n| a fortnight ago                                  | 07-03-2023 or 08-03-2023           |\n| 2/12/88                                         | 02-12-1988                         |\n| 18/5/88                                         | 18-05-1988                         |\n| 6 years in the future from Jan 2 2021            | 02-01-2027                         |\n| nine months after the blue jays won the...       | 21-09-1993                         |\n\n\nClarifications:\n\n- For \"the first of july nineteen ninety nine\", both options are provided since day and month can be ambiguous when presented in this format.\n- For \"two years ago\", the current date of 21-03-2023 is used to determine the output date.\n- For \"a fortnight ago\", both options are provided since \"fortnight\" is not a commonly used term and its precise meaning may not be clear to all users.\n- For \"six years in the future from Jan 2 2021\", the output date is based on adding six years to the input date."
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

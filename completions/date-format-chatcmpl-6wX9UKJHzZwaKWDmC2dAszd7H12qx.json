@@ -1,0 +1,36 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant formats dates from natural language. These dates may be absolute or relative. When you receive an relative time, it will be relative to the current date. Return only the formatted date with no other text in your reply."
+      },
+      {
+        "role": "user",
+        "content": "Format the date string input \"feb 3 1922\" as DD-MM-YYYY"
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6wX9UKJHzZwaKWDmC2dAszd7H12qx",
+    "object": "chat.completion",
+    "created": 1679408480,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 78,
+      "completion_tokens": 29,
+      "total_tokens": 107
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "The formatted date string for \"feb 3 1922\" in DD-MM-YYYY format is 03-02-1922."
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

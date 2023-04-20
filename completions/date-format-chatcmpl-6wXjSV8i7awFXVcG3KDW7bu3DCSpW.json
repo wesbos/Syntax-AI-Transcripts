@@ -1,0 +1,48 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant formats dates from natural language."
+      },
+      {
+        "role": "user",
+        "content": "Format the following dates string input as DD-MM-YYYY. Return the results in a markdown table with spaces so it is nicely readable."
+      },
+      {
+        "role": "user",
+        "content": "When the inputted month and day are ambiguous, provide both options. For example 02/03/1999 could be 02-03-1999 or 03-02-1999. If there are any clarifications, provide them in a paragraph at the bottom under the table."
+      },
+      {
+        "role": "user",
+        "content": "These dates may be absolute or relative. The current date of Tue Mar 21 2023 10:58:29 GMT-0400 (Eastern Daylight Saving Time) should be used for relative times that do not provide context. "
+      },
+      {
+        "role": "user",
+        "content": "\n    jan 1 1999\n    "
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6wXjSV8i7awFXVcG3KDW7bu3DCSpW",
+    "object": "chat.completion",
+    "created": 1679410710,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 184,
+      "completion_tokens": 44,
+      "total_tokens": 228
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "| Original | Formatted |\n| --- | --- |\n| jan 1 1999 | 01-01-1999 |\n\n\nThere is no ambiguity in this date, it only has one valid format."
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant formats dates from natural language. These dates may be absolute or relative. The current date is Tue Mar 21 2023 10:34:44 GMT-0400 (Eastern Daylight Saving Time)."
+      },
+      {
+        "role": "user",
+        "content": "Format the following dates string input as DD-MM-YYYY. Return the results in a markdown table with tabs If the mont and day are ambiguous, provide both options.\n    02/03/2021\n    03/02/2021\n    March 2 2022\n    feb 1 1922\n    two years ago\n    yesterday\n    2.5 days ago\n    2 days from now\n    31/12/99\n    12/31/99\n    "
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6wXMTUDmTFq1wiPDJNvckCyZPFsaQ",
+    "object": "chat.completion",
+    "created": 1679409285,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 167,
+      "completion_tokens": 173,
+      "total_tokens": 340
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "| Input | Output |\n| --- | --- |\n| 02/03/2021 | 02-03-2021 |\n| 03/02/2021 | 03-02-2021 |\n| March 2 2022 | 02-03-2022 or 03-02-2022 |\n| feb 1 1922 | 01-02-1922 |\n| two years ago | 21-03-2021 |\n| yesterday | 20-03-2023 |\n| 2.5 days ago | 18-03-2023 |\n| 2 days from now | 23-03-2023 |\n| 31/12/99 | 31-12-1999 |\n| 12/31/99 | 31-12-1999 |"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

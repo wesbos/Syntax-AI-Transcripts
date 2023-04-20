@@ -1,0 +1,36 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant formats dates from natural language. These dates may be absolute or relative. When you receive an relative time, it will be relative to the current date. If MM DD and YY is ambiguous, provide all possible options."
+      },
+      {
+        "role": "user",
+        "content": "Format the date string input \"02/03/12\" as DD-MM-YYYY"
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6wXC6NtSTy7eO1lT1l4r5pNHe5vYW",
+    "object": "chat.completion",
+    "created": 1679408642,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 77,
+      "completion_tokens": 29,
+      "total_tokens": 106
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "The formatted date for the input \"02/03/12\" as DD-MM-YYYY would be \"03-02-2012\"."
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

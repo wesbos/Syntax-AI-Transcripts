@@ -1,0 +1,36 @@
+{
+  "input": {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant formats dates from natural language. These dates may be absolute or relative. When you receive an relative time, it will be relative to the current date. If MM DD and YY is ambiguous, provide all possible options."
+      },
+      {
+        "role": "user",
+        "content": "Format the following dates string input as DD-MM-YYYY. Return the results in a markdown table.\n\n    02/02/2021\n    March 2 2022\n    feb 1 1922\n    two years ago\n    yesterday\n    2.5 days ago\n    2 days from now\n    31/12/99\n    12/31/99\n    "
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-6wXH7u4c5aMBezEkNyEiqAnU8rbyk",
+    "object": "chat.completion",
+    "created": 1679408953,
+    "model": "gpt-3.5-turbo-0301",
+    "usage": {
+      "prompt_tokens": 146,
+      "completion_tokens": 188,
+      "total_tokens": 334
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "| Input | Output |\n| --- | --- |\n| 02/02/2021 | 02-02-2021 |\n| March 2 2022 | 02-03-2022 |\n| feb 1 1922 | 01-02-1922 |\n| two years ago | 01-08-2019 <br> 02-08-2019 |\n| yesterday | (depending on current date) |\n| 2.5 days ago | (depending on current date) |\n| 2 days from now | (depending on current date) |\n| 31/12/99 | 31-12-1999 |\n| 12/31/99 | 31-12-1999 | \n\nNote that the output of `yesterday`, `2.5 days ago`, and `2 days from now` depend on the current date and may vary."
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "amazon-transcribe",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Wes Bos (https://wesbos.com/)",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-transcribe": "^3.316.0",
+    "dotenv": "^16.0.3"
+  }
+}
