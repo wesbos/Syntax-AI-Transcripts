@@ -1,0 +1,20 @@
+1
+00:00:01,042 --> 00:00:03,027
+Hey, check, check, what's up?
+
+2
+00:00:03,087 --> 00:00:04,109
+This is Wes Boss.
+
+3
+00:00:04,230 --> 00:00:05,873
+Here I am testing out Whisper.
+
+4
+00:00:05,953 --> 00:00:07,537
+Let's see how the quality is
+
+5
+00:00:07,557 --> 00:00:10,183
+and let's see how everything else is.
+

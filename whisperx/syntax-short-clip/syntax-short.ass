@@ -1,0 +1,132 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 384
+PlayResY: 288
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,24,&Hffffff,&Hffffff,&H0,&H0,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,0
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:0.04,0:00:0.24,Default,,0,0,0,,[SPEAKER_00]:  {\1c&HFF00&\u1}Every{\r} browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:0.24,0:00:0.28,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:0.28,0:00:0.64,Default,,0,0,0,,[SPEAKER_00]:  Every {\1c&HFF00&\u1}browser,{\r} including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:0.64,0:00:0.66,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:0.66,0:00:1.24,Default,,0,0,0,,[SPEAKER_00]:  Every browser, {\1c&HFF00&\u1}including{\r} Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:1.24,0:00:1.26,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:1.26,0:00:1.82,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including {\1c&HFF00&\u1}Safari,{\r} Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:1.82,0:00:1.88,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:1.88,0:00:2.33,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, {\1c&HFF00&\u1}Firefox,{\r} whatever supports just regular mask, but for
+Dialogue: 0,0:00:2.33,0:00:2.39,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:2.39,0:00:2.71,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, {\1c&HFF00&\u1}whatever{\r} supports just regular mask, but for
+Dialogue: 0,0:00:2.71,0:00:2.83,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:2.83,0:00:3.25,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever {\1c&HFF00&\u1}supports{\r} just regular mask, but for
+Dialogue: 0,0:00:3.25,0:00:3.29,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:3.29,0:00:3.45,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports {\1c&HFF00&\u1}just{\r} regular mask, but for
+Dialogue: 0,0:00:3.45,0:00:3.51,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:3.51,0:00:3.79,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just {\1c&HFF00&\u1}regular{\r} mask, but for
+Dialogue: 0,0:00:3.79,0:00:3.85,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:3.85,0:00:4.27,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular {\1c&HFF00&\u1}mask,{\r} but for
+Dialogue: 0,0:00:4.27,0:00:5.41,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:5.41,0:00:5.55,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, {\1c&HFF00&\u1}but{\r} for
+Dialogue: 0,0:00:5.55,0:00:5.59,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+Dialogue: 0,0:00:5.59,0:00:5.67,Default,,0,0,0,,[SPEAKER_00]:  Every browser, including Safari, Firefox, whatever supports just regular mask, but {\1c&HFF00&\u1}for{\r}
+Dialogue: 0,0:00:5.72,0:00:6.04,Default,,0,0,0,,[SPEAKER_00]:  {\1c&HFF00&\u1}whatever{\r} reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:6.04,0:00:6.12,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:6.12,0:00:6.44,Default,,0,0,0,,[SPEAKER_00]:  whatever {\1c&HFF00&\u1}reason,{\r} it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:6.44,0:00:6.46,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:6.46,0:00:6.76,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, {\1c&HFF00&\u1}it's{\r} never been unprefixed in Chrome.
+Dialogue: 0,0:00:6.76,0:00:6.88,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:6.88,0:00:7.10,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's {\1c&HFF00&\u1}never{\r} been unprefixed in Chrome.
+Dialogue: 0,0:00:7.10,0:00:7.14,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:7.14,0:00:7.33,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never {\1c&HFF00&\u1}been{\r} unprefixed in Chrome.
+Dialogue: 0,0:00:7.33,0:00:7.43,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:7.43,0:00:8.09,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been {\1c&HFF00&\u1}unprefixed{\r} in Chrome.
+Dialogue: 0,0:00:8.09,0:00:8.95,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:8.95,0:00:9.11,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed {\1c&HFF00&\u1}in{\r} Chrome.
+Dialogue: 0,0:00:9.11,0:00:9.67,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:00:9.67,0:00:9.91,Default,,0,0,0,,[SPEAKER_00]:  whatever reason, it's never been unprefixed in {\1c&HFF00&\u1}Chrome.{\r}
+Dialogue: 0,0:00:10.00,0:00:10.14,Default,,0,0,0,,[SPEAKER_00]:  {\1c&HFF00&\u1}There's{\r} probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.14,0:00:10.16,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.16,0:00:10.32,Default,,0,0,0,,[SPEAKER_00]:  There's {\1c&HFF00&\u1}probably{\r} a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.32,0:00:10.34,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.34,0:00:10.36,Default,,0,0,0,,[SPEAKER_00]:  There's probably {\1c&HFF00&\u1}a{\r} good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.36,0:00:10.38,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.38,0:00:10.48,Default,,0,0,0,,[SPEAKER_00]:  There's probably a {\1c&HFF00&\u1}good{\r} reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.48,0:00:10.50,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.50,0:00:10.74,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good {\1c&HFF00&\u1}reason{\r} behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.74,0:00:10.76,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:10.76,0:00:11.02,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason {\1c&HFF00&\u1}behind{\r} it, but it seems a bit silly.
+Dialogue: 0,0:00:11.02,0:00:11.08,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:11.08,0:00:11.16,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind {\1c&HFF00&\u1}it,{\r} but it seems a bit silly.
+Dialogue: 0,0:00:11.16,0:00:11.23,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:11.23,0:00:11.39,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, {\1c&HFF00&\u1}but{\r} it seems a bit silly.
+Dialogue: 0,0:00:11.39,0:00:11.41,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:11.41,0:00:11.45,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but {\1c&HFF00&\u1}it{\r} seems a bit silly.
+Dialogue: 0,0:00:11.45,0:00:11.49,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:11.49,0:00:11.69,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it {\1c&HFF00&\u1}seems{\r} a bit silly.
+Dialogue: 0,0:00:11.69,0:00:11.73,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:11.73,0:00:11.75,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems {\1c&HFF00&\u1}a{\r} bit silly.
+Dialogue: 0,0:00:11.75,0:00:11.79,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:11.79,0:00:11.91,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a {\1c&HFF00&\u1}bit{\r} silly.
+Dialogue: 0,0:00:11.91,0:00:11.95,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:00:11.95,0:00:12.19,Default,,0,0,0,,[SPEAKER_00]:  There's probably a good reason behind it, but it seems a bit {\1c&HFF00&\u1}silly.{\r}
+Dialogue: 0,0:00:13.12,0:00:13.36,Default,,0,0,0,,[SPEAKER_01]:  {\1c&HFF00&\u1}Yeah.{\r}
+Dialogue: 0,0:00:13.88,0:00:13.96,Default,,0,0,0,,[SPEAKER_01]:  {\1c&HFF00&\u1}Yeah.{\r}
+Dialogue: 0,0:00:14.92,0:00:15.00,Default,,0,0,0,,[SPEAKER_01]:  {\1c&HFF00&\u1}You{\r} know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.00,0:00:15.14,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.14,0:00:15.24,Default,,0,0,0,,[SPEAKER_01]:  You {\1c&HFF00&\u1}know,{\r} vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.24,0:00:15.26,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.26,0:00:15.48,Default,,0,0,0,,[SPEAKER_01]:  You know, {\1c&HFF00&\u1}vendor{\r} prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.48,0:00:15.50,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.50,0:00:15.84,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor {\1c&HFF00&\u1}prefixing{\r} for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.84,0:00:15.88,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.88,0:00:15.96,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing {\1c&HFF00&\u1}for{\r} CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.96,0:00:15.98,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:15.98,0:00:16.06,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for {\1c&HFF00&\u1}CSS{\r} is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:16.06,0:00:16.26,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:16.26,0:00:16.32,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS {\1c&HFF00&\u1}is{\r} certainly something that was of a time for anyone out
+Dialogue: 0,0:00:16.32,0:00:16.34,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:16.34,0:00:16.69,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is {\1c&HFF00&\u1}certainly{\r} something that was of a time for anyone out
+Dialogue: 0,0:00:16.69,0:00:16.73,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:16.73,0:00:17.05,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly {\1c&HFF00&\u1}something{\r} that was of a time for anyone out
+Dialogue: 0,0:00:17.05,0:00:17.09,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:17.09,0:00:17.27,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something {\1c&HFF00&\u1}that{\r} was of a time for anyone out
+Dialogue: 0,0:00:17.27,0:00:17.69,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:17.69,0:00:17.91,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that {\1c&HFF00&\u1}was{\r} of a time for anyone out
+Dialogue: 0,0:00:17.91,0:00:18.01,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:18.01,0:00:18.09,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was {\1c&HFF00&\u1}of{\r} a time for anyone out
+Dialogue: 0,0:00:18.09,0:00:18.19,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:18.19,0:00:18.23,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of {\1c&HFF00&\u1}a{\r} time for anyone out
+Dialogue: 0,0:00:18.23,0:00:18.33,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:18.33,0:00:18.79,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a {\1c&HFF00&\u1}time{\r} for anyone out
+Dialogue: 0,0:00:18.79,0:00:19.43,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:19.43,0:00:19.53,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time {\1c&HFF00&\u1}for{\r} anyone out
+Dialogue: 0,0:00:19.53,0:00:19.57,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:19.57,0:00:19.83,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for {\1c&HFF00&\u1}anyone{\r} out
+Dialogue: 0,0:00:19.83,0:00:19.85,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+Dialogue: 0,0:00:19.85,0:00:19.93,Default,,0,0,0,,[SPEAKER_01]:  You know, vendor prefixing for CSS is certainly something that was of a time for anyone {\1c&HFF00&\u1}out{\r}
+Dialogue: 0,0:00:19.96,0:00:20.12,Default,,0,0,0,,[SPEAKER_01]:  {\1c&HFF00&\u1}there{\r} who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:20.12,0:00:20.14,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:20.14,0:00:20.26,Default,,0,0,0,,[SPEAKER_01]:  there {\1c&HFF00&\u1}who{\r} remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:20.26,0:00:20.32,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:20.32,0:00:20.80,Default,,0,0,0,,[SPEAKER_01]:  there who {\1c&HFF00&\u1}remembers{\r} the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:20.80,0:00:20.82,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:20.82,0:00:21.75,Default,,0,0,0,,[SPEAKER_01]:  there who remembers {\1c&HFF00&\u1}the{\r} CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:21.75,0:00:22.09,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:22.09,0:00:22.89,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the {\1c&HFF00&\u1}CSS3{\r} pleas and any of that stuff.
+Dialogue: 0,0:00:22.89,0:00:22.97,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:22.97,0:00:23.33,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 {\1c&HFF00&\u1}pleas{\r} and any of that stuff.
+Dialogue: 0,0:00:23.33,0:00:23.39,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:23.39,0:00:23.47,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas {\1c&HFF00&\u1}and{\r} any of that stuff.
+Dialogue: 0,0:00:23.47,0:00:23.55,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:23.55,0:00:23.73,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and {\1c&HFF00&\u1}any{\r} of that stuff.
+Dialogue: 0,0:00:23.73,0:00:23.75,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:23.75,0:00:23.79,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any {\1c&HFF00&\u1}of{\r} that stuff.
+Dialogue: 0,0:00:23.79,0:00:23.81,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:23.81,0:00:23.96,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of {\1c&HFF00&\u1}that{\r} stuff.
+Dialogue: 0,0:00:23.96,0:00:23.98,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that stuff.
+Dialogue: 0,0:00:23.98,0:00:24.08,Default,,0,0,0,,[SPEAKER_01]:  there who remembers the CSS3 pleas and any of that {\1c&HFF00&\u1}stuff.{\r}

@@ -1,0 +1,56 @@
+is auto prefixer. It will add in the vendor prefixes that are required based on which
+browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+something that did not work without a vendor prefix still. What was it?
+Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+I think it does, or maybe it's custom. I know the input type of range still requires custom
+things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Oh, it was, it was the CSS gradient.
+You have, you have to use dash webkit mask
+instead of just straight up mask.
+And it's, it's hilarious because even Firefox supports
+the, the webkit prefixed version as well.
+Because so many people are just doing that.
+They're like, oh, you forgot to put the regular version on.
+But so every browser, including Safari, Firefox, whatever,
+supports just regular mask.
+But for whatever reason, it's never been unprefixed in Chrome.
+There's probably a good reason behind it, but it seems a bit silly.
+Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+It was like, this is CSS, right?
+But then when CSS3 dropped, we got all these new features,
+the browser prefixes and all that stuff,
+and then that really is what exploded the need
+for tools like SAS, because now all of a sudden
+you have these great new features,
+you have browser support that's kind of all over the place,
+you put in a tool intermediary to there.
+And then as the web has evolved, we've gotten more and more CSS properties,
+but it's also gotten more and more dialed in in terms of
+how these things are being added to the browser.
+So now we're not having to think so much about prefixes.
+But the problem there is that then becomes people just aren't thinking about
+any of that stuff at all.
+And then that's why you do end up using a tool like Post-CSS to say,
+you know, just just...
+you know, post compile my CSS or just compile my CSS,
+take care of anything I might have thought about
+or not, you know, based on whatever browsers
+I need to support and just do it.
+Sort of like Babel, right?
+Where before Babel came out,
+you were having to like really think about,
+well, Babel came out pretty early in the scheme of things,
+but it's basically allowing you to target
+specific browser versions to make sure that stuff supported.
+But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+are yet to come individually, as well as supporting things like prefixes or removing
+unused code or all sorts of things, even changing the language of certain things.
+I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+any of that stuff.
+But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+a baseline coverage.
+So first one we have here is variables.
+We've talked about this quite a bit.
+Variables are extremely well supported.

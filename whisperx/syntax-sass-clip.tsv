@@ -1,0 +1,57 @@
+start	end	text
+260	5924	is auto prefixer. It will add in the vendor prefixes that are required based on which
+5984	12688	browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+12728	16031	something that did not work without a vendor prefix still. What was it?
+16051	21474	Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+22135	26998	I think it does, or maybe it's custom. I know the input type of range still requires custom
+28881	34187	things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+35310	37772	Oh, it was, it was the CSS gradient.
+38572	42095	You have, you have to use dash webkit mask
+42355	43996	instead of just straight up mask.
+44597	48500	And it's, it's hilarious because even Firefox supports
+49321	52163	the, the webkit prefixed version as well.
+52183	53944	Because so many people are just doing that.
+53964	56766	They're like, oh, you forgot to put the regular version on.
+57147	60729	But so every browser, including Safari, Firefox, whatever,
+60829	62231	supports just regular mask.
+63414	67921	But for whatever reason, it's never been unprefixed in Chrome.
+67941	70184	There's probably a good reason behind it, but it seems a bit silly.
+71709	82256	Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+82276	93044	When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+93104	94705	It was like, this is CSS, right?
+95807	98548	But then when CSS3 dropped, we got all these new features,
+98568	100129	the browser prefixes and all that stuff,
+100549	103650	and then that really is what exploded the need
+103690	106071	for tools like SAS, because now all of a sudden
+106111	108131	you have these great new features,
+108992	111713	you have browser support that's kind of all over the place,
+111993	113953	you put in a tool intermediary to there.
+114274	117676	And then as the web has evolved, we've gotten more and more CSS properties,
+117696	120337	but it's also gotten more and more dialed in in terms of
+121038	122899	how these things are being added to the browser.
+122959	126080	So now we're not having to think so much about prefixes.
+126541	129662	But the problem there is that then becomes people just aren't thinking about
+130123	131063	any of that stuff at all.
+131463	134705	And then that's why you do end up using a tool like Post-CSS to say,
+134765	136086	you know, just just...
+136787	140370	you know, post compile my CSS or just compile my CSS,
+140731	143153	take care of anything I might have thought about
+143213	145154	or not, you know, based on whatever browsers
+145214	146936	I need to support and just do it.
+147316	148417	Sort of like Babel, right?
+148557	150639	Where before Babel came out,
+150659	152100	you were having to like really think about,
+152120	155343	well, Babel came out pretty early in the scheme of things,
+155383	157865	but it's basically allowing you to target
+158185	161548	specific browser versions to make sure that stuff supported.
+162230	166552	But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+166572	171934	just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+171974	178477	are yet to come individually, as well as supporting things like prefixes or removing
+178797	182779	unused code or all sorts of things, even changing the language of certain things.
+183481	190507	I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+190527	191148	any of that stuff.
+191468	196512	But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+196553	197393	a baseline coverage.
+198654	200256	So first one we have here is variables.
+200456	202038	We've talked about this quite a bit.
+202838	205381	Variables are extremely well supported.

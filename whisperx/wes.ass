@@ -1,0 +1,64 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 384
+PlayResY: 288
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,24,&Hffffff,&Hffffff,&H0,&H0,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,0
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:1.04,0:00:1.34,Default,,0,0,0,,{\1c&HFF00&\u1}Hey,{\r} check, check, what's up?
+Dialogue: 0,0:00:1.34,0:00:1.44,Default,,0,0,0,,Hey, check, check, what's up?
+Dialogue: 0,0:00:1.44,0:00:1.62,Default,,0,0,0,,Hey, {\1c&HFF00&\u1}check,{\r} check, what's up?
+Dialogue: 0,0:00:1.62,0:00:1.66,Default,,0,0,0,,Hey, check, check, what's up?
+Dialogue: 0,0:00:1.66,0:00:1.88,Default,,0,0,0,,Hey, check, {\1c&HFF00&\u1}check,{\r} what's up?
+Dialogue: 0,0:00:1.88,0:00:2.61,Default,,0,0,0,,Hey, check, check, what's up?
+Dialogue: 0,0:00:2.61,0:00:2.83,Default,,0,0,0,,Hey, check, check, {\1c&HFF00&\u1}what's{\r} up?
+Dialogue: 0,0:00:2.83,0:00:2.91,Default,,0,0,0,,Hey, check, check, what's up?
+Dialogue: 0,0:00:2.91,0:00:3.03,Default,,0,0,0,,Hey, check, check, what's {\1c&HFF00&\u1}up?{\r}
+Dialogue: 0,0:00:3.09,0:00:3.25,Default,,0,0,0,,{\1c&HFF00&\u1}This{\r} is Wes Boss.
+Dialogue: 0,0:00:3.25,0:00:3.33,Default,,0,0,0,,This is Wes Boss.
+Dialogue: 0,0:00:3.33,0:00:3.41,Default,,0,0,0,,This {\1c&HFF00&\u1}is{\r} Wes Boss.
+Dialogue: 0,0:00:3.41,0:00:3.49,Default,,0,0,0,,This is Wes Boss.
+Dialogue: 0,0:00:3.49,0:00:3.71,Default,,0,0,0,,This is {\1c&HFF00&\u1}Wes{\r} Boss.
+Dialogue: 0,0:00:3.71,0:00:3.77,Default,,0,0,0,,This is Wes Boss.
+Dialogue: 0,0:00:3.77,0:00:4.11,Default,,0,0,0,,This is Wes {\1c&HFF00&\u1}Boss.{\r}
+Dialogue: 0,0:00:4.23,0:00:4.41,Default,,0,0,0,,{\1c&HFF00&\u1}Here{\r} I am testing out Whisper.
+Dialogue: 0,0:00:4.41,0:00:4.51,Default,,0,0,0,,Here I am testing out Whisper.
+Dialogue: 0,0:00:4.51,0:00:4.57,Default,,0,0,0,,Here {\1c&HFF00&\u1}I{\r} am testing out Whisper.
+Dialogue: 0,0:00:4.57,0:00:4.63,Default,,0,0,0,,Here I am testing out Whisper.
+Dialogue: 0,0:00:4.63,0:00:4.69,Default,,0,0,0,,Here I {\1c&HFF00&\u1}am{\r} testing out Whisper.
+Dialogue: 0,0:00:4.69,0:00:4.75,Default,,0,0,0,,Here I am testing out Whisper.
+Dialogue: 0,0:00:4.75,0:00:5.05,Default,,0,0,0,,Here I am {\1c&HFF00&\u1}testing{\r} out Whisper.
+Dialogue: 0,0:00:5.05,0:00:5.13,Default,,0,0,0,,Here I am testing out Whisper.
+Dialogue: 0,0:00:5.13,0:00:5.27,Default,,0,0,0,,Here I am testing {\1c&HFF00&\u1}out{\r} Whisper.
+Dialogue: 0,0:00:5.27,0:00:5.43,Default,,0,0,0,,Here I am testing out Whisper.
+Dialogue: 0,0:00:5.43,0:00:5.87,Default,,0,0,0,,Here I am testing out {\1c&HFF00&\u1}Whisper.{\r}
+Dialogue: 0,0:00:5.95,0:00:6.13,Default,,0,0,0,,{\1c&HFF00&\u1}Let's{\r} see how the quality is
+Dialogue: 0,0:00:6.13,0:00:6.15,Default,,0,0,0,,Let's see how the quality is
+Dialogue: 0,0:00:6.15,0:00:6.27,Default,,0,0,0,,Let's {\1c&HFF00&\u1}see{\r} how the quality is
+Dialogue: 0,0:00:6.27,0:00:6.33,Default,,0,0,0,,Let's see how the quality is
+Dialogue: 0,0:00:6.33,0:00:6.53,Default,,0,0,0,,Let's see {\1c&HFF00&\u1}how{\r} the quality is
+Dialogue: 0,0:00:6.53,0:00:6.61,Default,,0,0,0,,Let's see how the quality is
+Dialogue: 0,0:00:6.61,0:00:6.74,Default,,0,0,0,,Let's see how {\1c&HFF00&\u1}the{\r} quality is
+Dialogue: 0,0:00:6.74,0:00:6.82,Default,,0,0,0,,Let's see how the quality is
+Dialogue: 0,0:00:6.82,0:00:7.24,Default,,0,0,0,,Let's see how the {\1c&HFF00&\u1}quality{\r} is
+Dialogue: 0,0:00:7.24,0:00:7.42,Default,,0,0,0,,Let's see how the quality is
+Dialogue: 0,0:00:7.42,0:00:7.54,Default,,0,0,0,,Let's see how the quality {\1c&HFF00&\u1}is{\r}
+Dialogue: 0,0:00:7.56,0:00:8.92,Default,,0,0,0,,{\1c&HFF00&\u1}and{\r} let's see how everything else is.
+Dialogue: 0,0:00:8.92,0:00:9.00,Default,,0,0,0,,and let's see how everything else is.
+Dialogue: 0,0:00:9.00,0:00:9.20,Default,,0,0,0,,and {\1c&HFF00&\u1}let's{\r} see how everything else is.
+Dialogue: 0,0:00:9.20,0:00:9.22,Default,,0,0,0,,and let's see how everything else is.
+Dialogue: 0,0:00:9.22,0:00:9.34,Default,,0,0,0,,and let's {\1c&HFF00&\u1}see{\r} how everything else is.
+Dialogue: 0,0:00:9.34,0:00:9.36,Default,,0,0,0,,and let's see how everything else is.
+Dialogue: 0,0:00:9.36,0:00:9.46,Default,,0,0,0,,and let's see {\1c&HFF00&\u1}how{\r} everything else is.
+Dialogue: 0,0:00:9.46,0:00:9.52,Default,,0,0,0,,and let's see how everything else is.
+Dialogue: 0,0:00:9.52,0:00:9.82,Default,,0,0,0,,and let's see how {\1c&HFF00&\u1}everything{\r} else is.
+Dialogue: 0,0:00:9.82,0:00:9.88,Default,,0,0,0,,and let's see how everything else is.
+Dialogue: 0,0:00:9.88,0:00:10.04,Default,,0,0,0,,and let's see how everything {\1c&HFF00&\u1}else{\r} is.
+Dialogue: 0,0:00:10.04,0:00:10.12,Default,,0,0,0,,and let's see how everything else is.
+Dialogue: 0,0:00:10.12,0:00:10.18,Default,,0,0,0,,and let's see how everything else {\1c&HFF00&\u1}is.{\r}

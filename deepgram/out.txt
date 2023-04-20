@@ -1,0 +1,496 @@
+{
+  "metadata": {
+    "transaction_key": "deprecated",
+    "request_id": "d3252c8c-3d2b-4036-a2be-74b612eaacce",
+    "sha256": "2e8f9ca56402be9c61ffa34f9ea8a2859ddbd0853f465d3ad02a7e5475b4b064",
+    "created": "2023-04-20T18:42:02.968Z",
+    "duration": 25.26025,
+    "channels": 1,
+    "models": [
+      "3312b52b-d08e-4072-bfff-124c410b770d"
+    ],
+    "model_info": {
+      "3312b52b-d08e-4072-bfff-124c410b770d": {
+        "name": "general-nova",
+        "version": "2023-03-13.31000",
+        "arch": "nova"
+      }
+    }
+  },
+  "results": {
+    "channels": [
+      {
+        "alternatives": [
+          {
+            "transcript": "Every browser, including Safari, Firefox, whatever, supports just regular mask. But for whatever reason, it's never been unprefixed. In in Chrome. There's probably a good reason behind it, but it seems a bit silly. Yeah. Yeah. The, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the the CSS three please and any of that's",
+            "confidence": 0.9951172,
+            "words": [
+              {
+                "word": "every",
+                "start": 0,
+                "end": 0.24,
+                "confidence": 0.9663086,
+                "punctuated_word": "Every"
+              },
+              {
+                "word": "browser",
+                "start": 0.24,
+                "end": 0.74,
+                "confidence": 0.795166,
+                "punctuated_word": "browser,"
+              },
+              {
+                "word": "including",
+                "start": 0.79999995,
+                "end": 1.28,
+                "confidence": 0.99902344,
+                "punctuated_word": "including"
+              },
+              {
+                "word": "safari",
+                "start": 1.28,
+                "end": 1.78,
+                "confidence": 0.99487305,
+                "punctuated_word": "Safari,"
+              },
+              {
+                "word": "firefox",
+                "start": 1.8399999,
+                "end": 2.32,
+                "confidence": 0.94384766,
+                "punctuated_word": "Firefox,"
+              },
+              {
+                "word": "whatever",
+                "start": 2.32,
+                "end": 2.8,
+                "confidence": 0.78125,
+                "punctuated_word": "whatever,"
+              },
+              {
+                "word": "supports",
+                "start": 2.8,
+                "end": 3.28,
+                "confidence": 0.9970703,
+                "punctuated_word": "supports"
+              },
+              {
+                "word": "just",
+                "start": 3.28,
+                "end": 3.52,
+                "confidence": 0.99316406,
+                "punctuated_word": "just"
+              },
+              {
+                "word": "regular",
+                "start": 3.52,
+                "end": 4,
+                "confidence": 0.83251953,
+                "punctuated_word": "regular"
+              },
+              {
+                "word": "mask",
+                "start": 4,
+                "end": 4.5,
+                "confidence": 0.83691406,
+                "punctuated_word": "mask."
+              },
+              {
+                "word": "but",
+                "start": 5.2799997,
+                "end": 5.44,
+                "confidence": 0.99902344,
+                "punctuated_word": "But"
+              },
+              {
+                "word": "for",
+                "start": 5.44,
+                "end": 5.68,
+                "confidence": 0.9145508,
+                "punctuated_word": "for"
+              },
+              {
+                "word": "whatever",
+                "start": 5.68,
+                "end": 6,
+                "confidence": 1,
+                "punctuated_word": "whatever"
+              },
+              {
+                "word": "reason",
+                "start": 6,
+                "end": 6.48,
+                "confidence": 0.92944336,
+                "punctuated_word": "reason,"
+              },
+              {
+                "word": "it's",
+                "start": 6.48,
+                "end": 6.7999997,
+                "confidence": 0.9970703,
+                "punctuated_word": "it's"
+              },
+              {
+                "word": "never",
+                "start": 6.7999997,
+                "end": 7.12,
+                "confidence": 1,
+                "punctuated_word": "never"
+              },
+              {
+                "word": "been",
+                "start": 7.12,
+                "end": 7.3599997,
+                "confidence": 1,
+                "punctuated_word": "been"
+              },
+              {
+                "word": "unprefixed",
+                "start": 7.3599997,
+                "end": 7.8599997,
+                "confidence": 0.70861816,
+                "punctuated_word": "unprefixed."
+              },
+              {
+                "word": "in",
+                "start": 8.835,
+                "end": 9.235001,
+                "confidence": 0.99658203,
+                "punctuated_word": "In"
+              },
+              {
+                "word": "in",
+                "start": 9.235001,
+                "end": 9.395,
+                "confidence": 0.98876953,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "chrome",
+                "start": 9.395,
+                "end": 9.635,
+                "confidence": 0.69799805,
+                "punctuated_word": "Chrome."
+              },
+              {
+                "word": "there's",
+                "start": 9.635,
+                "end": 9.875,
+                "confidence": 0.99658203,
+                "punctuated_word": "There's"
+              },
+              {
+                "word": "probably",
+                "start": 9.875,
+                "end": 10.075001,
+                "confidence": 0.9995117,
+                "punctuated_word": "probably"
+              },
+              {
+                "word": "a",
+                "start": 10.075001,
+                "end": 10.275001,
+                "confidence": 0.62109375,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "good",
+                "start": 10.275001,
+                "end": 10.435,
+                "confidence": 1,
+                "punctuated_word": "good"
+              },
+              {
+                "word": "reason",
+                "start": 10.435,
+                "end": 10.755,
+                "confidence": 0.9995117,
+                "punctuated_word": "reason"
+              },
+              {
+                "word": "behind",
+                "start": 10.755,
+                "end": 11.075001,
+                "confidence": 1,
+                "punctuated_word": "behind"
+              },
+              {
+                "word": "it",
+                "start": 11.075001,
+                "end": 11.155001,
+                "confidence": 0.7414551,
+                "punctuated_word": "it,"
+              },
+              {
+                "word": "but",
+                "start": 11.155001,
+                "end": 11.395,
+                "confidence": 0.9995117,
+                "punctuated_word": "but"
+              },
+              {
+                "word": "it",
+                "start": 11.395,
+                "end": 11.475,
+                "confidence": 0.99902344,
+                "punctuated_word": "it"
+              },
+              {
+                "word": "seems",
+                "start": 11.475,
+                "end": 11.715,
+                "confidence": 0.99902344,
+                "punctuated_word": "seems"
+              },
+              {
+                "word": "a",
+                "start": 11.715,
+                "end": 11.875,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "bit",
+                "start": 11.875,
+                "end": 12.035,
+                "confidence": 1,
+                "punctuated_word": "bit"
+              },
+              {
+                "word": "silly",
+                "start": 12.035,
+                "end": 12.535,
+                "confidence": 0.99902344,
+                "punctuated_word": "silly."
+              },
+              {
+                "word": "yeah",
+                "start": 13.075001,
+                "end": 13.555,
+                "confidence": 0.97558594,
+                "punctuated_word": "Yeah."
+              },
+              {
+                "word": "yeah",
+                "start": 13.555,
+                "end": 13.795,
+                "confidence": 0.9406738,
+                "punctuated_word": "Yeah."
+              },
+              {
+                "word": "the",
+                "start": 13.795,
+                "end": 14.035,
+                "confidence": 0.6586914,
+                "punctuated_word": "The,"
+              },
+              {
+                "word": "you",
+                "start": 14.035,
+                "end": 14.115,
+                "confidence": 1,
+                "punctuated_word": "you"
+              },
+              {
+                "word": "know",
+                "start": 14.115,
+                "end": 14.355,
+                "confidence": 0.9885254,
+                "punctuated_word": "know,"
+              },
+              {
+                "word": "vendor",
+                "start": 14.355,
+                "end": 14.675,
+                "confidence": 0.9838867,
+                "punctuated_word": "vendor"
+              },
+              {
+                "word": "prefixing",
+                "start": 14.675,
+                "end": 15.175,
+                "confidence": 0.9992676,
+                "punctuated_word": "prefixing"
+              },
+              {
+                "word": "for",
+                "start": 15.315001,
+                "end": 15.555,
+                "confidence": 0.9980469,
+                "punctuated_word": "for"
+              },
+              {
+                "word": "css",
+                "start": 15.555,
+                "end": 16.055,
+                "confidence": 0.9946289,
+                "punctuated_word": "CSS"
+              },
+              {
+                "word": "is",
+                "start": 16.115,
+                "end": 16.275,
+                "confidence": 0.99609375,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "certainly",
+                "start": 16.275,
+                "end": 16.675,
+                "confidence": 0.9995117,
+                "punctuated_word": "certainly"
+              },
+              {
+                "word": "something",
+                "start": 16.675,
+                "end": 17.075,
+                "confidence": 0.9995117,
+                "punctuated_word": "something"
+              },
+              {
+                "word": "that",
+                "start": 17.075,
+                "end": 17.54,
+                "confidence": 0.99902344,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "was",
+                "start": 17.62,
+                "end": 17.86,
+                "confidence": 0.9951172,
+                "punctuated_word": "was"
+              },
+              {
+                "word": "of",
+                "start": 17.86,
+                "end": 18.02,
+                "confidence": 0.9951172,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "a",
+                "start": 18.02,
+                "end": 18.26,
+                "confidence": 0.9902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "time",
+                "start": 18.26,
+                "end": 18.76,
+                "confidence": 0.9995117,
+                "punctuated_word": "time"
+              },
+              {
+                "word": "for",
+                "start": 19.220001,
+                "end": 19.380001,
+                "confidence": 0.9975586,
+                "punctuated_word": "for"
+              },
+              {
+                "word": "anyone",
+                "start": 19.380001,
+                "end": 19.78,
+                "confidence": 0.9980469,
+                "punctuated_word": "anyone"
+              },
+              {
+                "word": "out",
+                "start": 19.78,
+                "end": 19.94,
+                "confidence": 1,
+                "punctuated_word": "out"
+              },
+              {
+                "word": "there",
+                "start": 19.94,
+                "end": 20.1,
+                "confidence": 1,
+                "punctuated_word": "there"
+              },
+              {
+                "word": "who",
+                "start": 20.1,
+                "end": 20.34,
+                "confidence": 0.99609375,
+                "punctuated_word": "who"
+              },
+              {
+                "word": "remembers",
+                "start": 20.34,
+                "end": 20.84,
+                "confidence": 0.9995117,
+                "punctuated_word": "remembers"
+              },
+              {
+                "word": "the",
+                "start": 21.380001,
+                "end": 21.78,
+                "confidence": 0.98828125,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "the",
+                "start": 21.78,
+                "end": 22.18,
+                "confidence": 0.91064453,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "css",
+                "start": 22.18,
+                "end": 22.66,
+                "confidence": 0.984375,
+                "punctuated_word": "CSS"
+              },
+              {
+                "word": "three",
+                "start": 22.66,
+                "end": 22.900002,
+                "confidence": 0.98779297,
+                "punctuated_word": "three"
+              },
+              {
+                "word": "please",
+                "start": 22.900002,
+                "end": 23.220001,
+                "confidence": 0.6586914,
+                "punctuated_word": "please"
+              },
+              {
+                "word": "and",
+                "start": 23.220001,
+                "end": 23.460001,
+                "confidence": 0.78271484,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "any",
+                "start": 23.460001,
+                "end": 23.62,
+                "confidence": 0.984375,
+                "punctuated_word": "any"
+              },
+              {
+                "word": "of",
+                "start": 23.62,
+                "end": 23.78,
+                "confidence": 0.99316406,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "that's",
+                "start": 23.78,
+                "end": 24.02,
+                "confidence": 0.9016113,
+                "punctuated_word": "that's"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

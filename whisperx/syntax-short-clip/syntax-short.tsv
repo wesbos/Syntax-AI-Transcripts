@@ -1,0 +1,8 @@
+start	end	text
+40	5675	Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+5720	9913	whatever reason, it's never been unprefixed in Chrome.
+10000	12189	There's probably a good reason behind it, but it seems a bit silly.
+13122	13363	Yeah.
+13880	13961	Yeah.
+14920	19934	You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+19960	24076	there who remembers the CSS3 pleas and any of that stuff.

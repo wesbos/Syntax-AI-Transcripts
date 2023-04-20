@@ -1,0 +1,16 @@
+{
+  "name": "deepgram",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx deep.ts"
+  },
+  "author": "Wes Bos (https://wesbos.com/)",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@deepgram/sdk": "^1.20.0",
+    "dotenv": "^16.0.3"
+  }
+}

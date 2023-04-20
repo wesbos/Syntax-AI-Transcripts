@@ -1,0 +1,1171 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 384
+PlayResY: 288
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,24,&Hffffff,&Hffffff,&H0,&H0,0,0,0,0,100,100,0,0,1,1,0,2,10,10,10,0
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+
+Dialogue: 0,0:00:0.26,0:00:0.36,Default,,0,0,0,,{\1c&HFF00&\u1}is{\r} auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:0.36,0:00:0.44,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:0.44,0:00:0.66,Default,,0,0,0,,is {\1c&HFF00&\u1}auto{\r} prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:0.66,0:00:0.68,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:0.68,0:00:1.20,Default,,0,0,0,,is auto {\1c&HFF00&\u1}prefixer.{\r} It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:1.20,0:00:1.68,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:1.68,0:00:1.72,Default,,0,0,0,,is auto prefixer. {\1c&HFF00&\u1}It{\r} will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:1.72,0:00:1.76,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:1.76,0:00:1.90,Default,,0,0,0,,is auto prefixer. It {\1c&HFF00&\u1}will{\r} add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:1.90,0:00:2.02,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:2.02,0:00:2.18,Default,,0,0,0,,is auto prefixer. It will {\1c&HFF00&\u1}add{\r} in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:2.18,0:00:2.40,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:2.40,0:00:2.54,Default,,0,0,0,,is auto prefixer. It will add {\1c&HFF00&\u1}in{\r} the vendor prefixes that are required based on which
+Dialogue: 0,0:00:2.54,0:00:2.62,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:2.62,0:00:2.70,Default,,0,0,0,,is auto prefixer. It will add in {\1c&HFF00&\u1}the{\r} vendor prefixes that are required based on which
+Dialogue: 0,0:00:2.70,0:00:2.74,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:2.74,0:00:3.00,Default,,0,0,0,,is auto prefixer. It will add in the {\1c&HFF00&\u1}vendor{\r} prefixes that are required based on which
+Dialogue: 0,0:00:3.00,0:00:3.04,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:3.04,0:00:3.56,Default,,0,0,0,,is auto prefixer. It will add in the vendor {\1c&HFF00&\u1}prefixes{\r} that are required based on which
+Dialogue: 0,0:00:3.56,0:00:3.64,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:3.64,0:00:3.78,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes {\1c&HFF00&\u1}that{\r} are required based on which
+Dialogue: 0,0:00:3.78,0:00:3.84,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:3.84,0:00:3.94,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that {\1c&HFF00&\u1}are{\r} required based on which
+Dialogue: 0,0:00:3.94,0:00:3.98,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:3.98,0:00:5.26,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are {\1c&HFF00&\u1}required{\r} based on which
+Dialogue: 0,0:00:5.26,0:00:5.34,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:5.34,0:00:5.58,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required {\1c&HFF00&\u1}based{\r} on which
+Dialogue: 0,0:00:5.58,0:00:5.66,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:5.66,0:00:5.74,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based {\1c&HFF00&\u1}on{\r} which
+Dialogue: 0,0:00:5.74,0:00:5.78,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on which
+Dialogue: 0,0:00:5.78,0:00:5.92,Default,,0,0,0,,is auto prefixer. It will add in the vendor prefixes that are required based on {\1c&HFF00&\u1}which{\r}
+Dialogue: 0,0:00:5.98,0:00:6.42,Default,,0,0,0,,{\1c&HFF00&\u1}browsers{\r} you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:6.42,0:00:6.46,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:6.46,0:00:6.72,Default,,0,0,0,,browsers {\1c&HFF00&\u1}you're{\r} supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:6.72,0:00:6.74,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:6.74,0:00:7.16,Default,,0,0,0,,browsers you're {\1c&HFF00&\u1}supporting.{\r} It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:7.16,0:00:7.18,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:7.18,0:00:7.56,Default,,0,0,0,,browsers you're supporting. {\1c&HFF00&\u1}It's{\r} pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:7.56,0:00:7.63,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:7.63,0:00:7.85,Default,,0,0,0,,browsers you're supporting. It's {\1c&HFF00&\u1}pretty{\r} simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:7.85,0:00:7.91,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:7.91,0:00:8.25,Default,,0,0,0,,browsers you're supporting. It's pretty {\1c&HFF00&\u1}simple.{\r} And I was actually surprised the other day. I found
+Dialogue: 0,0:00:8.25,0:00:9.39,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:9.39,0:00:9.55,Default,,0,0,0,,browsers you're supporting. It's pretty simple. {\1c&HFF00&\u1}And{\r} I was actually surprised the other day. I found
+Dialogue: 0,0:00:9.55,0:00:9.85,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:9.85,0:00:9.89,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And {\1c&HFF00&\u1}I{\r} was actually surprised the other day. I found
+Dialogue: 0,0:00:9.89,0:00:9.93,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:9.93,0:00:10.01,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I {\1c&HFF00&\u1}was{\r} actually surprised the other day. I found
+Dialogue: 0,0:00:10.01,0:00:10.07,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:10.07,0:00:10.31,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was {\1c&HFF00&\u1}actually{\r} surprised the other day. I found
+Dialogue: 0,0:00:10.31,0:00:10.33,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:10.33,0:00:10.65,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually {\1c&HFF00&\u1}surprised{\r} the other day. I found
+Dialogue: 0,0:00:10.65,0:00:10.67,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:10.67,0:00:10.73,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised {\1c&HFF00&\u1}the{\r} other day. I found
+Dialogue: 0,0:00:10.73,0:00:10.75,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:10.75,0:00:10.87,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the {\1c&HFF00&\u1}other{\r} day. I found
+Dialogue: 0,0:00:10.87,0:00:10.89,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:10.89,0:00:10.99,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other {\1c&HFF00&\u1}day.{\r} I found
+Dialogue: 0,0:00:10.99,0:00:11.03,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:11.03,0:00:11.51,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. {\1c&HFF00&\u1}I{\r} found
+Dialogue: 0,0:00:11.51,0:00:12.47,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+Dialogue: 0,0:00:12.47,0:00:12.69,Default,,0,0,0,,browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I {\1c&HFF00&\u1}found{\r}
+Dialogue: 0,0:00:12.73,0:00:13.01,Default,,0,0,0,,{\1c&HFF00&\u1}something{\r} that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:13.01,0:00:13.03,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:13.03,0:00:13.17,Default,,0,0,0,,something {\1c&HFF00&\u1}that{\r} did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:13.17,0:00:13.37,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:13.37,0:00:13.53,Default,,0,0,0,,something that {\1c&HFF00&\u1}did{\r} not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:13.53,0:00:13.59,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:13.59,0:00:13.77,Default,,0,0,0,,something that did {\1c&HFF00&\u1}not{\r} work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:13.77,0:00:13.83,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:13.83,0:00:14.03,Default,,0,0,0,,something that did not {\1c&HFF00&\u1}work{\r} without a vendor prefix still. What was it?
+Dialogue: 0,0:00:14.03,0:00:14.07,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:14.07,0:00:14.31,Default,,0,0,0,,something that did not work {\1c&HFF00&\u1}without{\r} a vendor prefix still. What was it?
+Dialogue: 0,0:00:14.31,0:00:14.35,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:14.35,0:00:14.37,Default,,0,0,0,,something that did not work without {\1c&HFF00&\u1}a{\r} vendor prefix still. What was it?
+Dialogue: 0,0:00:14.37,0:00:14.41,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:14.41,0:00:14.67,Default,,0,0,0,,something that did not work without a {\1c&HFF00&\u1}vendor{\r} prefix still. What was it?
+Dialogue: 0,0:00:14.67,0:00:14.71,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:14.71,0:00:15.11,Default,,0,0,0,,something that did not work without a vendor {\1c&HFF00&\u1}prefix{\r} still. What was it?
+Dialogue: 0,0:00:15.11,0:00:15.15,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:15.15,0:00:15.43,Default,,0,0,0,,something that did not work without a vendor prefix {\1c&HFF00&\u1}still.{\r} What was it?
+Dialogue: 0,0:00:15.43,0:00:15.53,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:15.53,0:00:15.67,Default,,0,0,0,,something that did not work without a vendor prefix still. {\1c&HFF00&\u1}What{\r} was it?
+Dialogue: 0,0:00:15.67,0:00:15.71,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:15.71,0:00:15.89,Default,,0,0,0,,something that did not work without a vendor prefix still. What {\1c&HFF00&\u1}was{\r} it?
+Dialogue: 0,0:00:15.89,0:00:15.97,Default,,0,0,0,,something that did not work without a vendor prefix still. What was it?
+Dialogue: 0,0:00:15.97,0:00:16.03,Default,,0,0,0,,something that did not work without a vendor prefix still. What was {\1c&HFF00&\u1}it?{\r}
+Dialogue: 0,0:00:16.05,0:00:17.15,Default,,0,0,0,,{\1c&HFF00&\u1}Yeah,{\r} it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:17.15,0:00:17.17,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:17.17,0:00:17.21,Default,,0,0,0,,Yeah, {\1c&HFF00&\u1}it{\r} was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:17.21,0:00:17.27,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:17.27,0:00:17.49,Default,,0,0,0,,Yeah, it {\1c&HFF00&\u1}was...{\r} Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:17.49,0:00:17.51,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:17.51,0:00:18.57,Default,,0,0,0,,Yeah, it was... {\1c&HFF00&\u1}Does{\r} the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:18.57,0:00:18.59,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:18.59,0:00:18.71,Default,,0,0,0,,Yeah, it was... Does {\1c&HFF00&\u1}the{\r} scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:18.71,0:00:18.73,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:18.73,0:00:18.97,Default,,0,0,0,,Yeah, it was... Does the {\1c&HFF00&\u1}scroll{\r} bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:18.97,0:00:18.99,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:18.99,0:00:19.19,Default,,0,0,0,,Yeah, it was... Does the scroll {\1c&HFF00&\u1}bar{\r} stuff work without a vendor prefix?
+Dialogue: 0,0:00:19.19,0:00:19.21,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:19.21,0:00:19.43,Default,,0,0,0,,Yeah, it was... Does the scroll bar {\1c&HFF00&\u1}stuff{\r} work without a vendor prefix?
+Dialogue: 0,0:00:19.43,0:00:19.47,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:19.47,0:00:19.61,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff {\1c&HFF00&\u1}work{\r} without a vendor prefix?
+Dialogue: 0,0:00:19.61,0:00:19.63,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:19.63,0:00:19.85,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work {\1c&HFF00&\u1}without{\r} a vendor prefix?
+Dialogue: 0,0:00:19.85,0:00:19.87,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:19.87,0:00:19.89,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without {\1c&HFF00&\u1}a{\r} vendor prefix?
+Dialogue: 0,0:00:19.89,0:00:19.93,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:19.93,0:00:20.15,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a {\1c&HFF00&\u1}vendor{\r} prefix?
+Dialogue: 0,0:00:20.15,0:00:20.17,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+Dialogue: 0,0:00:20.17,0:00:21.47,Default,,0,0,0,,Yeah, it was... Does the scroll bar stuff work without a vendor {\1c&HFF00&\u1}prefix?{\r}
+Dialogue: 0,0:00:22.13,0:00:22.19,Default,,0,0,0,,{\1c&HFF00&\u1}I{\r} think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:22.19,0:00:22.31,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:22.31,0:00:22.51,Default,,0,0,0,,I {\1c&HFF00&\u1}think{\r} it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:22.51,0:00:22.57,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:22.57,0:00:22.63,Default,,0,0,0,,I think {\1c&HFF00&\u1}it{\r} does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:22.63,0:00:22.75,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:22.75,0:00:23.06,Default,,0,0,0,,I think it {\1c&HFF00&\u1}does,{\r} or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:23.06,0:00:23.20,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:23.20,0:00:23.28,Default,,0,0,0,,I think it does, {\1c&HFF00&\u1}or{\r} maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:23.28,0:00:23.32,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:23.32,0:00:23.50,Default,,0,0,0,,I think it does, or {\1c&HFF00&\u1}maybe{\r} it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:23.50,0:00:23.54,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:23.54,0:00:23.66,Default,,0,0,0,,I think it does, or maybe {\1c&HFF00&\u1}it's{\r} custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:23.66,0:00:23.70,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:23.70,0:00:24.08,Default,,0,0,0,,I think it does, or maybe it's {\1c&HFF00&\u1}custom.{\r} I know the input type of range still requires custom
+Dialogue: 0,0:00:24.08,0:00:24.18,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:24.18,0:00:24.22,Default,,0,0,0,,I think it does, or maybe it's custom. {\1c&HFF00&\u1}I{\r} know the input type of range still requires custom
+Dialogue: 0,0:00:24.22,0:00:24.26,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:24.26,0:00:24.40,Default,,0,0,0,,I think it does, or maybe it's custom. I {\1c&HFF00&\u1}know{\r} the input type of range still requires custom
+Dialogue: 0,0:00:24.40,0:00:24.46,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:24.46,0:00:24.54,Default,,0,0,0,,I think it does, or maybe it's custom. I know {\1c&HFF00&\u1}the{\r} input type of range still requires custom
+Dialogue: 0,0:00:24.54,0:00:24.64,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:24.64,0:00:24.90,Default,,0,0,0,,I think it does, or maybe it's custom. I know the {\1c&HFF00&\u1}input{\r} type of range still requires custom
+Dialogue: 0,0:00:24.90,0:00:24.94,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:24.94,0:00:25.12,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input {\1c&HFF00&\u1}type{\r} of range still requires custom
+Dialogue: 0,0:00:25.12,0:00:25.16,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:25.16,0:00:25.24,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type {\1c&HFF00&\u1}of{\r} range still requires custom
+Dialogue: 0,0:00:25.24,0:00:25.36,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:25.36,0:00:25.78,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of {\1c&HFF00&\u1}range{\r} still requires custom
+Dialogue: 0,0:00:25.78,0:00:25.98,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:25.98,0:00:26.20,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range {\1c&HFF00&\u1}still{\r} requires custom
+Dialogue: 0,0:00:26.20,0:00:26.26,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:26.26,0:00:26.74,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still {\1c&HFF00&\u1}requires{\r} custom
+Dialogue: 0,0:00:26.74,0:00:26.76,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires custom
+Dialogue: 0,0:00:26.76,0:00:27.00,Default,,0,0,0,,I think it does, or maybe it's custom. I know the input type of range still requires {\1c&HFF00&\u1}custom{\r}
+Dialogue: 0,0:00:28.88,0:00:29.14,Default,,0,0,0,,{\1c&HFF00&\u1}things.{\r} But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.14,0:00:29.20,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.20,0:00:29.28,Default,,0,0,0,,things. {\1c&HFF00&\u1}But{\r} that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.28,0:00:29.32,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.32,0:00:29.46,Default,,0,0,0,,things. But {\1c&HFF00&\u1}that's{\r} not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.46,0:00:29.50,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.50,0:00:29.64,Default,,0,0,0,,things. But that's {\1c&HFF00&\u1}not{\r} a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.64,0:00:29.66,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.66,0:00:29.70,Default,,0,0,0,,things. But that's not {\1c&HFF00&\u1}a{\r} vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.70,0:00:29.74,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:29.74,0:00:30.04,Default,,0,0,0,,things. But that's not a {\1c&HFF00&\u1}vendor{\r} prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:30.04,0:00:30.10,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:30.10,0:00:30.60,Default,,0,0,0,,things. But that's not a vendor {\1c&HFF00&\u1}prefix.{\r} I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:30.60,0:00:31.02,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.02,0:00:31.10,Default,,0,0,0,,things. But that's not a vendor prefix. {\1c&HFF00&\u1}I{\r} made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.10,0:00:31.14,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.14,0:00:31.26,Default,,0,0,0,,things. But that's not a vendor prefix. I {\1c&HFF00&\u1}made{\r} a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.26,0:00:31.30,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.30,0:00:31.34,Default,,0,0,0,,things. But that's not a vendor prefix. I made {\1c&HFF00&\u1}a{\r} tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.34,0:00:31.38,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.38,0:00:31.54,Default,,0,0,0,,things. But that's not a vendor prefix. I made a {\1c&HFF00&\u1}tick{\r} talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.54,0:00:31.58,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.58,0:00:31.80,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick {\1c&HFF00&\u1}talk{\r} about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.80,0:00:31.84,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:31.84,0:00:32.02,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk {\1c&HFF00&\u1}about{\r} it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:32.02,0:00:32.06,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:32.06,0:00:32.12,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about {\1c&HFF00&\u1}it{\r} one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:32.12,0:00:32.22,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:32.22,0:00:32.34,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it {\1c&HFF00&\u1}one{\r} sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:32.34,0:00:32.38,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:32.38,0:00:32.60,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one {\1c&HFF00&\u1}sec.{\r} Let's let's pause this a sec.
+Dialogue: 0,0:00:32.60,0:00:32.87,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:32.87,0:00:33.09,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. {\1c&HFF00&\u1}Let's{\r} let's pause this a sec.
+Dialogue: 0,0:00:33.09,0:00:33.25,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:33.25,0:00:33.43,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's {\1c&HFF00&\u1}let's{\r} pause this a sec.
+Dialogue: 0,0:00:33.43,0:00:33.49,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:33.49,0:00:33.71,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's {\1c&HFF00&\u1}pause{\r} this a sec.
+Dialogue: 0,0:00:33.71,0:00:33.77,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:33.77,0:00:33.89,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause {\1c&HFF00&\u1}this{\r} a sec.
+Dialogue: 0,0:00:33.89,0:00:33.95,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:33.95,0:00:34.01,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this {\1c&HFF00&\u1}a{\r} sec.
+Dialogue: 0,0:00:34.01,0:00:34.03,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+Dialogue: 0,0:00:34.03,0:00:34.19,Default,,0,0,0,,things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a {\1c&HFF00&\u1}sec.{\r}
+Dialogue: 0,0:00:35.31,0:00:35.39,Default,,0,0,0,,{\1c&HFF00&\u1}Oh,{\r} it was, it was the CSS gradient.
+Dialogue: 0,0:00:35.39,0:00:35.47,Default,,0,0,0,,Oh, it was, it was the CSS gradient.
+Dialogue: 0,0:00:35.47,0:00:35.53,Default,,0,0,0,,Oh, {\1c&HFF00&\u1}it{\r} was, it was the CSS gradient.
+Dialogue: 0,0:00:35.53,0:00:35.57,Default,,0,0,0,,Oh, it was, it was the CSS gradient.
+Dialogue: 0,0:00:35.57,0:00:35.75,Default,,0,0,0,,Oh, it {\1c&HFF00&\u1}was,{\r} it was the CSS gradient.
+Dialogue: 0,0:00:35.75,0:00:36.37,Default,,0,0,0,,Oh, it was, it was the CSS gradient.
+Dialogue: 0,0:00:36.37,0:00:36.43,Default,,0,0,0,,Oh, it was, {\1c&HFF00&\u1}it{\r} was the CSS gradient.
+Dialogue: 0,0:00:36.43,0:00:36.45,Default,,0,0,0,,Oh, it was, it was the CSS gradient.
+Dialogue: 0,0:00:36.45,0:00:36.59,Default,,0,0,0,,Oh, it was, it {\1c&HFF00&\u1}was{\r} the CSS gradient.
+Dialogue: 0,0:00:36.59,0:00:36.65,Default,,0,0,0,,Oh, it was, it was the CSS gradient.
+Dialogue: 0,0:00:36.65,0:00:36.73,Default,,0,0,0,,Oh, it was, it was {\1c&HFF00&\u1}the{\r} CSS gradient.
+Dialogue: 0,0:00:36.73,0:00:36.77,Default,,0,0,0,,Oh, it was, it was the CSS gradient.
+Dialogue: 0,0:00:36.77,0:00:37.21,Default,,0,0,0,,Oh, it was, it was the {\1c&HFF00&\u1}CSS{\r} gradient.
+Dialogue: 0,0:00:37.21,0:00:37.25,Default,,0,0,0,,Oh, it was, it was the CSS gradient.
+Dialogue: 0,0:00:37.25,0:00:37.77,Default,,0,0,0,,Oh, it was, it was the CSS {\1c&HFF00&\u1}gradient.{\r}
+Dialogue: 0,0:00:38.57,0:00:38.71,Default,,0,0,0,,{\1c&HFF00&\u1}You{\r} have, you have to use dash webkit mask
+Dialogue: 0,0:00:38.71,0:00:38.75,Default,,0,0,0,,You have, you have to use dash webkit mask
+Dialogue: 0,0:00:38.75,0:00:39.07,Default,,0,0,0,,You {\1c&HFF00&\u1}have,{\r} you have to use dash webkit mask
+Dialogue: 0,0:00:39.07,0:00:39.15,Default,,0,0,0,,You have, you have to use dash webkit mask
+Dialogue: 0,0:00:39.15,0:00:39.33,Default,,0,0,0,,You have, {\1c&HFF00&\u1}you{\r} have to use dash webkit mask
+Dialogue: 0,0:00:39.33,0:00:39.41,Default,,0,0,0,,You have, you have to use dash webkit mask
+Dialogue: 0,0:00:39.41,0:00:39.67,Default,,0,0,0,,You have, you {\1c&HFF00&\u1}have{\r} to use dash webkit mask
+Dialogue: 0,0:00:39.67,0:00:39.73,Default,,0,0,0,,You have, you have to use dash webkit mask
+Dialogue: 0,0:00:39.73,0:00:39.83,Default,,0,0,0,,You have, you have {\1c&HFF00&\u1}to{\r} use dash webkit mask
+Dialogue: 0,0:00:39.83,0:00:40.09,Default,,0,0,0,,You have, you have to use dash webkit mask
+Dialogue: 0,0:00:40.09,0:00:40.31,Default,,0,0,0,,You have, you have to {\1c&HFF00&\u1}use{\r} dash webkit mask
+Dialogue: 0,0:00:40.31,0:00:40.69,Default,,0,0,0,,You have, you have to use dash webkit mask
+Dialogue: 0,0:00:40.69,0:00:40.97,Default,,0,0,0,,You have, you have to use {\1c&HFF00&\u1}dash{\r} webkit mask
+Dialogue: 0,0:00:40.97,0:00:41.05,Default,,0,0,0,,You have, you have to use dash webkit mask
+Dialogue: 0,0:00:41.05,0:00:41.55,Default,,0,0,0,,You have, you have to use dash {\1c&HFF00&\u1}webkit{\r} mask
+Dialogue: 0,0:00:41.55,0:00:41.63,Default,,0,0,0,,You have, you have to use dash webkit mask
+Dialogue: 0,0:00:41.63,0:00:42.10,Default,,0,0,0,,You have, you have to use dash webkit {\1c&HFF00&\u1}mask{\r}
+Dialogue: 0,0:00:42.36,0:00:42.68,Default,,0,0,0,,{\1c&HFF00&\u1}instead{\r} of just straight up mask.
+Dialogue: 0,0:00:42.68,0:00:42.72,Default,,0,0,0,,instead of just straight up mask.
+Dialogue: 0,0:00:42.72,0:00:42.76,Default,,0,0,0,,instead {\1c&HFF00&\u1}of{\r} just straight up mask.
+Dialogue: 0,0:00:42.76,0:00:42.82,Default,,0,0,0,,instead of just straight up mask.
+Dialogue: 0,0:00:42.82,0:00:42.98,Default,,0,0,0,,instead of {\1c&HFF00&\u1}just{\r} straight up mask.
+Dialogue: 0,0:00:42.98,0:00:43.00,Default,,0,0,0,,instead of just straight up mask.
+Dialogue: 0,0:00:43.00,0:00:43.28,Default,,0,0,0,,instead of just {\1c&HFF00&\u1}straight{\r} up mask.
+Dialogue: 0,0:00:43.28,0:00:43.32,Default,,0,0,0,,instead of just straight up mask.
+Dialogue: 0,0:00:43.32,0:00:43.44,Default,,0,0,0,,instead of just straight {\1c&HFF00&\u1}up{\r} mask.
+Dialogue: 0,0:00:43.44,0:00:43.54,Default,,0,0,0,,instead of just straight up mask.
+Dialogue: 0,0:00:43.54,0:00:44.00,Default,,0,0,0,,instead of just straight up {\1c&HFF00&\u1}mask.{\r}
+Dialogue: 0,0:00:44.60,0:00:44.90,Default,,0,0,0,,{\1c&HFF00&\u1}And{\r} it's, it's hilarious because even Firefox supports
+Dialogue: 0,0:00:44.90,0:00:44.92,Default,,0,0,0,,And it's, it's hilarious because even Firefox supports
+Dialogue: 0,0:00:44.92,0:00:45.06,Default,,0,0,0,,And {\1c&HFF00&\u1}it's,{\r} it's hilarious because even Firefox supports
+Dialogue: 0,0:00:45.06,0:00:45.24,Default,,0,0,0,,And it's, it's hilarious because even Firefox supports
+Dialogue: 0,0:00:45.24,0:00:45.36,Default,,0,0,0,,And it's, {\1c&HFF00&\u1}it's{\r} hilarious because even Firefox supports
+Dialogue: 0,0:00:45.36,0:00:45.38,Default,,0,0,0,,And it's, it's hilarious because even Firefox supports
+Dialogue: 0,0:00:45.38,0:00:46.00,Default,,0,0,0,,And it's, it's {\1c&HFF00&\u1}hilarious{\r} because even Firefox supports
+Dialogue: 0,0:00:46.00,0:00:46.06,Default,,0,0,0,,And it's, it's hilarious because even Firefox supports
+Dialogue: 0,0:00:46.06,0:00:46.38,Default,,0,0,0,,And it's, it's hilarious {\1c&HFF00&\u1}because{\r} even Firefox supports
+Dialogue: 0,0:00:46.38,0:00:46.60,Default,,0,0,0,,And it's, it's hilarious because even Firefox supports
+Dialogue: 0,0:00:46.60,0:00:46.80,Default,,0,0,0,,And it's, it's hilarious because {\1c&HFF00&\u1}even{\r} Firefox supports
+Dialogue: 0,0:00:46.80,0:00:46.90,Default,,0,0,0,,And it's, it's hilarious because even Firefox supports
+Dialogue: 0,0:00:46.90,0:00:47.56,Default,,0,0,0,,And it's, it's hilarious because even {\1c&HFF00&\u1}Firefox{\r} supports
+Dialogue: 0,0:00:47.56,0:00:48.02,Default,,0,0,0,,And it's, it's hilarious because even Firefox supports
+Dialogue: 0,0:00:48.02,0:00:48.50,Default,,0,0,0,,And it's, it's hilarious because even Firefox {\1c&HFF00&\u1}supports{\r}
+Dialogue: 0,0:00:49.32,0:00:49.44,Default,,0,0,0,,{\1c&HFF00&\u1}the,{\r} the webkit prefixed version as well.
+Dialogue: 0,0:00:49.44,0:00:49.72,Default,,0,0,0,,the, the webkit prefixed version as well.
+Dialogue: 0,0:00:49.72,0:00:49.82,Default,,0,0,0,,the, {\1c&HFF00&\u1}the{\r} webkit prefixed version as well.
+Dialogue: 0,0:00:49.82,0:00:49.86,Default,,0,0,0,,the, the webkit prefixed version as well.
+Dialogue: 0,0:00:49.86,0:00:50.28,Default,,0,0,0,,the, the {\1c&HFF00&\u1}webkit{\r} prefixed version as well.
+Dialogue: 0,0:00:50.28,0:00:50.32,Default,,0,0,0,,the, the webkit prefixed version as well.
+Dialogue: 0,0:00:50.32,0:00:50.70,Default,,0,0,0,,the, the webkit {\1c&HFF00&\u1}prefixed{\r} version as well.
+Dialogue: 0,0:00:50.70,0:00:50.82,Default,,0,0,0,,the, the webkit prefixed version as well.
+Dialogue: 0,0:00:50.82,0:00:51.20,Default,,0,0,0,,the, the webkit prefixed {\1c&HFF00&\u1}version{\r} as well.
+Dialogue: 0,0:00:51.20,0:00:51.84,Default,,0,0,0,,the, the webkit prefixed version as well.
+Dialogue: 0,0:00:51.84,0:00:51.94,Default,,0,0,0,,the, the webkit prefixed version {\1c&HFF00&\u1}as{\r} well.
+Dialogue: 0,0:00:51.94,0:00:51.98,Default,,0,0,0,,the, the webkit prefixed version as well.
+Dialogue: 0,0:00:51.98,0:00:52.16,Default,,0,0,0,,the, the webkit prefixed version as {\1c&HFF00&\u1}well.{\r}
+Dialogue: 0,0:00:52.18,0:00:52.62,Default,,0,0,0,,{\1c&HFF00&\u1}Because{\r} so many people are just doing that.
+Dialogue: 0,0:00:52.62,0:00:52.64,Default,,0,0,0,,Because so many people are just doing that.
+Dialogue: 0,0:00:52.64,0:00:52.82,Default,,0,0,0,,Because {\1c&HFF00&\u1}so{\r} many people are just doing that.
+Dialogue: 0,0:00:52.82,0:00:52.84,Default,,0,0,0,,Because so many people are just doing that.
+Dialogue: 0,0:00:52.84,0:00:52.98,Default,,0,0,0,,Because so {\1c&HFF00&\u1}many{\r} people are just doing that.
+Dialogue: 0,0:00:52.98,0:00:53.02,Default,,0,0,0,,Because so many people are just doing that.
+Dialogue: 0,0:00:53.02,0:00:53.20,Default,,0,0,0,,Because so many {\1c&HFF00&\u1}people{\r} are just doing that.
+Dialogue: 0,0:00:53.20,0:00:53.22,Default,,0,0,0,,Because so many people are just doing that.
+Dialogue: 0,0:00:53.22,0:00:53.30,Default,,0,0,0,,Because so many people {\1c&HFF00&\u1}are{\r} just doing that.
+Dialogue: 0,0:00:53.30,0:00:53.34,Default,,0,0,0,,Because so many people are just doing that.
+Dialogue: 0,0:00:53.34,0:00:53.46,Default,,0,0,0,,Because so many people are {\1c&HFF00&\u1}just{\r} doing that.
+Dialogue: 0,0:00:53.46,0:00:53.50,Default,,0,0,0,,Because so many people are just doing that.
+Dialogue: 0,0:00:53.50,0:00:53.74,Default,,0,0,0,,Because so many people are just {\1c&HFF00&\u1}doing{\r} that.
+Dialogue: 0,0:00:53.74,0:00:53.80,Default,,0,0,0,,Because so many people are just doing that.
+Dialogue: 0,0:00:53.80,0:00:53.94,Default,,0,0,0,,Because so many people are just doing {\1c&HFF00&\u1}that.{\r}
+Dialogue: 0,0:00:53.96,0:00:54.18,Default,,0,0,0,,{\1c&HFF00&\u1}They're{\r} like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:54.18,0:00:54.20,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:54.20,0:00:54.34,Default,,0,0,0,,They're {\1c&HFF00&\u1}like,{\r} oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:54.34,0:00:54.88,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:54.88,0:00:54.98,Default,,0,0,0,,They're like, {\1c&HFF00&\u1}oh,{\r} you forgot to put the regular version on.
+Dialogue: 0,0:00:54.98,0:00:55.00,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:55.00,0:00:55.11,Default,,0,0,0,,They're like, oh, {\1c&HFF00&\u1}you{\r} forgot to put the regular version on.
+Dialogue: 0,0:00:55.11,0:00:55.13,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:55.13,0:00:55.35,Default,,0,0,0,,They're like, oh, you {\1c&HFF00&\u1}forgot{\r} to put the regular version on.
+Dialogue: 0,0:00:55.35,0:00:55.37,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:55.37,0:00:55.43,Default,,0,0,0,,They're like, oh, you forgot {\1c&HFF00&\u1}to{\r} put the regular version on.
+Dialogue: 0,0:00:55.43,0:00:55.47,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:55.47,0:00:55.63,Default,,0,0,0,,They're like, oh, you forgot to {\1c&HFF00&\u1}put{\r} the regular version on.
+Dialogue: 0,0:00:55.63,0:00:55.65,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:55.65,0:00:55.83,Default,,0,0,0,,They're like, oh, you forgot to put {\1c&HFF00&\u1}the{\r} regular version on.
+Dialogue: 0,0:00:55.83,0:00:55.91,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:55.91,0:00:56.21,Default,,0,0,0,,They're like, oh, you forgot to put the {\1c&HFF00&\u1}regular{\r} version on.
+Dialogue: 0,0:00:56.21,0:00:56.25,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:56.25,0:00:56.55,Default,,0,0,0,,They're like, oh, you forgot to put the regular {\1c&HFF00&\u1}version{\r} on.
+Dialogue: 0,0:00:56.55,0:00:56.69,Default,,0,0,0,,They're like, oh, you forgot to put the regular version on.
+Dialogue: 0,0:00:56.69,0:00:56.77,Default,,0,0,0,,They're like, oh, you forgot to put the regular version {\1c&HFF00&\u1}on.{\r}
+Dialogue: 0,0:00:57.15,0:00:57.29,Default,,0,0,0,,{\1c&HFF00&\u1}But{\r} so every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:57.29,0:00:57.65,Default,,0,0,0,,But so every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:57.65,0:00:57.87,Default,,0,0,0,,But {\1c&HFF00&\u1}so{\r} every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:57.87,0:00:58.07,Default,,0,0,0,,But so every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:58.07,0:00:58.25,Default,,0,0,0,,But so {\1c&HFF00&\u1}every{\r} browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:58.25,0:00:58.29,Default,,0,0,0,,But so every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:58.29,0:00:58.69,Default,,0,0,0,,But so every {\1c&HFF00&\u1}browser,{\r} including Safari, Firefox, whatever,
+Dialogue: 0,0:00:58.69,0:00:58.87,Default,,0,0,0,,But so every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:58.87,0:00:59.27,Default,,0,0,0,,But so every browser, {\1c&HFF00&\u1}including{\r} Safari, Firefox, whatever,
+Dialogue: 0,0:00:59.27,0:00:59.29,Default,,0,0,0,,But so every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:59.29,0:00:59.85,Default,,0,0,0,,But so every browser, including {\1c&HFF00&\u1}Safari,{\r} Firefox, whatever,
+Dialogue: 0,0:00:59.85,0:00:59.91,Default,,0,0,0,,But so every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:00:59.91,0:01:0.35,Default,,0,0,0,,But so every browser, including Safari, {\1c&HFF00&\u1}Firefox,{\r} whatever,
+Dialogue: 0,0:01:0.35,0:01:0.39,Default,,0,0,0,,But so every browser, including Safari, Firefox, whatever,
+Dialogue: 0,0:01:0.39,0:01:0.73,Default,,0,0,0,,But so every browser, including Safari, Firefox, {\1c&HFF00&\u1}whatever,{\r}
+Dialogue: 0,0:01:0.83,0:01:1.27,Default,,0,0,0,,{\1c&HFF00&\u1}supports{\r} just regular mask.
+Dialogue: 0,0:01:1.27,0:01:1.31,Default,,0,0,0,,supports just regular mask.
+Dialogue: 0,0:01:1.31,0:01:1.47,Default,,0,0,0,,supports {\1c&HFF00&\u1}just{\r} regular mask.
+Dialogue: 0,0:01:1.47,0:01:1.51,Default,,0,0,0,,supports just regular mask.
+Dialogue: 0,0:01:1.51,0:01:1.81,Default,,0,0,0,,supports just {\1c&HFF00&\u1}regular{\r} mask.
+Dialogue: 0,0:01:1.81,0:01:1.87,Default,,0,0,0,,supports just regular mask.
+Dialogue: 0,0:01:1.87,0:01:2.23,Default,,0,0,0,,supports just regular {\1c&HFF00&\u1}mask.{\r}
+Dialogue: 0,0:01:3.41,0:01:3.53,Default,,0,0,0,,{\1c&HFF00&\u1}But{\r} for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:3.53,0:01:3.57,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:3.57,0:01:3.69,Default,,0,0,0,,But {\1c&HFF00&\u1}for{\r} whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:3.69,0:01:3.73,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:3.73,0:01:4.05,Default,,0,0,0,,But for {\1c&HFF00&\u1}whatever{\r} reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:4.05,0:01:4.11,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:4.11,0:01:4.44,Default,,0,0,0,,But for whatever {\1c&HFF00&\u1}reason,{\r} it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:4.44,0:01:4.62,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:4.62,0:01:4.80,Default,,0,0,0,,But for whatever reason, {\1c&HFF00&\u1}it's{\r} never been unprefixed in Chrome.
+Dialogue: 0,0:01:4.80,0:01:4.88,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:4.88,0:01:5.10,Default,,0,0,0,,But for whatever reason, it's {\1c&HFF00&\u1}never{\r} been unprefixed in Chrome.
+Dialogue: 0,0:01:5.10,0:01:5.16,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:5.16,0:01:5.34,Default,,0,0,0,,But for whatever reason, it's never {\1c&HFF00&\u1}been{\r} unprefixed in Chrome.
+Dialogue: 0,0:01:5.34,0:01:5.42,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:5.42,0:01:6.08,Default,,0,0,0,,But for whatever reason, it's never been {\1c&HFF00&\u1}unprefixed{\r} in Chrome.
+Dialogue: 0,0:01:6.08,0:01:6.92,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:6.92,0:01:7.62,Default,,0,0,0,,But for whatever reason, it's never been unprefixed {\1c&HFF00&\u1}in{\r} Chrome.
+Dialogue: 0,0:01:7.62,0:01:7.68,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in Chrome.
+Dialogue: 0,0:01:7.68,0:01:7.92,Default,,0,0,0,,But for whatever reason, it's never been unprefixed in {\1c&HFF00&\u1}Chrome.{\r}
+Dialogue: 0,0:01:7.94,0:01:8.08,Default,,0,0,0,,{\1c&HFF00&\u1}There's{\r} probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.08,0:01:8.10,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.10,0:01:8.30,Default,,0,0,0,,There's {\1c&HFF00&\u1}probably{\r} a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.30,0:01:8.32,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.32,0:01:8.34,Default,,0,0,0,,There's probably {\1c&HFF00&\u1}a{\r} good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.34,0:01:8.36,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.36,0:01:8.48,Default,,0,0,0,,There's probably a {\1c&HFF00&\u1}good{\r} reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.48,0:01:8.52,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.52,0:01:8.74,Default,,0,0,0,,There's probably a good {\1c&HFF00&\u1}reason{\r} behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.74,0:01:8.76,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:8.76,0:01:9.02,Default,,0,0,0,,There's probably a good reason {\1c&HFF00&\u1}behind{\r} it, but it seems a bit silly.
+Dialogue: 0,0:01:9.02,0:01:9.08,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:9.08,0:01:9.16,Default,,0,0,0,,There's probably a good reason behind {\1c&HFF00&\u1}it,{\r} but it seems a bit silly.
+Dialogue: 0,0:01:9.16,0:01:9.22,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:9.22,0:01:9.38,Default,,0,0,0,,There's probably a good reason behind it, {\1c&HFF00&\u1}but{\r} it seems a bit silly.
+Dialogue: 0,0:01:9.38,0:01:9.42,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:9.42,0:01:9.46,Default,,0,0,0,,There's probably a good reason behind it, but {\1c&HFF00&\u1}it{\r} seems a bit silly.
+Dialogue: 0,0:01:9.46,0:01:9.50,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:9.50,0:01:9.68,Default,,0,0,0,,There's probably a good reason behind it, but it {\1c&HFF00&\u1}seems{\r} a bit silly.
+Dialogue: 0,0:01:9.68,0:01:9.72,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:9.72,0:01:9.76,Default,,0,0,0,,There's probably a good reason behind it, but it seems {\1c&HFF00&\u1}a{\r} bit silly.
+Dialogue: 0,0:01:9.76,0:01:9.78,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:9.78,0:01:9.92,Default,,0,0,0,,There's probably a good reason behind it, but it seems a {\1c&HFF00&\u1}bit{\r} silly.
+Dialogue: 0,0:01:9.92,0:01:9.94,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit silly.
+Dialogue: 0,0:01:9.94,0:01:10.18,Default,,0,0,0,,There's probably a good reason behind it, but it seems a bit {\1c&HFF00&\u1}silly.{\r}
+Dialogue: 0,0:01:11.71,0:01:12.07,Default,,0,0,0,,{\1c&HFF00&\u1}Yeah,{\r} you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:12.07,0:01:12.17,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:12.17,0:01:12.25,Default,,0,0,0,,Yeah, {\1c&HFF00&\u1}you{\r} know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:12.25,0:01:12.29,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:12.29,0:01:12.39,Default,,0,0,0,,Yeah, you {\1c&HFF00&\u1}know,{\r} vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:12.39,0:01:12.41,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:12.41,0:01:12.67,Default,,0,0,0,,Yeah, you know, {\1c&HFF00&\u1}vendor{\r} prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:12.67,0:01:12.71,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:12.71,0:01:13.25,Default,,0,0,0,,Yeah, you know, vendor {\1c&HFF00&\u1}prefixing{\r} for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:13.25,0:01:13.35,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:13.35,0:01:13.49,Default,,0,0,0,,Yeah, you know, vendor prefixing {\1c&HFF00&\u1}for{\r} CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:13.49,0:01:13.55,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:13.55,0:01:14.07,Default,,0,0,0,,Yeah, you know, vendor prefixing for {\1c&HFF00&\u1}CSS{\r} is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:14.07,0:01:14.25,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:14.25,0:01:14.31,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS {\1c&HFF00&\u1}is{\r} certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:14.31,0:01:14.35,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:14.35,0:01:14.67,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is {\1c&HFF00&\u1}certainly{\r} something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:14.67,0:01:14.73,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:14.73,0:01:15.03,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly {\1c&HFF00&\u1}something{\r} that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:15.03,0:01:15.07,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:15.07,0:01:15.25,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something {\1c&HFF00&\u1}that{\r} was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:15.25,0:01:15.69,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:15.69,0:01:15.91,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that {\1c&HFF00&\u1}was{\r} of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:15.91,0:01:15.99,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:15.99,0:01:16.09,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was {\1c&HFF00&\u1}of{\r} a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:16.09,0:01:16.17,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:16.17,0:01:16.21,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of {\1c&HFF00&\u1}a{\r} time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:16.21,0:01:16.33,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:16.33,0:01:16.77,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a {\1c&HFF00&\u1}time{\r} for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:16.77,0:01:17.43,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:17.43,0:01:17.51,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time {\1c&HFF00&\u1}for{\r} anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:17.51,0:01:17.55,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:17.55,0:01:17.81,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for {\1c&HFF00&\u1}anyone{\r} out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:17.81,0:01:17.85,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:17.85,0:01:17.93,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone {\1c&HFF00&\u1}out{\r} there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:17.93,0:01:17.97,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:17.97,0:01:18.11,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out {\1c&HFF00&\u1}there{\r} who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:18.11,0:01:18.13,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:18.13,0:01:18.27,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there {\1c&HFF00&\u1}who{\r} remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:18.27,0:01:18.31,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:18.31,0:01:18.83,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who {\1c&HFF00&\u1}remembers{\r} the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:18.83,0:01:19.47,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:19.47,0:01:19.73,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers {\1c&HFF00&\u1}the{\r} CSS3 please and any of that stuff.
+Dialogue: 0,0:01:19.73,0:01:20.09,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:20.09,0:01:20.90,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the {\1c&HFF00&\u1}CSS3{\r} please and any of that stuff.
+Dialogue: 0,0:01:20.90,0:01:20.96,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:20.96,0:01:21.32,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 {\1c&HFF00&\u1}please{\r} and any of that stuff.
+Dialogue: 0,0:01:21.32,0:01:21.40,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:21.40,0:01:21.46,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please {\1c&HFF00&\u1}and{\r} any of that stuff.
+Dialogue: 0,0:01:21.46,0:01:21.52,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:21.52,0:01:21.72,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and {\1c&HFF00&\u1}any{\r} of that stuff.
+Dialogue: 0,0:01:21.72,0:01:21.74,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:21.74,0:01:21.78,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any {\1c&HFF00&\u1}of{\r} that stuff.
+Dialogue: 0,0:01:21.78,0:01:21.82,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:21.82,0:01:21.98,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of {\1c&HFF00&\u1}that{\r} stuff.
+Dialogue: 0,0:01:21.98,0:01:22.02,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+Dialogue: 0,0:01:22.02,0:01:22.26,Default,,0,0,0,,Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that {\1c&HFF00&\u1}stuff.{\r}
+Dialogue: 0,0:01:22.28,0:01:22.44,Default,,0,0,0,,{\1c&HFF00&\u1}When{\r} for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:22.44,0:01:23.06,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.06,0:01:23.20,Default,,0,0,0,,When {\1c&HFF00&\u1}for{\r} a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.20,0:01:23.22,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.22,0:01:23.24,Default,,0,0,0,,When for {\1c&HFF00&\u1}a{\r} very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.24,0:01:23.28,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.28,0:01:23.50,Default,,0,0,0,,When for a {\1c&HFF00&\u1}very{\r} long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.50,0:01:23.56,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.56,0:01:23.78,Default,,0,0,0,,When for a very {\1c&HFF00&\u1}long{\r} time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.78,0:01:23.84,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:23.84,0:01:24.12,Default,,0,0,0,,When for a very long {\1c&HFF00&\u1}time{\r} and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:24.12,0:01:24.16,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:24.16,0:01:24.22,Default,,0,0,0,,When for a very long time {\1c&HFF00&\u1}and{\r} for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:24.22,0:01:25.32,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:25.32,0:01:25.60,Default,,0,0,0,,When for a very long time and {\1c&HFF00&\u1}for,{\r} you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:25.60,0:01:25.78,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:25.78,0:01:25.88,Default,,0,0,0,,When for a very long time and for, {\1c&HFF00&\u1}you{\r} know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:25.88,0:01:25.90,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:25.90,0:01:26.02,Default,,0,0,0,,When for a very long time and for, you {\1c&HFF00&\u1}know,{\r} many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.02,0:01:26.06,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.06,0:01:26.24,Default,,0,0,0,,When for a very long time and for, you know, {\1c&HFF00&\u1}many{\r} years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.24,0:01:26.26,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.26,0:01:26.50,Default,,0,0,0,,When for a very long time and for, you know, many {\1c&HFF00&\u1}years{\r} in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.50,0:01:26.56,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.56,0:01:26.62,Default,,0,0,0,,When for a very long time and for, you know, many years {\1c&HFF00&\u1}in{\r} the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.62,0:01:26.64,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.64,0:01:26.72,Default,,0,0,0,,When for a very long time and for, you know, many years in {\1c&HFF00&\u1}the{\r} start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.72,0:01:26.74,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.74,0:01:26.96,Default,,0,0,0,,When for a very long time and for, you know, many years in the {\1c&HFF00&\u1}start{\r} of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.96,0:01:26.98,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:26.98,0:01:27.04,Default,,0,0,0,,When for a very long time and for, you know, many years in the start {\1c&HFF00&\u1}of{\r} my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:27.04,0:01:27.08,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:27.08,0:01:27.28,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of {\1c&HFF00&\u1}my{\r} development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:27.28,0:01:27.32,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:27.32,0:01:27.82,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my {\1c&HFF00&\u1}development{\r} career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:27.82,0:01:27.88,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:27.88,0:01:28.34,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development {\1c&HFF00&\u1}career,{\r} CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:28.34,0:01:28.38,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:28.38,0:01:28.90,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, {\1c&HFF00&\u1}CSS{\r} hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:28.90,0:01:29.20,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:29.20,0:01:29.48,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS {\1c&HFF00&\u1}hadn't{\r} seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:29.48,0:01:29.52,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:29.52,0:01:29.72,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't {\1c&HFF00&\u1}seen{\r} any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:29.72,0:01:29.80,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:29.80,0:01:29.96,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen {\1c&HFF00&\u1}any{\r} major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:29.96,0:01:30.06,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:30.06,0:01:30.38,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any {\1c&HFF00&\u1}major{\r} improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:30.38,0:01:30.42,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:30.42,0:01:30.92,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major {\1c&HFF00&\u1}improvements{\r} and it was kind of like a done thing.
+Dialogue: 0,0:01:30.92,0:01:31.36,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:31.36,0:01:31.46,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements {\1c&HFF00&\u1}and{\r} it was kind of like a done thing.
+Dialogue: 0,0:01:31.46,0:01:31.48,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:31.48,0:01:31.52,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and {\1c&HFF00&\u1}it{\r} was kind of like a done thing.
+Dialogue: 0,0:01:31.52,0:01:31.56,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:31.56,0:01:31.66,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it {\1c&HFF00&\u1}was{\r} kind of like a done thing.
+Dialogue: 0,0:01:31.66,0:01:31.72,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:31.72,0:01:31.90,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was {\1c&HFF00&\u1}kind{\r} of like a done thing.
+Dialogue: 0,0:01:31.90,0:01:31.92,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:31.92,0:01:31.98,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind {\1c&HFF00&\u1}of{\r} like a done thing.
+Dialogue: 0,0:01:31.98,0:01:32.02,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:32.02,0:01:32.20,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of {\1c&HFF00&\u1}like{\r} a done thing.
+Dialogue: 0,0:01:32.20,0:01:32.30,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:32.30,0:01:32.36,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like {\1c&HFF00&\u1}a{\r} done thing.
+Dialogue: 0,0:01:32.36,0:01:32.42,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:32.42,0:01:32.68,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a {\1c&HFF00&\u1}done{\r} thing.
+Dialogue: 0,0:01:32.68,0:01:32.74,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+Dialogue: 0,0:01:32.74,0:01:33.04,Default,,0,0,0,,When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done {\1c&HFF00&\u1}thing.{\r}
+Dialogue: 0,0:01:33.10,0:01:33.16,Default,,0,0,0,,{\1c&HFF00&\u1}It{\r} was like, this is CSS, right?
+Dialogue: 0,0:01:33.16,0:01:33.20,Default,,0,0,0,,It was like, this is CSS, right?
+Dialogue: 0,0:01:33.20,0:01:33.34,Default,,0,0,0,,It {\1c&HFF00&\u1}was{\r} like, this is CSS, right?
+Dialogue: 0,0:01:33.34,0:01:33.38,Default,,0,0,0,,It was like, this is CSS, right?
+Dialogue: 0,0:01:33.38,0:01:33.54,Default,,0,0,0,,It was {\1c&HFF00&\u1}like,{\r} this is CSS, right?
+Dialogue: 0,0:01:33.54,0:01:33.56,Default,,0,0,0,,It was like, this is CSS, right?
+Dialogue: 0,0:01:33.56,0:01:33.72,Default,,0,0,0,,It was like, {\1c&HFF00&\u1}this{\r} is CSS, right?
+Dialogue: 0,0:01:33.72,0:01:33.80,Default,,0,0,0,,It was like, this is CSS, right?
+Dialogue: 0,0:01:33.80,0:01:33.86,Default,,0,0,0,,It was like, this {\1c&HFF00&\u1}is{\r} CSS, right?
+Dialogue: 0,0:01:33.86,0:01:33.90,Default,,0,0,0,,It was like, this is CSS, right?
+Dialogue: 0,0:01:33.90,0:01:34.47,Default,,0,0,0,,It was like, this is {\1c&HFF00&\u1}CSS,{\r} right?
+Dialogue: 0,0:01:34.47,0:01:34.53,Default,,0,0,0,,It was like, this is CSS, right?
+Dialogue: 0,0:01:34.53,0:01:34.71,Default,,0,0,0,,It was like, this is CSS, {\1c&HFF00&\u1}right?{\r}
+Dialogue: 0,0:01:35.81,0:01:35.89,Default,,0,0,0,,{\1c&HFF00&\u1}But{\r} then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:35.89,0:01:35.91,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:35.91,0:01:36.01,Default,,0,0,0,,But {\1c&HFF00&\u1}then{\r} when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:36.01,0:01:36.05,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:36.05,0:01:36.17,Default,,0,0,0,,But then {\1c&HFF00&\u1}when{\r} CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:36.17,0:01:36.19,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:36.19,0:01:36.59,Default,,0,0,0,,But then when {\1c&HFF00&\u1}CSS3{\r} dropped, we got all these new features,
+Dialogue: 0,0:01:36.59,0:01:36.97,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:36.97,0:01:37.35,Default,,0,0,0,,But then when CSS3 {\1c&HFF00&\u1}dropped,{\r} we got all these new features,
+Dialogue: 0,0:01:37.35,0:01:37.39,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:37.39,0:01:37.49,Default,,0,0,0,,But then when CSS3 dropped, {\1c&HFF00&\u1}we{\r} got all these new features,
+Dialogue: 0,0:01:37.49,0:01:37.53,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:37.53,0:01:37.63,Default,,0,0,0,,But then when CSS3 dropped, we {\1c&HFF00&\u1}got{\r} all these new features,
+Dialogue: 0,0:01:37.63,0:01:37.65,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:37.65,0:01:37.79,Default,,0,0,0,,But then when CSS3 dropped, we got {\1c&HFF00&\u1}all{\r} these new features,
+Dialogue: 0,0:01:37.79,0:01:37.81,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:37.81,0:01:37.95,Default,,0,0,0,,But then when CSS3 dropped, we got all {\1c&HFF00&\u1}these{\r} new features,
+Dialogue: 0,0:01:37.95,0:01:37.99,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:37.99,0:01:38.11,Default,,0,0,0,,But then when CSS3 dropped, we got all these {\1c&HFF00&\u1}new{\r} features,
+Dialogue: 0,0:01:38.11,0:01:38.15,Default,,0,0,0,,But then when CSS3 dropped, we got all these new features,
+Dialogue: 0,0:01:38.15,0:01:38.55,Default,,0,0,0,,But then when CSS3 dropped, we got all these new {\1c&HFF00&\u1}features,{\r}
+Dialogue: 0,0:01:38.57,0:01:38.63,Default,,0,0,0,,{\1c&HFF00&\u1}the{\r} browser prefixes and all that stuff,
+Dialogue: 0,0:01:38.63,0:01:38.67,Default,,0,0,0,,the browser prefixes and all that stuff,
+Dialogue: 0,0:01:38.67,0:01:38.99,Default,,0,0,0,,the {\1c&HFF00&\u1}browser{\r} prefixes and all that stuff,
+Dialogue: 0,0:01:38.99,0:01:39.03,Default,,0,0,0,,the browser prefixes and all that stuff,
+Dialogue: 0,0:01:39.03,0:01:39.53,Default,,0,0,0,,the browser {\1c&HFF00&\u1}prefixes{\r} and all that stuff,
+Dialogue: 0,0:01:39.53,0:01:39.55,Default,,0,0,0,,the browser prefixes and all that stuff,
+Dialogue: 0,0:01:39.55,0:01:39.61,Default,,0,0,0,,the browser prefixes {\1c&HFF00&\u1}and{\r} all that stuff,
+Dialogue: 0,0:01:39.61,0:01:39.65,Default,,0,0,0,,the browser prefixes and all that stuff,
+Dialogue: 0,0:01:39.65,0:01:39.73,Default,,0,0,0,,the browser prefixes and {\1c&HFF00&\u1}all{\r} that stuff,
+Dialogue: 0,0:01:39.73,0:01:39.75,Default,,0,0,0,,the browser prefixes and all that stuff,
+Dialogue: 0,0:01:39.75,0:01:39.89,Default,,0,0,0,,the browser prefixes and all {\1c&HFF00&\u1}that{\r} stuff,
+Dialogue: 0,0:01:39.89,0:01:39.91,Default,,0,0,0,,the browser prefixes and all that stuff,
+Dialogue: 0,0:01:39.91,0:01:40.13,Default,,0,0,0,,the browser prefixes and all that {\1c&HFF00&\u1}stuff,{\r}
+Dialogue: 0,0:01:40.55,0:01:40.65,Default,,0,0,0,,{\1c&HFF00&\u1}and{\r} then that really is what exploded the need
+Dialogue: 0,0:01:40.65,0:01:40.69,Default,,0,0,0,,and then that really is what exploded the need
+Dialogue: 0,0:01:40.69,0:01:40.91,Default,,0,0,0,,and {\1c&HFF00&\u1}then{\r} that really is what exploded the need
+Dialogue: 0,0:01:40.91,0:01:41.07,Default,,0,0,0,,and then that really is what exploded the need
+Dialogue: 0,0:01:41.07,0:01:41.27,Default,,0,0,0,,and then {\1c&HFF00&\u1}that{\r} really is what exploded the need
+Dialogue: 0,0:01:41.27,0:01:41.49,Default,,0,0,0,,and then that really is what exploded the need
+Dialogue: 0,0:01:41.49,0:01:41.91,Default,,0,0,0,,and then that {\1c&HFF00&\u1}really{\r} is what exploded the need
+Dialogue: 0,0:01:41.91,0:01:42.13,Default,,0,0,0,,and then that really is what exploded the need
+Dialogue: 0,0:01:42.13,0:01:42.21,Default,,0,0,0,,and then that really {\1c&HFF00&\u1}is{\r} what exploded the need
+Dialogue: 0,0:01:42.21,0:01:42.27,Default,,0,0,0,,and then that really is what exploded the need
+Dialogue: 0,0:01:42.27,0:01:42.43,Default,,0,0,0,,and then that really is {\1c&HFF00&\u1}what{\r} exploded the need
+Dialogue: 0,0:01:42.43,0:01:42.49,Default,,0,0,0,,and then that really is what exploded the need
+Dialogue: 0,0:01:42.49,0:01:43.15,Default,,0,0,0,,and then that really is what {\1c&HFF00&\u1}exploded{\r} the need
+Dialogue: 0,0:01:43.15,0:01:43.21,Default,,0,0,0,,and then that really is what exploded the need
+Dialogue: 0,0:01:43.21,0:01:43.31,Default,,0,0,0,,and then that really is what exploded {\1c&HFF00&\u1}the{\r} need
+Dialogue: 0,0:01:43.31,0:01:43.39,Default,,0,0,0,,and then that really is what exploded the need
+Dialogue: 0,0:01:43.39,0:01:43.65,Default,,0,0,0,,and then that really is what exploded the {\1c&HFF00&\u1}need{\r}
+Dialogue: 0,0:01:43.69,0:01:43.83,Default,,0,0,0,,{\1c&HFF00&\u1}for{\r} tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:43.83,0:01:43.95,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:43.95,0:01:44.35,Default,,0,0,0,,for {\1c&HFF00&\u1}tools{\r} like SAS, because now all of a sudden
+Dialogue: 0,0:01:44.35,0:01:44.45,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:44.45,0:01:44.67,Default,,0,0,0,,for tools {\1c&HFF00&\u1}like{\r} SAS, because now all of a sudden
+Dialogue: 0,0:01:44.67,0:01:44.77,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:44.77,0:01:45.15,Default,,0,0,0,,for tools like {\1c&HFF00&\u1}SAS,{\r} because now all of a sudden
+Dialogue: 0,0:01:45.15,0:01:45.21,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:45.21,0:01:45.45,Default,,0,0,0,,for tools like SAS, {\1c&HFF00&\u1}because{\r} now all of a sudden
+Dialogue: 0,0:01:45.45,0:01:45.47,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:45.47,0:01:45.57,Default,,0,0,0,,for tools like SAS, because {\1c&HFF00&\u1}now{\r} all of a sudden
+Dialogue: 0,0:01:45.57,0:01:45.61,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:45.61,0:01:45.71,Default,,0,0,0,,for tools like SAS, because now {\1c&HFF00&\u1}all{\r} of a sudden
+Dialogue: 0,0:01:45.71,0:01:45.73,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:45.73,0:01:45.77,Default,,0,0,0,,for tools like SAS, because now all {\1c&HFF00&\u1}of{\r} a sudden
+Dialogue: 0,0:01:45.77,0:01:45.79,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:45.79,0:01:45.83,Default,,0,0,0,,for tools like SAS, because now all of {\1c&HFF00&\u1}a{\r} sudden
+Dialogue: 0,0:01:45.83,0:01:45.85,Default,,0,0,0,,for tools like SAS, because now all of a sudden
+Dialogue: 0,0:01:45.85,0:01:46.07,Default,,0,0,0,,for tools like SAS, because now all of a {\1c&HFF00&\u1}sudden{\r}
+Dialogue: 0,0:01:46.11,0:01:46.23,Default,,0,0,0,,{\1c&HFF00&\u1}you{\r} have these great new features,
+Dialogue: 0,0:01:46.23,0:01:46.29,Default,,0,0,0,,you have these great new features,
+Dialogue: 0,0:01:46.29,0:01:46.59,Default,,0,0,0,,you {\1c&HFF00&\u1}have{\r} these great new features,
+Dialogue: 0,0:01:46.59,0:01:46.91,Default,,0,0,0,,you have these great new features,
+Dialogue: 0,0:01:46.91,0:01:47.07,Default,,0,0,0,,you have {\1c&HFF00&\u1}these{\r} great new features,
+Dialogue: 0,0:01:47.07,0:01:47.13,Default,,0,0,0,,you have these great new features,
+Dialogue: 0,0:01:47.13,0:01:47.35,Default,,0,0,0,,you have these {\1c&HFF00&\u1}great{\r} new features,
+Dialogue: 0,0:01:47.35,0:01:47.41,Default,,0,0,0,,you have these great new features,
+Dialogue: 0,0:01:47.41,0:01:47.55,Default,,0,0,0,,you have these great {\1c&HFF00&\u1}new{\r} features,
+Dialogue: 0,0:01:47.55,0:01:47.63,Default,,0,0,0,,you have these great new features,
+Dialogue: 0,0:01:47.63,0:01:48.13,Default,,0,0,0,,you have these great new {\1c&HFF00&\u1}features,{\r}
+Dialogue: 0,0:01:48.99,0:01:49.33,Default,,0,0,0,,{\1c&HFF00&\u1}you{\r} have browser support that's kind of all over the place,
+Dialogue: 0,0:01:49.33,0:01:49.37,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:49.37,0:01:49.49,Default,,0,0,0,,you {\1c&HFF00&\u1}have{\r} browser support that's kind of all over the place,
+Dialogue: 0,0:01:49.49,0:01:49.59,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:49.59,0:01:49.97,Default,,0,0,0,,you have {\1c&HFF00&\u1}browser{\r} support that's kind of all over the place,
+Dialogue: 0,0:01:49.97,0:01:50.01,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:50.01,0:01:50.31,Default,,0,0,0,,you have browser {\1c&HFF00&\u1}support{\r} that's kind of all over the place,
+Dialogue: 0,0:01:50.31,0:01:50.35,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:50.35,0:01:50.51,Default,,0,0,0,,you have browser support {\1c&HFF00&\u1}that's{\r} kind of all over the place,
+Dialogue: 0,0:01:50.51,0:01:50.53,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:50.53,0:01:50.69,Default,,0,0,0,,you have browser support that's {\1c&HFF00&\u1}kind{\r} of all over the place,
+Dialogue: 0,0:01:50.69,0:01:50.71,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:50.71,0:01:50.75,Default,,0,0,0,,you have browser support that's kind {\1c&HFF00&\u1}of{\r} all over the place,
+Dialogue: 0,0:01:50.75,0:01:50.83,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:50.83,0:01:50.99,Default,,0,0,0,,you have browser support that's kind of {\1c&HFF00&\u1}all{\r} over the place,
+Dialogue: 0,0:01:50.99,0:01:51.07,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:51.07,0:01:51.23,Default,,0,0,0,,you have browser support that's kind of all {\1c&HFF00&\u1}over{\r} the place,
+Dialogue: 0,0:01:51.23,0:01:51.25,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:51.25,0:01:51.33,Default,,0,0,0,,you have browser support that's kind of all over {\1c&HFF00&\u1}the{\r} place,
+Dialogue: 0,0:01:51.33,0:01:51.37,Default,,0,0,0,,you have browser support that's kind of all over the place,
+Dialogue: 0,0:01:51.37,0:01:51.71,Default,,0,0,0,,you have browser support that's kind of all over the {\1c&HFF00&\u1}place,{\r}
+Dialogue: 0,0:01:51.99,0:01:52.13,Default,,0,0,0,,{\1c&HFF00&\u1}you{\r} put in a tool intermediary to there.
+Dialogue: 0,0:01:52.13,0:01:52.15,Default,,0,0,0,,you put in a tool intermediary to there.
+Dialogue: 0,0:01:52.15,0:01:52.27,Default,,0,0,0,,you {\1c&HFF00&\u1}put{\r} in a tool intermediary to there.
+Dialogue: 0,0:01:52.27,0:01:52.33,Default,,0,0,0,,you put in a tool intermediary to there.
+Dialogue: 0,0:01:52.33,0:01:52.41,Default,,0,0,0,,you put {\1c&HFF00&\u1}in{\r} a tool intermediary to there.
+Dialogue: 0,0:01:52.41,0:01:52.45,Default,,0,0,0,,you put in a tool intermediary to there.
+Dialogue: 0,0:01:52.45,0:01:52.49,Default,,0,0,0,,you put in {\1c&HFF00&\u1}a{\r} tool intermediary to there.
+Dialogue: 0,0:01:52.49,0:01:52.53,Default,,0,0,0,,you put in a tool intermediary to there.
+Dialogue: 0,0:01:52.53,0:01:52.85,Default,,0,0,0,,you put in a {\1c&HFF00&\u1}tool{\r} intermediary to there.
+Dialogue: 0,0:01:52.85,0:01:52.93,Default,,0,0,0,,you put in a tool intermediary to there.
+Dialogue: 0,0:01:52.93,0:01:53.61,Default,,0,0,0,,you put in a tool {\1c&HFF00&\u1}intermediary{\r} to there.
+Dialogue: 0,0:01:53.61,0:01:53.65,Default,,0,0,0,,you put in a tool intermediary to there.
+Dialogue: 0,0:01:53.65,0:01:53.73,Default,,0,0,0,,you put in a tool intermediary {\1c&HFF00&\u1}to{\r} there.
+Dialogue: 0,0:01:53.73,0:01:53.77,Default,,0,0,0,,you put in a tool intermediary to there.
+Dialogue: 0,0:01:53.77,0:01:53.95,Default,,0,0,0,,you put in a tool intermediary to {\1c&HFF00&\u1}there.{\r}
+Dialogue: 0,0:01:54.27,0:01:54.37,Default,,0,0,0,,{\1c&HFF00&\u1}And{\r} then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:54.37,0:01:54.39,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:54.39,0:01:54.53,Default,,0,0,0,,And {\1c&HFF00&\u1}then{\r} as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:54.53,0:01:54.67,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:54.67,0:01:54.77,Default,,0,0,0,,And then {\1c&HFF00&\u1}as{\r} the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:54.77,0:01:54.81,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:54.81,0:01:54.89,Default,,0,0,0,,And then as {\1c&HFF00&\u1}the{\r} web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:54.89,0:01:54.93,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:54.93,0:01:55.09,Default,,0,0,0,,And then as the {\1c&HFF00&\u1}web{\r} has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:55.09,0:01:55.11,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:55.11,0:01:55.25,Default,,0,0,0,,And then as the web {\1c&HFF00&\u1}has{\r} evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:55.25,0:01:55.31,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:55.31,0:01:55.73,Default,,0,0,0,,And then as the web has {\1c&HFF00&\u1}evolved,{\r} we've gotten more and more CSS properties,
+Dialogue: 0,0:01:55.73,0:01:55.77,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:55.77,0:01:55.94,Default,,0,0,0,,And then as the web has evolved, {\1c&HFF00&\u1}we've{\r} gotten more and more CSS properties,
+Dialogue: 0,0:01:55.94,0:01:55.98,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:55.98,0:01:56.22,Default,,0,0,0,,And then as the web has evolved, we've {\1c&HFF00&\u1}gotten{\r} more and more CSS properties,
+Dialogue: 0,0:01:56.22,0:01:56.28,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:56.28,0:01:56.44,Default,,0,0,0,,And then as the web has evolved, we've gotten {\1c&HFF00&\u1}more{\r} and more CSS properties,
+Dialogue: 0,0:01:56.44,0:01:56.46,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:56.46,0:01:56.52,Default,,0,0,0,,And then as the web has evolved, we've gotten more {\1c&HFF00&\u1}and{\r} more CSS properties,
+Dialogue: 0,0:01:56.52,0:01:56.56,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:56.56,0:01:56.70,Default,,0,0,0,,And then as the web has evolved, we've gotten more and {\1c&HFF00&\u1}more{\r} CSS properties,
+Dialogue: 0,0:01:56.70,0:01:56.76,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:56.76,0:01:57.20,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more {\1c&HFF00&\u1}CSS{\r} properties,
+Dialogue: 0,0:01:57.20,0:01:57.24,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS properties,
+Dialogue: 0,0:01:57.24,0:01:57.68,Default,,0,0,0,,And then as the web has evolved, we've gotten more and more CSS {\1c&HFF00&\u1}properties,{\r}
+Dialogue: 0,0:01:57.70,0:01:57.80,Default,,0,0,0,,{\1c&HFF00&\u1}but{\r} it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:57.80,0:01:57.82,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:57.82,0:01:57.94,Default,,0,0,0,,but {\1c&HFF00&\u1}it's{\r} also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:57.94,0:01:57.96,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:57.96,0:01:58.20,Default,,0,0,0,,but it's {\1c&HFF00&\u1}also{\r} gotten more and more dialed in in terms of
+Dialogue: 0,0:01:58.20,0:01:58.26,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:58.26,0:01:58.50,Default,,0,0,0,,but it's also {\1c&HFF00&\u1}gotten{\r} more and more dialed in in terms of
+Dialogue: 0,0:01:58.50,0:01:58.56,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:58.56,0:01:58.74,Default,,0,0,0,,but it's also gotten {\1c&HFF00&\u1}more{\r} and more dialed in in terms of
+Dialogue: 0,0:01:58.74,0:01:58.78,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:58.78,0:01:58.84,Default,,0,0,0,,but it's also gotten more {\1c&HFF00&\u1}and{\r} more dialed in in terms of
+Dialogue: 0,0:01:58.84,0:01:58.86,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:58.86,0:01:59.08,Default,,0,0,0,,but it's also gotten more and {\1c&HFF00&\u1}more{\r} dialed in in terms of
+Dialogue: 0,0:01:59.08,0:01:59.14,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:59.14,0:01:59.52,Default,,0,0,0,,but it's also gotten more and more {\1c&HFF00&\u1}dialed{\r} in in terms of
+Dialogue: 0,0:01:59.52,0:01:59.64,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:59.64,0:01:59.74,Default,,0,0,0,,but it's also gotten more and more dialed {\1c&HFF00&\u1}in{\r} in terms of
+Dialogue: 0,0:01:59.74,0:01:59.78,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:59.78,0:01:59.86,Default,,0,0,0,,but it's also gotten more and more dialed in {\1c&HFF00&\u1}in{\r} terms of
+Dialogue: 0,0:01:59.86,0:01:59.92,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:01:59.92,0:02:0.18,Default,,0,0,0,,but it's also gotten more and more dialed in in {\1c&HFF00&\u1}terms{\r} of
+Dialogue: 0,0:02:0.18,0:02:0.26,Default,,0,0,0,,but it's also gotten more and more dialed in in terms of
+Dialogue: 0,0:02:0.26,0:02:0.34,Default,,0,0,0,,but it's also gotten more and more dialed in in terms {\1c&HFF00&\u1}of{\r}
+Dialogue: 0,0:02:1.04,0:02:1.24,Default,,0,0,0,,{\1c&HFF00&\u1}how{\r} these things are being added to the browser.
+Dialogue: 0,0:02:1.24,0:02:1.30,Default,,0,0,0,,how these things are being added to the browser.
+Dialogue: 0,0:02:1.30,0:02:1.46,Default,,0,0,0,,how {\1c&HFF00&\u1}these{\r} things are being added to the browser.
+Dialogue: 0,0:02:1.46,0:02:1.50,Default,,0,0,0,,how these things are being added to the browser.
+Dialogue: 0,0:02:1.50,0:02:1.70,Default,,0,0,0,,how these {\1c&HFF00&\u1}things{\r} are being added to the browser.
+Dialogue: 0,0:02:1.70,0:02:1.74,Default,,0,0,0,,how these things are being added to the browser.
+Dialogue: 0,0:02:1.74,0:02:1.84,Default,,0,0,0,,how these things {\1c&HFF00&\u1}are{\r} being added to the browser.
+Dialogue: 0,0:02:1.84,0:02:1.88,Default,,0,0,0,,how these things are being added to the browser.
+Dialogue: 0,0:02:1.88,0:02:2.04,Default,,0,0,0,,how these things are {\1c&HFF00&\u1}being{\r} added to the browser.
+Dialogue: 0,0:02:2.04,0:02:2.12,Default,,0,0,0,,how these things are being added to the browser.
+Dialogue: 0,0:02:2.12,0:02:2.30,Default,,0,0,0,,how these things are being {\1c&HFF00&\u1}added{\r} to the browser.
+Dialogue: 0,0:02:2.30,0:02:2.34,Default,,0,0,0,,how these things are being added to the browser.
+Dialogue: 0,0:02:2.34,0:02:2.40,Default,,0,0,0,,how these things are being added {\1c&HFF00&\u1}to{\r} the browser.
+Dialogue: 0,0:02:2.40,0:02:2.42,Default,,0,0,0,,how these things are being added to the browser.
+Dialogue: 0,0:02:2.42,0:02:2.50,Default,,0,0,0,,how these things are being added to {\1c&HFF00&\u1}the{\r} browser.
+Dialogue: 0,0:02:2.50,0:02:2.54,Default,,0,0,0,,how these things are being added to the browser.
+Dialogue: 0,0:02:2.54,0:02:2.90,Default,,0,0,0,,how these things are being added to the {\1c&HFF00&\u1}browser.{\r}
+Dialogue: 0,0:02:2.96,0:02:3.10,Default,,0,0,0,,{\1c&HFF00&\u1}So{\r} now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:3.10,0:02:3.14,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:3.14,0:02:3.24,Default,,0,0,0,,So {\1c&HFF00&\u1}now{\r} we're not having to think so much about prefixes.
+Dialogue: 0,0:02:3.24,0:02:3.26,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:3.26,0:02:3.42,Default,,0,0,0,,So now {\1c&HFF00&\u1}we're{\r} not having to think so much about prefixes.
+Dialogue: 0,0:02:3.42,0:02:3.46,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:3.46,0:02:3.58,Default,,0,0,0,,So now we're {\1c&HFF00&\u1}not{\r} having to think so much about prefixes.
+Dialogue: 0,0:02:3.58,0:02:3.66,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:3.66,0:02:4.00,Default,,0,0,0,,So now we're not {\1c&HFF00&\u1}having{\r} to think so much about prefixes.
+Dialogue: 0,0:02:4.00,0:02:4.06,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:4.06,0:02:4.18,Default,,0,0,0,,So now we're not having {\1c&HFF00&\u1}to{\r} think so much about prefixes.
+Dialogue: 0,0:02:4.18,0:02:4.56,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:4.56,0:02:4.78,Default,,0,0,0,,So now we're not having to {\1c&HFF00&\u1}think{\r} so much about prefixes.
+Dialogue: 0,0:02:4.78,0:02:4.82,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:4.82,0:02:4.96,Default,,0,0,0,,So now we're not having to think {\1c&HFF00&\u1}so{\r} much about prefixes.
+Dialogue: 0,0:02:4.96,0:02:5.00,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:5.00,0:02:5.16,Default,,0,0,0,,So now we're not having to think so {\1c&HFF00&\u1}much{\r} about prefixes.
+Dialogue: 0,0:02:5.16,0:02:5.22,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:5.22,0:02:5.46,Default,,0,0,0,,So now we're not having to think so much {\1c&HFF00&\u1}about{\r} prefixes.
+Dialogue: 0,0:02:5.46,0:02:5.52,Default,,0,0,0,,So now we're not having to think so much about prefixes.
+Dialogue: 0,0:02:5.52,0:02:6.08,Default,,0,0,0,,So now we're not having to think so much about {\1c&HFF00&\u1}prefixes.{\r}
+Dialogue: 0,0:02:6.54,0:02:6.64,Default,,0,0,0,,{\1c&HFF00&\u1}But{\r} the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:6.64,0:02:6.68,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:6.68,0:02:6.78,Default,,0,0,0,,But {\1c&HFF00&\u1}the{\r} problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:6.78,0:02:6.80,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:6.80,0:02:7.14,Default,,0,0,0,,But the {\1c&HFF00&\u1}problem{\r} there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:7.14,0:02:7.18,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:7.18,0:02:7.34,Default,,0,0,0,,But the problem {\1c&HFF00&\u1}there{\r} is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:7.34,0:02:7.40,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:7.40,0:02:7.46,Default,,0,0,0,,But the problem there {\1c&HFF00&\u1}is{\r} that then becomes people just aren't thinking about
+Dialogue: 0,0:02:7.46,0:02:7.50,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:7.50,0:02:7.64,Default,,0,0,0,,But the problem there is {\1c&HFF00&\u1}that{\r} then becomes people just aren't thinking about
+Dialogue: 0,0:02:7.64,0:02:7.82,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:7.82,0:02:8.02,Default,,0,0,0,,But the problem there is that {\1c&HFF00&\u1}then{\r} becomes people just aren't thinking about
+Dialogue: 0,0:02:8.02,0:02:8.06,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:8.06,0:02:8.46,Default,,0,0,0,,But the problem there is that then {\1c&HFF00&\u1}becomes{\r} people just aren't thinking about
+Dialogue: 0,0:02:8.46,0:02:8.56,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:8.56,0:02:8.78,Default,,0,0,0,,But the problem there is that then becomes {\1c&HFF00&\u1}people{\r} just aren't thinking about
+Dialogue: 0,0:02:8.78,0:02:8.82,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:8.82,0:02:8.94,Default,,0,0,0,,But the problem there is that then becomes people {\1c&HFF00&\u1}just{\r} aren't thinking about
+Dialogue: 0,0:02:8.94,0:02:8.98,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:8.98,0:02:9.12,Default,,0,0,0,,But the problem there is that then becomes people just {\1c&HFF00&\u1}aren't{\r} thinking about
+Dialogue: 0,0:02:9.12,0:02:9.14,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:9.14,0:02:9.42,Default,,0,0,0,,But the problem there is that then becomes people just aren't {\1c&HFF00&\u1}thinking{\r} about
+Dialogue: 0,0:02:9.42,0:02:9.46,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking about
+Dialogue: 0,0:02:9.46,0:02:9.66,Default,,0,0,0,,But the problem there is that then becomes people just aren't thinking {\1c&HFF00&\u1}about{\r}
+Dialogue: 0,0:02:10.12,0:02:10.24,Default,,0,0,0,,{\1c&HFF00&\u1}any{\r} of that stuff at all.
+Dialogue: 0,0:02:10.24,0:02:10.26,Default,,0,0,0,,any of that stuff at all.
+Dialogue: 0,0:02:10.26,0:02:10.32,Default,,0,0,0,,any {\1c&HFF00&\u1}of{\r} that stuff at all.
+Dialogue: 0,0:02:10.32,0:02:10.36,Default,,0,0,0,,any of that stuff at all.
+Dialogue: 0,0:02:10.36,0:02:10.48,Default,,0,0,0,,any of {\1c&HFF00&\u1}that{\r} stuff at all.
+Dialogue: 0,0:02:10.48,0:02:10.52,Default,,0,0,0,,any of that stuff at all.
+Dialogue: 0,0:02:10.52,0:02:10.76,Default,,0,0,0,,any of that {\1c&HFF00&\u1}stuff{\r} at all.
+Dialogue: 0,0:02:10.76,0:02:10.78,Default,,0,0,0,,any of that stuff at all.
+Dialogue: 0,0:02:10.78,0:02:10.84,Default,,0,0,0,,any of that stuff {\1c&HFF00&\u1}at{\r} all.
+Dialogue: 0,0:02:10.84,0:02:10.94,Default,,0,0,0,,any of that stuff at all.
+Dialogue: 0,0:02:10.94,0:02:11.06,Default,,0,0,0,,any of that stuff at {\1c&HFF00&\u1}all.{\r}
+Dialogue: 0,0:02:11.46,0:02:11.54,Default,,0,0,0,,{\1c&HFF00&\u1}And{\r} then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:11.54,0:02:11.56,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:11.56,0:02:11.66,Default,,0,0,0,,And {\1c&HFF00&\u1}then{\r} that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:11.66,0:02:11.70,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:11.70,0:02:11.84,Default,,0,0,0,,And then {\1c&HFF00&\u1}that's{\r} why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:11.84,0:02:11.88,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:11.88,0:02:12.02,Default,,0,0,0,,And then that's {\1c&HFF00&\u1}why{\r} you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.02,0:02:12.06,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.06,0:02:12.20,Default,,0,0,0,,And then that's why {\1c&HFF00&\u1}you{\r} do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.20,0:02:12.22,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.22,0:02:12.40,Default,,0,0,0,,And then that's why you {\1c&HFF00&\u1}do{\r} end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.40,0:02:12.48,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.48,0:02:12.56,Default,,0,0,0,,And then that's why you do {\1c&HFF00&\u1}end{\r} up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.56,0:02:12.62,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.62,0:02:12.68,Default,,0,0,0,,And then that's why you do end {\1c&HFF00&\u1}up{\r} using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.68,0:02:12.76,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.76,0:02:12.96,Default,,0,0,0,,And then that's why you do end up {\1c&HFF00&\u1}using{\r} a tool like Post-CSS to say,
+Dialogue: 0,0:02:12.96,0:02:13.00,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:13.00,0:02:13.04,Default,,0,0,0,,And then that's why you do end up using {\1c&HFF00&\u1}a{\r} tool like Post-CSS to say,
+Dialogue: 0,0:02:13.04,0:02:13.08,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:13.08,0:02:13.36,Default,,0,0,0,,And then that's why you do end up using a {\1c&HFF00&\u1}tool{\r} like Post-CSS to say,
+Dialogue: 0,0:02:13.36,0:02:13.38,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:13.38,0:02:13.54,Default,,0,0,0,,And then that's why you do end up using a tool {\1c&HFF00&\u1}like{\r} Post-CSS to say,
+Dialogue: 0,0:02:13.54,0:02:13.58,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:13.58,0:02:14.32,Default,,0,0,0,,And then that's why you do end up using a tool like {\1c&HFF00&\u1}Post-CSS{\r} to say,
+Dialogue: 0,0:02:14.32,0:02:14.36,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:14.36,0:02:14.47,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS {\1c&HFF00&\u1}to{\r} say,
+Dialogue: 0,0:02:14.47,0:02:14.51,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to say,
+Dialogue: 0,0:02:14.51,0:02:14.71,Default,,0,0,0,,And then that's why you do end up using a tool like Post-CSS to {\1c&HFF00&\u1}say,{\r}
+Dialogue: 0,0:02:14.77,0:02:14.85,Default,,0,0,0,,{\1c&HFF00&\u1}you{\r} know, just just...
+Dialogue: 0,0:02:14.85,0:02:14.87,Default,,0,0,0,,you know, just just...
+Dialogue: 0,0:02:14.87,0:02:15.05,Default,,0,0,0,,you {\1c&HFF00&\u1}know,{\r} just just...
+Dialogue: 0,0:02:15.05,0:02:15.09,Default,,0,0,0,,you know, just just...
+Dialogue: 0,0:02:15.09,0:02:15.25,Default,,0,0,0,,you know, {\1c&HFF00&\u1}just{\r} just...
+Dialogue: 0,0:02:15.25,0:02:15.89,Default,,0,0,0,,you know, just just...
+Dialogue: 0,0:02:15.89,0:02:16.09,Default,,0,0,0,,you know, just {\1c&HFF00&\u1}just...{\r}
+Dialogue: 0,0:02:16.79,0:02:16.87,Default,,0,0,0,,{\1c&HFF00&\u1}you{\r} know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:16.87,0:02:16.89,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:16.89,0:02:17.01,Default,,0,0,0,,you {\1c&HFF00&\u1}know,{\r} post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:17.01,0:02:17.07,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:17.07,0:02:17.29,Default,,0,0,0,,you know, {\1c&HFF00&\u1}post{\r} compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:17.29,0:02:17.33,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:17.33,0:02:17.73,Default,,0,0,0,,you know, post {\1c&HFF00&\u1}compile{\r} my CSS or just compile my CSS,
+Dialogue: 0,0:02:17.73,0:02:17.75,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:17.75,0:02:17.95,Default,,0,0,0,,you know, post compile {\1c&HFF00&\u1}my{\r} CSS or just compile my CSS,
+Dialogue: 0,0:02:17.95,0:02:18.29,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:18.29,0:02:18.79,Default,,0,0,0,,you know, post compile my {\1c&HFF00&\u1}CSS{\r} or just compile my CSS,
+Dialogue: 0,0:02:18.79,0:02:18.85,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:18.85,0:02:18.95,Default,,0,0,0,,you know, post compile my CSS {\1c&HFF00&\u1}or{\r} just compile my CSS,
+Dialogue: 0,0:02:18.95,0:02:19.05,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:19.05,0:02:19.21,Default,,0,0,0,,you know, post compile my CSS or {\1c&HFF00&\u1}just{\r} compile my CSS,
+Dialogue: 0,0:02:19.21,0:02:19.27,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:19.27,0:02:19.69,Default,,0,0,0,,you know, post compile my CSS or just {\1c&HFF00&\u1}compile{\r} my CSS,
+Dialogue: 0,0:02:19.69,0:02:19.71,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:19.71,0:02:19.85,Default,,0,0,0,,you know, post compile my CSS or just compile {\1c&HFF00&\u1}my{\r} CSS,
+Dialogue: 0,0:02:19.85,0:02:19.89,Default,,0,0,0,,you know, post compile my CSS or just compile my CSS,
+Dialogue: 0,0:02:19.89,0:02:20.37,Default,,0,0,0,,you know, post compile my CSS or just compile my {\1c&HFF00&\u1}CSS,{\r}
+Dialogue: 0,0:02:20.73,0:02:20.89,Default,,0,0,0,,{\1c&HFF00&\u1}take{\r} care of anything I might have thought about
+Dialogue: 0,0:02:20.89,0:02:20.93,Default,,0,0,0,,take care of anything I might have thought about
+Dialogue: 0,0:02:20.93,0:02:21.07,Default,,0,0,0,,take {\1c&HFF00&\u1}care{\r} of anything I might have thought about
+Dialogue: 0,0:02:21.07,0:02:21.09,Default,,0,0,0,,take care of anything I might have thought about
+Dialogue: 0,0:02:21.09,0:02:21.13,Default,,0,0,0,,take care {\1c&HFF00&\u1}of{\r} anything I might have thought about
+Dialogue: 0,0:02:21.13,0:02:21.19,Default,,0,0,0,,take care of anything I might have thought about
+Dialogue: 0,0:02:21.19,0:02:21.49,Default,,0,0,0,,take care of {\1c&HFF00&\u1}anything{\r} I might have thought about
+Dialogue: 0,0:02:21.49,0:02:21.55,Default,,0,0,0,,take care of anything I might have thought about
+Dialogue: 0,0:02:21.55,0:02:21.63,Default,,0,0,0,,take care of anything {\1c&HFF00&\u1}I{\r} might have thought about
+Dialogue: 0,0:02:21.63,0:02:21.73,Default,,0,0,0,,take care of anything I might have thought about
+Dialogue: 0,0:02:21.73,0:02:21.93,Default,,0,0,0,,take care of anything I {\1c&HFF00&\u1}might{\r} have thought about
+Dialogue: 0,0:02:21.93,0:02:22.13,Default,,0,0,0,,take care of anything I might have thought about
+Dialogue: 0,0:02:22.13,0:02:22.29,Default,,0,0,0,,take care of anything I might {\1c&HFF00&\u1}have{\r} thought about
+Dialogue: 0,0:02:22.29,0:02:22.65,Default,,0,0,0,,take care of anything I might have thought about
+Dialogue: 0,0:02:22.65,0:02:22.89,Default,,0,0,0,,take care of anything I might have {\1c&HFF00&\u1}thought{\r} about
+Dialogue: 0,0:02:22.89,0:02:22.93,Default,,0,0,0,,take care of anything I might have thought about
+Dialogue: 0,0:02:22.93,0:02:23.15,Default,,0,0,0,,take care of anything I might have thought {\1c&HFF00&\u1}about{\r}
+Dialogue: 0,0:02:23.21,0:02:23.29,Default,,0,0,0,,{\1c&HFF00&\u1}or{\r} not, you know, based on whatever browsers
+Dialogue: 0,0:02:23.29,0:02:23.33,Default,,0,0,0,,or not, you know, based on whatever browsers
+Dialogue: 0,0:02:23.33,0:02:23.47,Default,,0,0,0,,or {\1c&HFF00&\u1}not,{\r} you know, based on whatever browsers
+Dialogue: 0,0:02:23.47,0:02:23.59,Default,,0,0,0,,or not, you know, based on whatever browsers
+Dialogue: 0,0:02:23.59,0:02:23.85,Default,,0,0,0,,or not, {\1c&HFF00&\u1}you{\r} know, based on whatever browsers
+Dialogue: 0,0:02:23.85,0:02:23.87,Default,,0,0,0,,or not, you know, based on whatever browsers
+Dialogue: 0,0:02:23.87,0:02:24.03,Default,,0,0,0,,or not, you {\1c&HFF00&\u1}know,{\r} based on whatever browsers
+Dialogue: 0,0:02:24.03,0:02:24.05,Default,,0,0,0,,or not, you know, based on whatever browsers
+Dialogue: 0,0:02:24.05,0:02:24.29,Default,,0,0,0,,or not, you know, {\1c&HFF00&\u1}based{\r} on whatever browsers
+Dialogue: 0,0:02:24.29,0:02:24.35,Default,,0,0,0,,or not, you know, based on whatever browsers
+Dialogue: 0,0:02:24.35,0:02:24.41,Default,,0,0,0,,or not, you know, based {\1c&HFF00&\u1}on{\r} whatever browsers
+Dialogue: 0,0:02:24.41,0:02:24.43,Default,,0,0,0,,or not, you know, based on whatever browsers
+Dialogue: 0,0:02:24.43,0:02:24.73,Default,,0,0,0,,or not, you know, based on {\1c&HFF00&\u1}whatever{\r} browsers
+Dialogue: 0,0:02:24.73,0:02:24.77,Default,,0,0,0,,or not, you know, based on whatever browsers
+Dialogue: 0,0:02:24.77,0:02:25.15,Default,,0,0,0,,or not, you know, based on whatever {\1c&HFF00&\u1}browsers{\r}
+Dialogue: 0,0:02:25.21,0:02:25.25,Default,,0,0,0,,{\1c&HFF00&\u1}I{\r} need to support and just do it.
+Dialogue: 0,0:02:25.25,0:02:25.27,Default,,0,0,0,,I need to support and just do it.
+Dialogue: 0,0:02:25.27,0:02:25.43,Default,,0,0,0,,I {\1c&HFF00&\u1}need{\r} to support and just do it.
+Dialogue: 0,0:02:25.43,0:02:25.47,Default,,0,0,0,,I need to support and just do it.
+Dialogue: 0,0:02:25.47,0:02:25.55,Default,,0,0,0,,I need {\1c&HFF00&\u1}to{\r} support and just do it.
+Dialogue: 0,0:02:25.55,0:02:25.59,Default,,0,0,0,,I need to support and just do it.
+Dialogue: 0,0:02:25.59,0:02:25.99,Default,,0,0,0,,I need to {\1c&HFF00&\u1}support{\r} and just do it.
+Dialogue: 0,0:02:25.99,0:02:26.40,Default,,0,0,0,,I need to support and just do it.
+Dialogue: 0,0:02:26.40,0:02:26.48,Default,,0,0,0,,I need to support {\1c&HFF00&\u1}and{\r} just do it.
+Dialogue: 0,0:02:26.48,0:02:26.50,Default,,0,0,0,,I need to support and just do it.
+Dialogue: 0,0:02:26.50,0:02:26.66,Default,,0,0,0,,I need to support and {\1c&HFF00&\u1}just{\r} do it.
+Dialogue: 0,0:02:26.66,0:02:26.70,Default,,0,0,0,,I need to support and just do it.
+Dialogue: 0,0:02:26.70,0:02:26.82,Default,,0,0,0,,I need to support and just {\1c&HFF00&\u1}do{\r} it.
+Dialogue: 0,0:02:26.82,0:02:26.88,Default,,0,0,0,,I need to support and just do it.
+Dialogue: 0,0:02:26.88,0:02:26.94,Default,,0,0,0,,I need to support and just do {\1c&HFF00&\u1}it.{\r}
+Dialogue: 0,0:02:27.32,0:02:27.46,Default,,0,0,0,,{\1c&HFF00&\u1}Sort{\r} of like Babel, right?
+Dialogue: 0,0:02:27.46,0:02:27.50,Default,,0,0,0,,Sort of like Babel, right?
+Dialogue: 0,0:02:27.50,0:02:27.56,Default,,0,0,0,,Sort {\1c&HFF00&\u1}of{\r} like Babel, right?
+Dialogue: 0,0:02:27.56,0:02:27.60,Default,,0,0,0,,Sort of like Babel, right?
+Dialogue: 0,0:02:27.60,0:02:27.74,Default,,0,0,0,,Sort of {\1c&HFF00&\u1}like{\r} Babel, right?
+Dialogue: 0,0:02:27.74,0:02:27.78,Default,,0,0,0,,Sort of like Babel, right?
+Dialogue: 0,0:02:27.78,0:02:28.10,Default,,0,0,0,,Sort of like {\1c&HFF00&\u1}Babel,{\r} right?
+Dialogue: 0,0:02:28.10,0:02:28.22,Default,,0,0,0,,Sort of like Babel, right?
+Dialogue: 0,0:02:28.22,0:02:28.42,Default,,0,0,0,,Sort of like Babel, {\1c&HFF00&\u1}right?{\r}
+Dialogue: 0,0:02:28.56,0:02:28.78,Default,,0,0,0,,{\1c&HFF00&\u1}Where{\r} before Babel came out,
+Dialogue: 0,0:02:28.78,0:02:29.66,Default,,0,0,0,,Where before Babel came out,
+Dialogue: 0,0:02:29.66,0:02:29.94,Default,,0,0,0,,Where {\1c&HFF00&\u1}before{\r} Babel came out,
+Dialogue: 0,0:02:29.94,0:02:29.98,Default,,0,0,0,,Where before Babel came out,
+Dialogue: 0,0:02:29.98,0:02:30.28,Default,,0,0,0,,Where before {\1c&HFF00&\u1}Babel{\r} came out,
+Dialogue: 0,0:02:30.28,0:02:30.32,Default,,0,0,0,,Where before Babel came out,
+Dialogue: 0,0:02:30.32,0:02:30.50,Default,,0,0,0,,Where before Babel {\1c&HFF00&\u1}came{\r} out,
+Dialogue: 0,0:02:30.50,0:02:30.54,Default,,0,0,0,,Where before Babel came out,
+Dialogue: 0,0:02:30.54,0:02:30.64,Default,,0,0,0,,Where before Babel came {\1c&HFF00&\u1}out,{\r}
+Dialogue: 0,0:02:30.66,0:02:30.74,Default,,0,0,0,,{\1c&HFF00&\u1}you{\r} were having to like really think about,
+Dialogue: 0,0:02:30.74,0:02:30.76,Default,,0,0,0,,you were having to like really think about,
+Dialogue: 0,0:02:30.76,0:02:30.86,Default,,0,0,0,,you {\1c&HFF00&\u1}were{\r} having to like really think about,
+Dialogue: 0,0:02:30.86,0:02:30.88,Default,,0,0,0,,you were having to like really think about,
+Dialogue: 0,0:02:30.88,0:02:31.04,Default,,0,0,0,,you were {\1c&HFF00&\u1}having{\r} to like really think about,
+Dialogue: 0,0:02:31.04,0:02:31.08,Default,,0,0,0,,you were having to like really think about,
+Dialogue: 0,0:02:31.08,0:02:31.14,Default,,0,0,0,,you were having {\1c&HFF00&\u1}to{\r} like really think about,
+Dialogue: 0,0:02:31.14,0:02:31.16,Default,,0,0,0,,you were having to like really think about,
+Dialogue: 0,0:02:31.16,0:02:31.32,Default,,0,0,0,,you were having to {\1c&HFF00&\u1}like{\r} really think about,
+Dialogue: 0,0:02:31.32,0:02:31.36,Default,,0,0,0,,you were having to like really think about,
+Dialogue: 0,0:02:31.36,0:02:31.60,Default,,0,0,0,,you were having to like {\1c&HFF00&\u1}really{\r} think about,
+Dialogue: 0,0:02:31.60,0:02:31.64,Default,,0,0,0,,you were having to like really think about,
+Dialogue: 0,0:02:31.64,0:02:31.82,Default,,0,0,0,,you were having to like really {\1c&HFF00&\u1}think{\r} about,
+Dialogue: 0,0:02:31.82,0:02:31.86,Default,,0,0,0,,you were having to like really think about,
+Dialogue: 0,0:02:31.86,0:02:32.10,Default,,0,0,0,,you were having to like really think {\1c&HFF00&\u1}about,{\r}
+Dialogue: 0,0:02:32.12,0:02:33.04,Default,,0,0,0,,{\1c&HFF00&\u1}well,{\r} Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:33.04,0:02:33.08,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:33.08,0:02:33.40,Default,,0,0,0,,well, {\1c&HFF00&\u1}Babel{\r} came out pretty early in the scheme of things,
+Dialogue: 0,0:02:33.40,0:02:33.46,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:33.46,0:02:33.62,Default,,0,0,0,,well, Babel {\1c&HFF00&\u1}came{\r} out pretty early in the scheme of things,
+Dialogue: 0,0:02:33.62,0:02:33.68,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:33.68,0:02:33.78,Default,,0,0,0,,well, Babel came {\1c&HFF00&\u1}out{\r} pretty early in the scheme of things,
+Dialogue: 0,0:02:33.78,0:02:33.82,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:33.82,0:02:34.04,Default,,0,0,0,,well, Babel came out {\1c&HFF00&\u1}pretty{\r} early in the scheme of things,
+Dialogue: 0,0:02:34.04,0:02:34.10,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:34.10,0:02:34.32,Default,,0,0,0,,well, Babel came out pretty {\1c&HFF00&\u1}early{\r} in the scheme of things,
+Dialogue: 0,0:02:34.32,0:02:34.36,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:34.36,0:02:34.42,Default,,0,0,0,,well, Babel came out pretty early {\1c&HFF00&\u1}in{\r} the scheme of things,
+Dialogue: 0,0:02:34.42,0:02:34.46,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:34.46,0:02:34.58,Default,,0,0,0,,well, Babel came out pretty early in {\1c&HFF00&\u1}the{\r} scheme of things,
+Dialogue: 0,0:02:34.58,0:02:34.78,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:34.78,0:02:35.00,Default,,0,0,0,,well, Babel came out pretty early in the {\1c&HFF00&\u1}scheme{\r} of things,
+Dialogue: 0,0:02:35.00,0:02:35.02,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:35.02,0:02:35.08,Default,,0,0,0,,well, Babel came out pretty early in the scheme {\1c&HFF00&\u1}of{\r} things,
+Dialogue: 0,0:02:35.08,0:02:35.10,Default,,0,0,0,,well, Babel came out pretty early in the scheme of things,
+Dialogue: 0,0:02:35.10,0:02:35.34,Default,,0,0,0,,well, Babel came out pretty early in the scheme of {\1c&HFF00&\u1}things,{\r}
+Dialogue: 0,0:02:35.38,0:02:35.52,Default,,0,0,0,,{\1c&HFF00&\u1}but{\r} it's basically allowing you to target
+Dialogue: 0,0:02:35.52,0:02:35.90,Default,,0,0,0,,but it's basically allowing you to target
+Dialogue: 0,0:02:35.90,0:02:36.00,Default,,0,0,0,,but {\1c&HFF00&\u1}it's{\r} basically allowing you to target
+Dialogue: 0,0:02:36.00,0:02:36.06,Default,,0,0,0,,but it's basically allowing you to target
+Dialogue: 0,0:02:36.06,0:02:36.52,Default,,0,0,0,,but it's {\1c&HFF00&\u1}basically{\r} allowing you to target
+Dialogue: 0,0:02:36.52,0:02:36.56,Default,,0,0,0,,but it's basically allowing you to target
+Dialogue: 0,0:02:36.56,0:02:36.88,Default,,0,0,0,,but it's basically {\1c&HFF00&\u1}allowing{\r} you to target
+Dialogue: 0,0:02:36.88,0:02:36.92,Default,,0,0,0,,but it's basically allowing you to target
+Dialogue: 0,0:02:36.92,0:02:37.04,Default,,0,0,0,,but it's basically allowing {\1c&HFF00&\u1}you{\r} to target
+Dialogue: 0,0:02:37.04,0:02:37.14,Default,,0,0,0,,but it's basically allowing you to target
+Dialogue: 0,0:02:37.14,0:02:37.34,Default,,0,0,0,,but it's basically allowing you {\1c&HFF00&\u1}to{\r} target
+Dialogue: 0,0:02:37.34,0:02:37.46,Default,,0,0,0,,but it's basically allowing you to target
+Dialogue: 0,0:02:37.46,0:02:37.86,Default,,0,0,0,,but it's basically allowing you to {\1c&HFF00&\u1}target{\r}
+Dialogue: 0,0:02:38.18,0:02:38.65,Default,,0,0,0,,{\1c&HFF00&\u1}specific{\r} browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:38.65,0:02:38.73,Default,,0,0,0,,specific browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:38.73,0:02:39.15,Default,,0,0,0,,specific {\1c&HFF00&\u1}browser{\r} versions to make sure that stuff supported.
+Dialogue: 0,0:02:39.15,0:02:39.29,Default,,0,0,0,,specific browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:39.29,0:02:39.73,Default,,0,0,0,,specific browser {\1c&HFF00&\u1}versions{\r} to make sure that stuff supported.
+Dialogue: 0,0:02:39.73,0:02:40.11,Default,,0,0,0,,specific browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:40.11,0:02:40.35,Default,,0,0,0,,specific browser versions {\1c&HFF00&\u1}to{\r} make sure that stuff supported.
+Dialogue: 0,0:02:40.35,0:02:40.47,Default,,0,0,0,,specific browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:40.47,0:02:40.61,Default,,0,0,0,,specific browser versions to {\1c&HFF00&\u1}make{\r} sure that stuff supported.
+Dialogue: 0,0:02:40.61,0:02:40.65,Default,,0,0,0,,specific browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:40.65,0:02:40.77,Default,,0,0,0,,specific browser versions to make {\1c&HFF00&\u1}sure{\r} that stuff supported.
+Dialogue: 0,0:02:40.77,0:02:40.79,Default,,0,0,0,,specific browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:40.79,0:02:40.93,Default,,0,0,0,,specific browser versions to make sure {\1c&HFF00&\u1}that{\r} stuff supported.
+Dialogue: 0,0:02:40.93,0:02:40.95,Default,,0,0,0,,specific browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:40.95,0:02:41.15,Default,,0,0,0,,specific browser versions to make sure that {\1c&HFF00&\u1}stuff{\r} supported.
+Dialogue: 0,0:02:41.15,0:02:41.17,Default,,0,0,0,,specific browser versions to make sure that stuff supported.
+Dialogue: 0,0:02:41.17,0:02:41.55,Default,,0,0,0,,specific browser versions to make sure that stuff {\1c&HFF00&\u1}supported.{\r}
+Dialogue: 0,0:02:42.23,0:02:42.31,Default,,0,0,0,,{\1c&HFF00&\u1}But{\r} what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:42.31,0:02:42.35,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:42.35,0:02:42.51,Default,,0,0,0,,But {\1c&HFF00&\u1}what's{\r} cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:42.51,0:02:42.53,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:42.53,0:02:42.71,Default,,0,0,0,,But what's {\1c&HFF00&\u1}cool{\r} about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:42.71,0:02:42.73,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:42.73,0:02:42.91,Default,,0,0,0,,But what's cool {\1c&HFF00&\u1}about{\r} Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:42.91,0:02:42.95,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:42.95,0:02:43.57,Default,,0,0,0,,But what's cool about {\1c&HFF00&\u1}Post-CSS,{\r} in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:43.57,0:02:43.61,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:43.61,0:02:43.71,Default,,0,0,0,,But what's cool about Post-CSS, {\1c&HFF00&\u1}in{\r} addition to that aspect of things, is that there's
+Dialogue: 0,0:02:43.71,0:02:43.75,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:43.75,0:02:44.11,Default,,0,0,0,,But what's cool about Post-CSS, in {\1c&HFF00&\u1}addition{\r} to that aspect of things, is that there's
+Dialogue: 0,0:02:44.11,0:02:44.19,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:44.19,0:02:44.49,Default,,0,0,0,,But what's cool about Post-CSS, in addition {\1c&HFF00&\u1}to{\r} that aspect of things, is that there's
+Dialogue: 0,0:02:44.49,0:02:45.07,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:45.07,0:02:45.27,Default,,0,0,0,,But what's cool about Post-CSS, in addition to {\1c&HFF00&\u1}that{\r} aspect of things, is that there's
+Dialogue: 0,0:02:45.27,0:02:45.39,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:45.39,0:02:45.73,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that {\1c&HFF00&\u1}aspect{\r} of things, is that there's
+Dialogue: 0,0:02:45.73,0:02:45.77,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:45.77,0:02:45.83,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect {\1c&HFF00&\u1}of{\r} things, is that there's
+Dialogue: 0,0:02:45.83,0:02:45.85,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:45.85,0:02:46.07,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of {\1c&HFF00&\u1}things,{\r} is that there's
+Dialogue: 0,0:02:46.07,0:02:46.15,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:46.15,0:02:46.21,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, {\1c&HFF00&\u1}is{\r} that there's
+Dialogue: 0,0:02:46.21,0:02:46.25,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:46.25,0:02:46.33,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is {\1c&HFF00&\u1}that{\r} there's
+Dialogue: 0,0:02:46.33,0:02:46.37,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+Dialogue: 0,0:02:46.37,0:02:46.55,Default,,0,0,0,,But what's cool about Post-CSS, in addition to that aspect of things, is that {\1c&HFF00&\u1}there's{\r}
+Dialogue: 0,0:02:46.57,0:02:46.67,Default,,0,0,0,,{\1c&HFF00&\u1}just{\r} a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:46.67,0:02:46.69,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:46.69,0:02:46.71,Default,,0,0,0,,just {\1c&HFF00&\u1}a{\r} whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:46.71,0:02:46.81,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:46.81,0:02:46.99,Default,,0,0,0,,just a {\1c&HFF00&\u1}whole{\r} plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:46.99,0:02:47.05,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:47.05,0:02:47.45,Default,,0,0,0,,just a whole {\1c&HFF00&\u1}plug-in{\r} ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:47.45,0:02:47.59,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:47.59,0:02:48.21,Default,,0,0,0,,just a whole plug-in {\1c&HFF00&\u1}ecosystem,{\r} so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:48.21,0:02:48.23,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:48.23,0:02:48.35,Default,,0,0,0,,just a whole plug-in ecosystem, {\1c&HFF00&\u1}so{\r} you can add plugins for specific CSS features that
+Dialogue: 0,0:02:48.35,0:02:48.37,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:48.37,0:02:48.49,Default,,0,0,0,,just a whole plug-in ecosystem, so {\1c&HFF00&\u1}you{\r} can add plugins for specific CSS features that
+Dialogue: 0,0:02:48.49,0:02:48.51,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:48.51,0:02:48.65,Default,,0,0,0,,just a whole plug-in ecosystem, so you {\1c&HFF00&\u1}can{\r} add plugins for specific CSS features that
+Dialogue: 0,0:02:48.65,0:02:48.89,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:48.89,0:02:49.07,Default,,0,0,0,,just a whole plug-in ecosystem, so you can {\1c&HFF00&\u1}add{\r} plugins for specific CSS features that
+Dialogue: 0,0:02:49.07,0:02:49.43,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:49.43,0:02:49.89,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add {\1c&HFF00&\u1}plugins{\r} for specific CSS features that
+Dialogue: 0,0:02:49.89,0:02:49.99,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:49.99,0:02:50.25,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins {\1c&HFF00&\u1}for{\r} specific CSS features that
+Dialogue: 0,0:02:50.25,0:02:50.55,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:50.55,0:02:50.99,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for {\1c&HFF00&\u1}specific{\r} CSS features that
+Dialogue: 0,0:02:50.99,0:02:51.03,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:51.03,0:02:51.43,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific {\1c&HFF00&\u1}CSS{\r} features that
+Dialogue: 0,0:02:51.43,0:02:51.47,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:51.47,0:02:51.79,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS {\1c&HFF00&\u1}features{\r} that
+Dialogue: 0,0:02:51.79,0:02:51.81,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+Dialogue: 0,0:02:51.81,0:02:51.93,Default,,0,0,0,,just a whole plug-in ecosystem, so you can add plugins for specific CSS features {\1c&HFF00&\u1}that{\r}
+Dialogue: 0,0:02:51.97,0:02:52.11,Default,,0,0,0,,{\1c&HFF00&\u1}are{\r} yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:52.11,0:02:52.25,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:52.25,0:02:52.43,Default,,0,0,0,,are {\1c&HFF00&\u1}yet{\r} to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:52.43,0:02:52.49,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:52.49,0:02:52.61,Default,,0,0,0,,are yet {\1c&HFF00&\u1}to{\r} come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:52.61,0:02:52.65,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:52.65,0:02:52.91,Default,,0,0,0,,are yet to {\1c&HFF00&\u1}come{\r} individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:52.91,0:02:53.94,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:53.94,0:02:54.64,Default,,0,0,0,,are yet to come {\1c&HFF00&\u1}individually,{\r} as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:54.64,0:02:54.86,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:54.86,0:02:54.94,Default,,0,0,0,,are yet to come individually, {\1c&HFF00&\u1}as{\r} well as supporting things like prefixes or removing
+Dialogue: 0,0:02:54.94,0:02:55.02,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:55.02,0:02:55.28,Default,,0,0,0,,are yet to come individually, as {\1c&HFF00&\u1}well{\r} as supporting things like prefixes or removing
+Dialogue: 0,0:02:55.28,0:02:55.50,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:55.50,0:02:55.60,Default,,0,0,0,,are yet to come individually, as well {\1c&HFF00&\u1}as{\r} supporting things like prefixes or removing
+Dialogue: 0,0:02:55.60,0:02:55.80,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:55.80,0:02:56.26,Default,,0,0,0,,are yet to come individually, as well as {\1c&HFF00&\u1}supporting{\r} things like prefixes or removing
+Dialogue: 0,0:02:56.26,0:02:56.30,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:56.30,0:02:56.50,Default,,0,0,0,,are yet to come individually, as well as supporting {\1c&HFF00&\u1}things{\r} like prefixes or removing
+Dialogue: 0,0:02:56.50,0:02:56.52,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:56.52,0:02:56.66,Default,,0,0,0,,are yet to come individually, as well as supporting things {\1c&HFF00&\u1}like{\r} prefixes or removing
+Dialogue: 0,0:02:56.66,0:02:56.72,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:56.72,0:02:57.28,Default,,0,0,0,,are yet to come individually, as well as supporting things like {\1c&HFF00&\u1}prefixes{\r} or removing
+Dialogue: 0,0:02:57.28,0:02:57.52,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:57.52,0:02:57.64,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes {\1c&HFF00&\u1}or{\r} removing
+Dialogue: 0,0:02:57.64,0:02:58.04,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or removing
+Dialogue: 0,0:02:58.04,0:02:58.48,Default,,0,0,0,,are yet to come individually, as well as supporting things like prefixes or {\1c&HFF00&\u1}removing{\r}
+Dialogue: 0,0:02:58.80,0:02:59.08,Default,,0,0,0,,{\1c&HFF00&\u1}unused{\r} code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:02:59.08,0:02:59.12,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:02:59.12,0:02:59.46,Default,,0,0,0,,unused {\1c&HFF00&\u1}code{\r} or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:02:59.46,0:02:59.48,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:02:59.48,0:02:59.56,Default,,0,0,0,,unused code {\1c&HFF00&\u1}or{\r} all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:02:59.56,0:02:59.64,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:02:59.64,0:02:59.80,Default,,0,0,0,,unused code or {\1c&HFF00&\u1}all{\r} sorts of things, even changing the language of certain things.
+Dialogue: 0,0:02:59.80,0:02:59.88,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:02:59.88,0:03:0.08,Default,,0,0,0,,unused code or all {\1c&HFF00&\u1}sorts{\r} of things, even changing the language of certain things.
+Dialogue: 0,0:03:0.08,0:03:0.12,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:0.12,0:03:0.18,Default,,0,0,0,,unused code or all sorts {\1c&HFF00&\u1}of{\r} things, even changing the language of certain things.
+Dialogue: 0,0:03:0.18,0:03:0.22,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:0.22,0:03:0.44,Default,,0,0,0,,unused code or all sorts of {\1c&HFF00&\u1}things,{\r} even changing the language of certain things.
+Dialogue: 0,0:03:0.44,0:03:0.98,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:0.98,0:03:1.14,Default,,0,0,0,,unused code or all sorts of things, {\1c&HFF00&\u1}even{\r} changing the language of certain things.
+Dialogue: 0,0:03:1.14,0:03:1.18,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:1.18,0:03:1.48,Default,,0,0,0,,unused code or all sorts of things, even {\1c&HFF00&\u1}changing{\r} the language of certain things.
+Dialogue: 0,0:03:1.48,0:03:1.52,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:1.52,0:03:1.62,Default,,0,0,0,,unused code or all sorts of things, even changing {\1c&HFF00&\u1}the{\r} language of certain things.
+Dialogue: 0,0:03:1.62,0:03:1.66,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:1.66,0:03:2.02,Default,,0,0,0,,unused code or all sorts of things, even changing the {\1c&HFF00&\u1}language{\r} of certain things.
+Dialogue: 0,0:03:2.02,0:03:2.06,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:2.06,0:03:2.12,Default,,0,0,0,,unused code or all sorts of things, even changing the language {\1c&HFF00&\u1}of{\r} certain things.
+Dialogue: 0,0:03:2.12,0:03:2.16,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:2.16,0:03:2.40,Default,,0,0,0,,unused code or all sorts of things, even changing the language of {\1c&HFF00&\u1}certain{\r} things.
+Dialogue: 0,0:03:2.40,0:03:2.60,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain things.
+Dialogue: 0,0:03:2.60,0:03:2.78,Default,,0,0,0,,unused code or all sorts of things, even changing the language of certain {\1c&HFF00&\u1}things.{\r}
+Dialogue: 0,0:03:3.48,0:03:3.56,Default,,0,0,0,,{\1c&HFF00&\u1}I{\r} personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:3.56,0:03:3.90,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:3.90,0:03:4.32,Default,,0,0,0,,I {\1c&HFF00&\u1}personally{\r} do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:4.32,0:03:4.40,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:4.40,0:03:4.56,Default,,0,0,0,,I personally {\1c&HFF00&\u1}do{\r} use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:4.56,0:03:4.68,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:4.68,0:03:4.82,Default,,0,0,0,,I personally do {\1c&HFF00&\u1}use{\r} Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:4.82,0:03:4.88,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:4.88,0:03:5.62,Default,,0,0,0,,I personally do use {\1c&HFF00&\u1}Post-CSS{\r} even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:5.62,0:03:5.68,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:5.68,0:03:5.82,Default,,0,0,0,,I personally do use Post-CSS {\1c&HFF00&\u1}even{\r} though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:5.82,0:03:5.84,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:5.84,0:03:6.00,Default,,0,0,0,,I personally do use Post-CSS even {\1c&HFF00&\u1}though{\r} I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.00,0:03:6.02,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.02,0:03:6.06,Default,,0,0,0,,I personally do use Post-CSS even though {\1c&HFF00&\u1}I{\r} don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.06,0:03:6.10,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.10,0:03:6.28,Default,,0,0,0,,I personally do use Post-CSS even though I {\1c&HFF00&\u1}don't{\r} use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.28,0:03:6.44,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.44,0:03:6.58,Default,,0,0,0,,I personally do use Post-CSS even though I don't {\1c&HFF00&\u1}use{\r} a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.58,0:03:6.78,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.78,0:03:6.82,Default,,0,0,0,,I personally do use Post-CSS even though I don't use {\1c&HFF00&\u1}a{\r} CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.82,0:03:6.88,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:6.88,0:03:7.46,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a {\1c&HFF00&\u1}CSS{\r} or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:7.46,0:03:7.96,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:7.96,0:03:8.02,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS {\1c&HFF00&\u1}or{\r} SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:8.02,0:03:8.24,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:8.24,0:03:8.59,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or {\1c&HFF00&\u1}SAS,{\r} SAS-CSS or SCSS or
+Dialogue: 0,0:03:8.59,0:03:8.77,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:8.77,0:03:9.63,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, {\1c&HFF00&\u1}SAS-CSS{\r} or SCSS or
+Dialogue: 0,0:03:9.63,0:03:9.67,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:9.67,0:03:9.77,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS {\1c&HFF00&\u1}or{\r} SCSS or
+Dialogue: 0,0:03:9.77,0:03:9.95,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:9.95,0:03:10.41,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or {\1c&HFF00&\u1}SCSS{\r} or
+Dialogue: 0,0:03:10.41,0:03:10.43,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+Dialogue: 0,0:03:10.43,0:03:10.51,Default,,0,0,0,,I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS {\1c&HFF00&\u1}or{\r}
+Dialogue: 0,0:03:10.53,0:03:10.65,Default,,0,0,0,,{\1c&HFF00&\u1}any{\r} of that stuff.
+Dialogue: 0,0:03:10.65,0:03:10.67,Default,,0,0,0,,any of that stuff.
+Dialogue: 0,0:03:10.67,0:03:10.71,Default,,0,0,0,,any {\1c&HFF00&\u1}of{\r} that stuff.
+Dialogue: 0,0:03:10.71,0:03:10.73,Default,,0,0,0,,any of that stuff.
+Dialogue: 0,0:03:10.73,0:03:10.87,Default,,0,0,0,,any of {\1c&HFF00&\u1}that{\r} stuff.
+Dialogue: 0,0:03:10.87,0:03:10.91,Default,,0,0,0,,any of that stuff.
+Dialogue: 0,0:03:10.91,0:03:11.15,Default,,0,0,0,,any of that {\1c&HFF00&\u1}stuff.{\r}
+Dialogue: 0,0:03:11.47,0:03:11.61,Default,,0,0,0,,{\1c&HFF00&\u1}But{\r} I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:11.61,0:03:11.65,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:11.65,0:03:11.69,Default,,0,0,0,,But {\1c&HFF00&\u1}I{\r} do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:11.69,0:03:11.73,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:11.73,0:03:11.85,Default,,0,0,0,,But I {\1c&HFF00&\u1}do{\r} use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:11.85,0:03:11.93,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:11.93,0:03:12.03,Default,,0,0,0,,But I do {\1c&HFF00&\u1}use{\r} Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:12.03,0:03:12.07,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:12.07,0:03:12.69,Default,,0,0,0,,But I do use {\1c&HFF00&\u1}Post-CSS{\r} today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:12.69,0:03:12.75,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:12.75,0:03:13.15,Default,,0,0,0,,But I do use Post-CSS {\1c&HFF00&\u1}today,{\r} no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:13.15,0:03:13.69,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:13.69,0:03:13.77,Default,,0,0,0,,But I do use Post-CSS today, {\1c&HFF00&\u1}no{\r} matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:13.77,0:03:13.81,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:13.81,0:03:14.03,Default,,0,0,0,,But I do use Post-CSS today, no {\1c&HFF00&\u1}matter{\r} what, pretty much on every project, just to get
+Dialogue: 0,0:03:14.03,0:03:14.07,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:14.07,0:03:14.25,Default,,0,0,0,,But I do use Post-CSS today, no matter {\1c&HFF00&\u1}what,{\r} pretty much on every project, just to get
+Dialogue: 0,0:03:14.25,0:03:14.35,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:14.35,0:03:14.55,Default,,0,0,0,,But I do use Post-CSS today, no matter what, {\1c&HFF00&\u1}pretty{\r} much on every project, just to get
+Dialogue: 0,0:03:14.55,0:03:14.59,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:14.59,0:03:14.73,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty {\1c&HFF00&\u1}much{\r} on every project, just to get
+Dialogue: 0,0:03:14.73,0:03:14.79,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:14.79,0:03:14.85,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much {\1c&HFF00&\u1}on{\r} every project, just to get
+Dialogue: 0,0:03:14.85,0:03:14.91,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:14.91,0:03:15.09,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on {\1c&HFF00&\u1}every{\r} project, just to get
+Dialogue: 0,0:03:15.09,0:03:15.13,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:15.13,0:03:15.51,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every {\1c&HFF00&\u1}project,{\r} just to get
+Dialogue: 0,0:03:15.51,0:03:15.55,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:15.55,0:03:15.75,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, {\1c&HFF00&\u1}just{\r} to get
+Dialogue: 0,0:03:15.75,0:03:15.77,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:15.77,0:03:15.87,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just {\1c&HFF00&\u1}to{\r} get
+Dialogue: 0,0:03:15.87,0:03:16.37,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+Dialogue: 0,0:03:16.37,0:03:16.51,Default,,0,0,0,,But I do use Post-CSS today, no matter what, pretty much on every project, just to {\1c&HFF00&\u1}get{\r}
+Dialogue: 0,0:03:16.55,0:03:16.59,Default,,0,0,0,,{\1c&HFF00&\u1}a{\r} baseline coverage.
+Dialogue: 0,0:03:16.59,0:03:16.61,Default,,0,0,0,,a baseline coverage.
+Dialogue: 0,0:03:16.61,0:03:16.97,Default,,0,0,0,,a {\1c&HFF00&\u1}baseline{\r} coverage.
+Dialogue: 0,0:03:16.97,0:03:17.01,Default,,0,0,0,,a baseline coverage.
+Dialogue: 0,0:03:17.01,0:03:17.39,Default,,0,0,0,,a baseline {\1c&HFF00&\u1}coverage.{\r}
+Dialogue: 0,0:03:18.65,0:03:18.79,Default,,0,0,0,,{\1c&HFF00&\u1}So{\r} first one we have here is variables.
+Dialogue: 0,0:03:18.79,0:03:18.81,Default,,0,0,0,,So first one we have here is variables.
+Dialogue: 0,0:03:18.81,0:03:18.99,Default,,0,0,0,,So {\1c&HFF00&\u1}first{\r} one we have here is variables.
+Dialogue: 0,0:03:18.99,0:03:19.05,Default,,0,0,0,,So first one we have here is variables.
+Dialogue: 0,0:03:19.05,0:03:19.11,Default,,0,0,0,,So first {\1c&HFF00&\u1}one{\r} we have here is variables.
+Dialogue: 0,0:03:19.11,0:03:19.13,Default,,0,0,0,,So first one we have here is variables.
+Dialogue: 0,0:03:19.13,0:03:19.21,Default,,0,0,0,,So first one {\1c&HFF00&\u1}we{\r} have here is variables.
+Dialogue: 0,0:03:19.21,0:03:19.23,Default,,0,0,0,,So first one we have here is variables.
+Dialogue: 0,0:03:19.23,0:03:19.36,Default,,0,0,0,,So first one we {\1c&HFF00&\u1}have{\r} here is variables.
+Dialogue: 0,0:03:19.36,0:03:19.38,Default,,0,0,0,,So first one we have here is variables.
+Dialogue: 0,0:03:19.38,0:03:19.52,Default,,0,0,0,,So first one we have {\1c&HFF00&\u1}here{\r} is variables.
+Dialogue: 0,0:03:19.52,0:03:19.56,Default,,0,0,0,,So first one we have here is variables.
+Dialogue: 0,0:03:19.56,0:03:19.64,Default,,0,0,0,,So first one we have here {\1c&HFF00&\u1}is{\r} variables.
+Dialogue: 0,0:03:19.64,0:03:19.74,Default,,0,0,0,,So first one we have here is variables.
+Dialogue: 0,0:03:19.74,0:03:20.26,Default,,0,0,0,,So first one we have here is {\1c&HFF00&\u1}variables.{\r}
+Dialogue: 0,0:03:20.46,0:03:20.58,Default,,0,0,0,,{\1c&HFF00&\u1}We've{\r} talked about this quite a bit.
+Dialogue: 0,0:03:20.58,0:03:20.62,Default,,0,0,0,,We've talked about this quite a bit.
+Dialogue: 0,0:03:20.62,0:03:20.80,Default,,0,0,0,,We've {\1c&HFF00&\u1}talked{\r} about this quite a bit.
+Dialogue: 0,0:03:20.80,0:03:20.82,Default,,0,0,0,,We've talked about this quite a bit.
+Dialogue: 0,0:03:20.82,0:03:20.98,Default,,0,0,0,,We've talked {\1c&HFF00&\u1}about{\r} this quite a bit.
+Dialogue: 0,0:03:20.98,0:03:21.00,Default,,0,0,0,,We've talked about this quite a bit.
+Dialogue: 0,0:03:21.00,0:03:21.18,Default,,0,0,0,,We've talked about {\1c&HFF00&\u1}this{\r} quite a bit.
+Dialogue: 0,0:03:21.18,0:03:21.54,Default,,0,0,0,,We've talked about this quite a bit.
+Dialogue: 0,0:03:21.54,0:03:21.72,Default,,0,0,0,,We've talked about this {\1c&HFF00&\u1}quite{\r} a bit.
+Dialogue: 0,0:03:21.72,0:03:21.74,Default,,0,0,0,,We've talked about this quite a bit.
+Dialogue: 0,0:03:21.74,0:03:21.80,Default,,0,0,0,,We've talked about this quite {\1c&HFF00&\u1}a{\r} bit.
+Dialogue: 0,0:03:21.80,0:03:21.82,Default,,0,0,0,,We've talked about this quite a bit.
+Dialogue: 0,0:03:21.82,0:03:22.04,Default,,0,0,0,,We've talked about this quite a {\1c&HFF00&\u1}bit.{\r}
+Dialogue: 0,0:03:22.84,0:03:23.38,Default,,0,0,0,,{\1c&HFF00&\u1}Variables{\r} are extremely well supported.
+Dialogue: 0,0:03:23.38,0:03:23.70,Default,,0,0,0,,Variables are extremely well supported.
+Dialogue: 0,0:03:23.70,0:03:23.88,Default,,0,0,0,,Variables {\1c&HFF00&\u1}are{\r} extremely well supported.
+Dialogue: 0,0:03:23.88,0:03:24.14,Default,,0,0,0,,Variables are extremely well supported.
+Dialogue: 0,0:03:24.14,0:03:24.68,Default,,0,0,0,,Variables are {\1c&HFF00&\u1}extremely{\r} well supported.
+Dialogue: 0,0:03:24.68,0:03:24.74,Default,,0,0,0,,Variables are extremely well supported.
+Dialogue: 0,0:03:24.74,0:03:24.94,Default,,0,0,0,,Variables are extremely {\1c&HFF00&\u1}well{\r} supported.
+Dialogue: 0,0:03:24.94,0:03:24.98,Default,,0,0,0,,Variables are extremely well supported.
+Dialogue: 0,0:03:24.98,0:03:25.38,Default,,0,0,0,,Variables are extremely well {\1c&HFF00&\u1}supported.{\r}

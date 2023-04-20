@@ -1,0 +1,224 @@
+1
+00:00:00,260 --> 00:00:05,924
+is auto prefixer. It will add in the vendor prefixes that are required based on which
+
+2
+00:00:05,984 --> 00:00:12,688
+browsers you're supporting. It's pretty simple. And I was actually surprised the other day. I found
+
+3
+00:00:12,728 --> 00:00:16,031
+something that did not work without a vendor prefix still. What was it?
+
+4
+00:00:16,051 --> 00:00:21,474
+Yeah, it was... Does the scroll bar stuff work without a vendor prefix?
+
+5
+00:00:22,135 --> 00:00:26,998
+I think it does, or maybe it's custom. I know the input type of range still requires custom
+
+6
+00:00:28,881 --> 00:00:34,187
+things. But that's not a vendor prefix. I made a tick talk about it one sec. Let's let's pause this a sec.
+
+7
+00:00:35,310 --> 00:00:37,772
+Oh, it was, it was the CSS gradient.
+
+8
+00:00:38,572 --> 00:00:42,095
+You have, you have to use dash webkit mask
+
+9
+00:00:42,355 --> 00:00:43,996
+instead of just straight up mask.
+
+10
+00:00:44,597 --> 00:00:48,500
+And it's, it's hilarious because even Firefox supports
+
+11
+00:00:49,321 --> 00:00:52,163
+the, the webkit prefixed version as well.
+
+12
+00:00:52,183 --> 00:00:53,944
+Because so many people are just doing that.
+
+13
+00:00:53,964 --> 00:00:56,766
+They're like, oh, you forgot to put the regular version on.
+
+14
+00:00:57,147 --> 00:01:00,729
+But so every browser, including Safari, Firefox, whatever,
+
+15
+00:01:00,829 --> 00:01:02,231
+supports just regular mask.
+
+16
+00:01:03,414 --> 00:01:07,921
+But for whatever reason, it's never been unprefixed in Chrome.
+
+17
+00:01:07,941 --> 00:01:10,184
+There's probably a good reason behind it, but it seems a bit silly.
+
+18
+00:01:11,709 --> 00:01:22,256
+Yeah, you know, vendor prefixing for CSS is certainly something that was of a time for anyone out there who remembers the CSS3 please and any of that stuff.
+
+19
+00:01:22,276 --> 00:01:33,044
+When for a very long time and for, you know, many years in the start of my development career, CSS hadn't seen any major improvements and it was kind of like a done thing.
+
+20
+00:01:33,104 --> 00:01:34,705
+It was like, this is CSS, right?
+
+21
+00:01:35,807 --> 00:01:38,548
+But then when CSS3 dropped, we got all these new features,
+
+22
+00:01:38,568 --> 00:01:40,129
+the browser prefixes and all that stuff,
+
+23
+00:01:40,549 --> 00:01:43,650
+and then that really is what exploded the need
+
+24
+00:01:43,690 --> 00:01:46,071
+for tools like SAS, because now all of a sudden
+
+25
+00:01:46,111 --> 00:01:48,131
+you have these great new features,
+
+26
+00:01:48,992 --> 00:01:51,713
+you have browser support that's kind of all over the place,
+
+27
+00:01:51,993 --> 00:01:53,953
+you put in a tool intermediary to there.
+
+28
+00:01:54,274 --> 00:01:57,676
+And then as the web has evolved, we've gotten more and more CSS properties,
+
+29
+00:01:57,696 --> 00:02:00,337
+but it's also gotten more and more dialed in in terms of
+
+30
+00:02:01,038 --> 00:02:02,899
+how these things are being added to the browser.
+
+31
+00:02:02,959 --> 00:02:06,080
+So now we're not having to think so much about prefixes.
+
+32
+00:02:06,541 --> 00:02:09,662
+But the problem there is that then becomes people just aren't thinking about
+
+33
+00:02:10,123 --> 00:02:11,063
+any of that stuff at all.
+
+34
+00:02:11,463 --> 00:02:14,705
+And then that's why you do end up using a tool like Post-CSS to say,
+
+35
+00:02:14,765 --> 00:02:16,086
+you know, just just...
+
+36
+00:02:16,787 --> 00:02:20,370
+you know, post compile my CSS or just compile my CSS,
+
+37
+00:02:20,731 --> 00:02:23,153
+take care of anything I might have thought about
+
+38
+00:02:23,213 --> 00:02:25,154
+or not, you know, based on whatever browsers
+
+39
+00:02:25,214 --> 00:02:26,936
+I need to support and just do it.
+
+40
+00:02:27,316 --> 00:02:28,417
+Sort of like Babel, right?
+
+41
+00:02:28,557 --> 00:02:30,639
+Where before Babel came out,
+
+42
+00:02:30,659 --> 00:02:32,100
+you were having to like really think about,
+
+43
+00:02:32,120 --> 00:02:35,343
+well, Babel came out pretty early in the scheme of things,
+
+44
+00:02:35,383 --> 00:02:37,865
+but it's basically allowing you to target
+
+45
+00:02:38,185 --> 00:02:41,548
+specific browser versions to make sure that stuff supported.
+
+46
+00:02:42,230 --> 00:02:46,552
+But what's cool about Post-CSS, in addition to that aspect of things, is that there's
+
+47
+00:02:46,572 --> 00:02:51,934
+just a whole plug-in ecosystem, so you can add plugins for specific CSS features that
+
+48
+00:02:51,974 --> 00:02:58,477
+are yet to come individually, as well as supporting things like prefixes or removing
+
+49
+00:02:58,797 --> 00:03:02,779
+unused code or all sorts of things, even changing the language of certain things.
+
+50
+00:03:03,481 --> 00:03:10,507
+I personally do use Post-CSS even though I don't use a CSS or SAS, SAS-CSS or SCSS or
+
+51
+00:03:10,527 --> 00:03:11,148
+any of that stuff.
+
+52
+00:03:11,468 --> 00:03:16,512
+But I do use Post-CSS today, no matter what, pretty much on every project, just to get
+
+53
+00:03:16,553 --> 00:03:17,393
+a baseline coverage.
+
+54
+00:03:18,654 --> 00:03:20,256
+So first one we have here is variables.
+
+55
+00:03:20,456 --> 00:03:22,038
+We've talked about this quite a bit.
+
+56
+00:03:22,838 --> 00:03:25,381
+Variables are extremely well supported.
+

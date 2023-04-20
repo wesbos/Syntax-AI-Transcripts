@@ -1,0 +1,7 @@
+Every browser, including Safari, Firefox, whatever supports just regular mask, but for
+whatever reason, it's never been unprefixed in Chrome.
+There's probably a good reason behind it, but it seems a bit silly.
+Yeah.
+Yeah.
+You know, vendor prefixing for CSS is certainly something that was of a time for anyone out
+there who remembers the CSS3 pleas and any of that stuff.
