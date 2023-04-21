@@ -11,4 +11,3 @@ console.log('Encoded this string looks like: ', encoded)
 
 console.log('Token Count: ', encoded.length);
 console.log('Price: ', Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format((encoded.length / 1000) * 0.002));
-
