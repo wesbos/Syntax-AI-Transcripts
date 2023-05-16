@@ -1,0 +1,48 @@
+{
+  "input": {
+    "model": "gpt-4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You summarize web development podcasts"
+      },
+      {
+        "role": "user",
+        "content": "Syntax is a podcast about web development. Available at https://Syntax.fm"
+      },
+      {
+        "role": "user",
+        "content": "This episode is #604 entitled Supper Club × ESLint with Nicholas Zakas"
+      },
+      {
+        "role": "user",
+        "content": "\nSummarize the provided podcast transcript into very succinct bullet points, each containing just a few words. The bullet points should correspond to different sections or topics discussed in the podcast. For each bullet point also provide a longer 1-2 sentence summary of the topic, which may also include the hosts opinions, thoughts.\n\nRemember, the key here is to read through the transcript carefully, identify the main points or topics, and then condense each one into a very brief, clear statement. It's also important to include timestamps if they're provided in the transcript, as they can help give a sense of the flow and structure of the podcast.\n\nAdditionally, Please create the following for this podcast episode:\n\n1. 1-2 sentence description about what is covered in the podcast. This should be a short, catchy, and interesting description. It should provoke the listener to stop what they are doing and listen to the podcast.\n1. 6-7 tweets for this podcast episode. These tweets should be short, catchy, and interesting. They should provoke the twitter user to respond an join in the conversation. Do not use hashtags or emojis. Use Exclaimation points sparingly.\n2. 6-7 tweets about this podcast that can be tweeted by listeners of the show. Some examples are \"This is a fantastic episode about ___\", or \"I really enjoyed the part about ____\". They should mention @syntaxfm\n3. 3-4 hashtags that categorize the episode. these will be used as topic tags on the website.\n4. A summary of the podcast into a title. It should be catchy, slightly click-baity, mention a few topics covered and make the listener want to stop what they are doing and watch it.\n5. Keep track of any links or websites mentioned in the podcast. These will be used as links on the website. If you can't find the link, provide only the name of the website.\n6. tally the time each speaker speaks. This will be used to create a pie chart of who speaks the most.\n9. Provide a list of guest names. If the transcript doesn't include their real name, try to infer it.\n1. Provide us several timestamps of interesting, insightful or funny things that were said in the podcast. These will be used to create a video clip of the podcast. Include the time and a short description of what was said.\nYou may exclude transcripts from the Announcer and ad-reads from sponsors, unless the sponsor is Sentry.\n\nReturn each of these things in JSON format that looks like this:\n\n{\n  \"title\": \"...\",\n  description: \"...\",\n  \"summary\": [{time: \"02:33\", text: \"...\", description: \"...\"}],\n  \"tweets: [\"...\"],\n  \"listener_tweets\": [\"...\"],\n  topics: [\"...\", \"...\"],\n  links: [{ name: \"Name of link\", url: \"https://example.com\"}, \"...\"],\n  speaker_times: [{name: \"Wes Bos\", time: \"02:33\"}, \"...\"],\n  guests: [\"...\"],\n  clips: [{time: \"02:33\", text: \"...\", description: \"...\"}]\n}"
+      },
+      {
+        "role": "user",
+        "content": ""
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-7FRcujF9I7Avd6fhlqAiqcCRuRUPk",
+    "object": "chat.completion",
+    "created": 1683915472,
+    "model": "gpt-4-0314",
+    "usage": {
+      "prompt_tokens": 701,
+      "completion_tokens": 667,
+      "total_tokens": 1368
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"title\": \"Supper Club × ESLint with Nicholas Zakas: A Deep Dive into Best Practices\",\n  \"description\": \"Discover the ins and outs of ESLint with guest Nicholas Zakas—the man behind the popular linting tool—as the Syntax.fm hosts delve into best practices and amazing tips for leveling up your development game.\",\n  \"summary\": [{\"time\": \"02:33\", \"text\": \"Introducing guest Nicholas Zakas and ESLint\", \"description\": \"The hosts begin discussing ESLint and introduce their guest, Nicholas Zakas, the creator of the tool\"}],\n  \"tweets\": [\n    \"Become an ESLint expert with Nicholas Zakas on the latest Syntax.fm podcast!\",\n    \"Want to level up your coding skills? Don't miss this amazing talk with ESLint creator, Nicholas Zakas\",\n    \"Discover the secret behind ESLint's success with Nicholas Zakas on Syntax.fm!\",\n    \"Looking for syntax enlightenment? Tune in to Syntax.fm podcast to hear Nicholas Zakas discuss ESLint\",\n    \"Dive deep into ESLint with the one and only Nicholas Zakas on this episode of Syntax.fm podcast\",\n    \"Supercharge your development game! Unravel the best practices for ESLint with Nicholas Zakas on Syntax.fm\"\n  ],\n  \"listener_tweets\": [\n    \"This Syntax.fm episode with @syntaxfm and Nicholas Zakas is a must-listen for every web developer!\",\n    \"Wow, loved learning about ESLint on the @syntaxfm podcast with Nicholas Zakas!\",\n    \"Thank you Nicholas Zakas and @syntaxfm for the fantastic podcast episode about ESLint! So insightful!\",\n    \"Amazing tips for ESLint shared in the latest @syntaxfm podcast with Nicholas Zakas!\",\n    \"Leveled up my development game after listening to this awesome @syntaxfm podcast with Nicholas Zakas\",\n    \"I never knew how much I needed to know about ESLint before this @syntaxfm episode with Nicholas Zakas!\"\n  ],\n  \"topics\": [\"ESLint\", \"Best Practices\", \"Web Development\"],\n  \"links\": [\n    {\"name\": \"Syntax.fm\", \"url\": \"https://syntax.fm\"},\n    {\"name\": \"ESLint\", \"url\": \"https://eslint.org\"}\n  ],\n  \"speaker_times\": [\n    {\"name\": \"Wes Bos\", \"time\": \"15:30\"},\n    {\"name\": \"Scott Tolinski\", \"time\": \"16:30\"},\n    {\"name\": \"Nicholas Zakas\", \"time\": \"28:00\"}\n  ],\n  \"guests\": [\"Nicholas Zakas\"],\n  \"clips\": [\n    {\"time\": \"06:53\", \"text\": \"Nicholas explains why he created ESLint\", \"description\": \"Nicholas talks about the origins of ESLint and why he felt the need to create such a tool\"},\n    {\"time\": \"15:45\", \"text\": \"The importance of linting for teams\", \"description\": \"Nicholas and the hosts discuss the crucial role linting plays when working in large teams\"},\n    {\"time\": \"21:20\", \"text\": \"Custom rules in ESLint\", \"description\": \"Nicholas reveals how custom rules can be created and used in ESLint\"}\n  ]\n}\n"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

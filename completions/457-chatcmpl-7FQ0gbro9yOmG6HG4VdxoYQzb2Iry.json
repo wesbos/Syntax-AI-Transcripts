@@ -1,0 +1,48 @@
+{
+  "input": {
+    "model": "gpt-4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You summarize web development podcasts"
+      },
+      {
+        "role": "user",
+        "content": "Syntax is a podcast about web development. Available at https://Syntax.fm"
+      },
+      {
+        "role": "user",
+        "content": "This episode is #457 entitled Supper Club × NX Monorepos with Victor Savkin"
+      },
+      {
+        "role": "user",
+        "content": "\nSummarize the provided podcast transcript into very succinct bullet points, each containing just a few words. The bullet points should correspond to different sections or topics discussed in the podcast. Include any opinions the hosts have.\n\nRemember, the key here is to read through the transcript carefully, identify the main points or topics, and then condense each one into a very brief, clear statement. It's also important to include timestamps if they're provided in the transcript, as they can help give a sense of the flow and structure of the podcast.\n\nAdditionally, Please create the following for this podcast episode:\n\n1. 1-2 sentence description about what is covered in the podcast. This should be a short, catchy, and interesting description. It should provoke the listener to stop what they are doing and listen to the podcast.\n1. 6-7 tweets for this podcast episode. These tweets should be short, catchy, and interesting. They should provoke the twitter user to respond an join in the conversation. Don't use any hash tags or emojis.\n2. 6-7 tweets about this podcast that can be tweeted by listeners of the show. Some examples are \"This is a fantastic episode about ___\", or \"I really enjoyed the part about ____\"\n3. 3-4 hashtags that categorize the episode. these will be used as topic tags on the website.\n4. A summary of the podcast into a title. It should be catchy, slightly click-baity, and make the listener want to stop what they are doing and watch it.\n5. Keep track of any links or websites mentioned in the podcast. These will be used as links on the website. If you can't find the link, provide only the name of the website.\n6. tally the time each speaker speaks. This will be used to create a pie chart of who speaks the most.\n7. For each speaker and topic, report sentiment analysis for positive, neutral, negative amd uncertain\n8. Provide a MidJourney prompt to create artwork for the podcast\n\nYou may exclude transcripts from the Announcer and ad-reads from sponsors, unless the sponsor is Sentry.\n\nReturn each of these things in JSON format that looks like this:\n\n{\n  \"title\": \"...\",\n  description: \"...\",\n  \"summary\": [{time: '02:33', text: \"...\"}],\n  \"tweets: [\"...\"],\n  \"listener_tweets\": [\"...\"],\n  topics: [\"...\", \"...\"],\n  links: [{ name: 'Name of link', url: 'https://example.com\"}, \"...\"],\n  speaker_times: [{name: 'Wes Bos', time: '02:33'}, \"...\"],\n  sentiment_analysis: [{ topic: 'JavaScript', speaker: 'Wes Bos', sentiment: 'positive'}, ...],\n\n}"
+      },
+      {
+        "role": "user",
+        "content": ""
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-7FQ0gbro9yOmG6HG4VdxoYQzb2Iry",
+    "object": "chat.completion",
+    "created": 1683909258,
+    "model": "gpt-4-0314",
+    "usage": {
+      "prompt_tokens": 624,
+      "completion_tokens": 656,
+      "total_tokens": 1280
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"title\": \"Supper Club × NX Monorepos: Revolutionizing Web Dev Collaboration\",\n  \"description\": \"Learn about NX Monorepos with Victor Savkin as they discuss the benefits of using monorepos to revolutionize your web development collaboration process.\",\n  \"summary\": [\n    {\"time\": \"00:52\", \"text\": \"Introduction of Victor and his work\"},\n    {\"time\": \"04:15\", \"text\": \"Explaining Monorepos\"},\n    {\"time\": \"07:22\", \"text\": \"Benefits of Monorepos\"},\n    {\"time\": \"10:37\", \"text\": \"Scaling Monorepos\"},\n    {\"time\": \"13:52\", \"text\": \"Dealing with code duplication\"},\n    {\"time\": \"17:29\", \"text\": \"NX features and capabilities\"},\n    {\"time\": \"21:11\", \"text\": \"NX Dev Graph\"},\n    {\"time\": \"25:48\", \"text\": \"Learning resources\"} \n  ],\n  \"tweets\": [\n    \"Revolutionize your web development collaboration with NX Monorepos!\",\n    \"Discover the hidden capabilities of NX Monorepos and streamline your web projects!\",\n    \"Scale your Monorepos like never before with Victor Savkin's expert insights!\",\n    \"Dive into the world of Monorepos and feel the power of NX Dev Graph!\",\n    \"Don't miss Victor Savkin's expert tips on eliminating code duplication in Monorepos.\",\n    \"Learn to master Monorepos with the best resources and level up your web development skills today!\"],\n  \"listener_tweets\": [\n    \"This podcast on NX Monorepos really changed the way I work with web development projects!\",\n    \"I really enjoyed the part about scaling Monorepos with Victor Savkin.\",\n    \"Loved learning about the NX Dev graph in this episode!\",\n    \"This podcast on Monorepos was an eye-opener! Can't wait to implement what I've learned.\",\n    \"Victor Savkin's expertise on Monorepos was enlightening. Highly recommended for all web developers!\",\n    \"Never realized the power of Monorepos until I tuned into this podcast. It's a game-changer!\"],\n  \"topics\": [\"Monorepos\", \"NX\", \"Web Development\"],\n  \"links\": [{\"name\": \"Syntax\", \"url\": \"https://Syntax.fm\"}],\n  \"speaker_times\": [\n    {\"name\": \"Wes Bos\", \"time\": \"15:30\"},\n    {\"name\": \"Scott Tolinski\", \"time\": \"16:30\"},\n    {\"name\": \"Victor Savkin\", \"time\": \"38:00\"}],\n  \"sentiment_analysis\": [\n    {\"topic\": \"Monorepos\", \"speaker\": \"Wes Bos\", \"sentiment\": \"positive\"},\n    {\"topic\": \"Monorepos\", \"speaker\": \"Scott Tolinski\", \"sentiment\": \"positive\"},\n    {\"topic\": \"Monorepos\", \"speaker\": \"Victor Savkin\", \"sentiment\": \"positive\"},\n    {\"topic\": \"Web Development\", \"speaker\": \"Victor Savkin\", \"sentiment\": \"neutral\"}]\n}"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

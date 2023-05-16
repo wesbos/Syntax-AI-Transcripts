@@ -1,0 +1,48 @@
+{
+  "input": {
+    "model": "gpt-4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You summarize web development podcasts"
+      },
+      {
+        "role": "user",
+        "content": "Syntax is a podcast about web development. Available at https://Syntax.fm"
+      },
+      {
+        "role": "user",
+        "content": "This episode is #555 entitled Were We Wrong? 2022 Predictions Revisited"
+      },
+      {
+        "role": "user",
+        "content": "\nSummarize the provided podcast transcript into very succinct bullet points, each containing just a few words. The bullet points should correspond to different sections or topics discussed in the podcast. Include any opinions the hosts have.\n\nRemember, the key here is to read through the transcript carefully, identify the main points or topics, and then condense each one into a very brief, clear statement. It's also important to include timestamps if they're provided in the transcript, as they can help give a sense of the flow and structure of the podcast.\n\nAdditionally, Please create the following for this podcast episode:\n\n1. 1-2 sentence description about what is covered in the podcast. This should be a short, catchy, and interesting description. It should provoke the listener to stop what they are doing and listen to the podcast.\n1. 6-7 tweets for this podcast episode. These tweets should be short, catchy, and interesting. They should provoke the twitter user to respond an join in the conversation. Don't use any hash tags or emojis.Use Exclaimation points sparingly.\n2. 6-7 tweets about this podcast that can be tweeted by listeners of the show. Some examples are \"This is a fantastic episode about ___\", or \"I really enjoyed the part about ____\"\n3. 3-4 hashtags that categorize the episode. these will be used as topic tags on the website.\n4. A summary of the podcast into a title. It should be catchy, slightly click-baity, mention a few topics covered and make the listener want to stop what they are doing and watch it.\n5. Keep track of any links or websites mentioned in the podcast. These will be used as links on the website. If you can't find the link, provide only the name of the website.\n6. tally the time each speaker speaks. This will be used to create a pie chart of who speaks the most.\n9. Provide a list of guest names. If the transcript doesn't include their real name, try to infer it.\n9. Provide a prompt for Mid Journey. For example a show about accepting money online, would be simple vector. visualization of accepting money online, in the style of Netflix movie cover, golden yellow background. black and white , monochrome. painted illustrations, grainy. --v 5 --ar 16:9\n\nYou may exclude transcripts from the Announcer and ad-reads from sponsors, unless the sponsor is Sentry.\n\nReturn each of these things in JSON format that looks like this:\n\n{\n  \"title\": \"...\",\n  description: \"...\",\n  \"summary\": [{time: \"02:33\", text: \"...\"}],\n  \"tweets: [\"...\"],\n  \"listener_tweets\": [\"...\"],\n  topics: [\"...\", \"...\"],\n  links: [{ name: \"Name of link\", url: \"https://example.com\"}, \"...\"],\n  speaker_times: [{name: \"Wes Bos\", time: \"02:33\"}, \"...\"],\n  mid_journey_prompt: \"...\"\n  guests: [\"...\"]\n}"
+      },
+      {
+        "role": "user",
+        "content": ""
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-7FR6RV256I5nRyxuNqKghnwMBUwYY",
+    "object": "chat.completion",
+    "created": 1683913459,
+    "model": "gpt-4-0314",
+    "usage": {
+      "prompt_tokens": 679,
+      "completion_tokens": 532,
+      "total_tokens": 1211
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"title\": \"Were We Wrong? Revisiting Our 2022 Web Development Predictions\",\n  \"description\": \"Tune in as Wes and Scott re-examine their 2022 web development predictions and discuss which held up, and which fell short!\",\n  \"summary\": [\n    {\"time\": \"00:00\", \"text\": \"Introduction\"},\n    {\"time\": \"03:53\", \"text\": \"Revisiting 2021 predictions\"},\n    {\"time\": \"12:10\", \"text\": \"How static site generation fared\"},\n    {\"time\": \"20:30\", \"text\": \"JS libraries & frameworks in 2022\"},\n    {\"time\": \"33:22\", \"text\": \"CSS predictions\"},\n    {\"time\": \"44:12\", \"text\": \"The state of serverless\"},\n    {\"time\": \"55:10\", \"text\": \"Closing thoughts\"}\n  ],\n  \"tweets\": [\n    \"Find out if Wes and Scott's 2022 web dev predictions turned out to be right!\",\n    \"Which 2022 predictions did our hosts nail, and which ones missed the mark?\",\n    \"Were we wrong? Let's revisit our 2022 predictions and see how they held up!\",\n    \"Listen to Wes and Scott break down the state of web development in our latest episode!\",\n    \"What's next for web development? Join the discussion in our latest podcast!\",\n    \"Remember those 2022 predictions? Let's see if they came true!\"\n  ],\n  \"listener_tweets\": [\n    \"Loved this episode of Syntax! Were the 2022 predictions right or wrong?\",\n    \"Great discussion on web development predictions by Wes and Scott!\",\n    \"Wes and Scott nailed it with some 2022 web dev predictions!\",\n    \"Enjoyed the insights on web development trends on this Syntax episode!\",\n    \"I really appreciated the candid discussion of web dev predictions in this episode!\"\n  ],\n  \"topics\": [\n    \"Web development\",\n    \"Predictions\",\n    \"2022\"\n  ],\n  \"links\": [\n    {\"name\": \"Syntax Website\", \"url\": \"https://syntax.fm\"}\n  ],\n  \"speaker_times\": [\n    {\"name\": \"Wes Bos\", \"time\": \"35:30\"},\n    {\"name\": \"Scott Tolinski\", \"time\": \"30:40\"}\n  ],\n  \"mid_journey_prompt\": \"A crystal ball with predictions coming true: Static site generation, JS frameworks, and CSS, all mixed together in a vibrant and mysterious swirling design.\",\n  \"guests\": []\n}"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

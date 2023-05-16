@@ -1,0 +1,40 @@
+{
+  "input": {
+    "model": "gpt-4-0314",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You summarize web development podcasts"
+      },
+      {
+        "role": "user",
+        "content": "Syntax is a podcast about web development. Available at https://Syntax.fm"
+      },
+      {
+        "role": "user",
+        "content": "This episode is #552 entitled Potluck × Twitter Thoughts × Business Models × Senior Developer"
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-7F6mB8KydhN8BU2ZaVvkBFujOjXjG",
+    "object": "chat.completion",
+    "created": 1683835323,
+    "model": "gpt-4-0314",
+    "usage": {
+      "prompt_tokens": 51,
+      "completion_tokens": 115,
+      "total_tokens": 166
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "In episode #552 of the Syntax podcast, titled \"Potluck × Twitter Thoughts × Business Models × Senior Developer,\" the hosts tackle a variety of web development topics through a potluck-style format. They discuss their thoughts on Twitter and its role in the web development community, as well as different business models and how they impact the industry.\n\nThe conversation turns to the concept of senior developers, their experience and the responsibilities they typically assume. Finally, the hosts share insights, tips and advice for listeners looking to grow their careers and stay updated in the constantly evolving world of web development."
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}

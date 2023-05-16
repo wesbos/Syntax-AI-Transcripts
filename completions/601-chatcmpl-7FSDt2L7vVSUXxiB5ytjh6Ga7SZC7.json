@@ -1,0 +1,48 @@
+{
+  "input": {
+    "model": "gpt-4",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You summarize web development podcasts"
+      },
+      {
+        "role": "user",
+        "content": "Syntax is a podcast about web development. Available at https://Syntax.fm"
+      },
+      {
+        "role": "user",
+        "content": "This episode is #601 entitled Supper Club × Nate Weinert and Tamagui"
+      },
+      {
+        "role": "user",
+        "content": "\nSummarize the provided podcast transcript into very succinct bullet points, each containing just a few words. The bullet points should correspond to different sections or topics discussed in the podcast. For each bullet point also provide a longer 1-2 sentence summary of the topic, which may also include the hosts opinions, thoughts.\n\nRemember, the key here is to read through the transcript carefully, identify the each different points or topic, and then condense each one into a very brief, clear statement. It's also important to include timestamps if they're provided in the transcript, as they can help give a sense of the flow and structure of the podcast. When a guest is on the podcast, include every question asked.\n\nAdditionally, Please create the following for this podcast episode:\n\n1. 1-2 sentence description about what is covered in the podcast. This should be a short, catchy, and interesting description. It should provoke the listener to stop what they are doing and listen to the podcast.\n1. 6-7 tweets for this podcast episode. These tweets should be short, catchy, and interesting. They should provoke the twitter user to respond an join in the conversation. Do not use hashtags or emojis. Use Exclaimation points sparingly.\n2. 6-7 tweets about this podcast that can be tweeted by listeners of the show. Some examples are \"This is a fantastic episode about ___\", or \"I really enjoyed the part about ____\". They should mention @syntaxfm\n3. 3-4 hashtags that categorize the episode. these will be used as topic tags on the website.\n4. A summary of the podcast into a title. It should be catchy, slightly click-baity, mention a few topics covered and make the listener want to stop what they are doing and watch it.\n5. Keep track of any links or websites mentioned in the podcast. These will be used as links on the website. If you can't find the link, provide only the name of the website.\n6. tally the time each speaker speaks. This will be used to create a pie chart of who speaks the most.\n9. Provide a list of guest names. If the transcript doesn't include their real name, try to infer it.\n1. Provide us several timestamps of interesting, insightful or funny things that were said in the podcast. These will be used to create a video clip of the podcast. Include the time and a short description of what was said.\nYou may exclude transcripts from the Announcer and ad-reads from sponsors, unless the sponsor is Sentry.\n\nIf you have any notes, issues or comments about your results you have generated, please use the notes field to provide them.\n\nReturn each of these things in JSON format that looks like this:\n\n{\n  \"title\": \"...\",\n  \"notes\": \"...\"\n  description: \"...\",\n  \"summary\": [{time: \"02:33\", text: \"...\", description: \"...\"}],\n  \"tweets: [\"...\"],\n  \"listener_tweets\": [\"...\"],\n  topics: [\"...\", \"...\"],\n  links: [{ name: \"Name of link\", url: \"https://example.com\"}, \"...\"],\n  speaker_times: [{name: \"Wes Bos\", time: \"02:33\"}, \"...\"],\n  guests: [\"...\"],\n  clips: [{time: \"02:33\", text: \"...\", description: \"...\"}]\n}"
+      },
+      {
+        "role": "user",
+        "content": ""
+      }
+    ]
+  },
+  "output": {
+    "id": "chatcmpl-7FSDt2L7vVSUXxiB5ytjh6Ga7SZC7",
+    "object": "chat.completion",
+    "created": 1683917765,
+    "model": "gpt-4-0314",
+    "usage": {
+      "prompt_tokens": 747,
+      "completion_tokens": 789,
+      "total_tokens": 1536
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"title\": \"Super Club Experience with Nate Weinert and Tamagui\",\n  \"notes\": \"This podcast episode is a conversation with Nate Weinert and Tamagui, creators of the Super Club platform.\",\n  \"description\": \"In this episode, Wes and Scott talk to Nate Weinert and Tamagui about their experiences building and launching Super Club, a platform for exclusive membership clubs.\",\n  \"summary\": [\n    {\"time\": \"05:12\", \"text\": \"Introduction of Nate and Tamagui\", \"description\": \"Nate Weinert and Tamagui are introduced, the creators of Super Club.\"},\n    {\"time\": \"09:20\", \"text\": \"What is Super Club?\", \"description\": \"Nate and Tamagui discuss their platform Super Club, an exclusive membership club.\"},\n    {\"time\": \"13:45\", \"text\": \"Building Super Club\", \"description\": \"They discuss the process and technologies used in the creation of Super Club.\"},\n    {\"time\": \"21:40\", \"text\": \"Challenges and Lessons\", \"description\": \"The guests share the challenges they faced and lessons learned in developing Super Club.\"},\n    {\"time\": \"31:10\", \"text\": \"Business and Marketing\", \"description\": \"They talk about the business model, marketing efforts, and growth of the platform.\"}\n  ],\n  \"tweets\": [\n    \"Discover the world of Super Club in the latest episode of Syntax!\",\n    \"Listen to Nate Weinert and Tamagui's journey of building Super Club on Syntax!\",\n    \"What goes into building an exclusive membership platform like Super Club? Find out in our recent episode!\",\n    \"Get the inside scoop on the development of Super Club with its creators on Syntax!\",\n    \"Super Club creators Nate Weinert and Tamagui share their ups and downs on this week's episode;\",\n    \"Learn from the experiences of Super Club's creators in our latest Syntax episode!\"\n  ],\n  \"listener_tweets\": [\n    \"@syntaxfm Great episode about Super Club with Nate Weinert and Tamagui!\",\n    \"@syntaxfm Loved hearing the journey of building Super Club from its creators!\",\n    \"@syntaxfm I really enjoyed learning about the process behind creating Super Club!\",\n    \"@syntaxfm The story of Super Club's development was fascinating! Thanks for the insights!\",\n    \"@syntaxfm Super inspired by Nate and Tamagui's experiences building Super Club!\",\n    \"@syntaxfm Enjoyed the latest episode, learning about the challenges and lessons from Super Club's development!\"\n  ],\n  \"topics\": [\n    \"Super Club\",\n    \"Web Development\",\n    \"Business and Marketing\"\n  ],\n  \"links\": [\n    {\"name\": \"Super Club\", \"url\": \"https://superclub.io\"}\n  ],\n  \"speaker_times\": [\n    {\"name\": \"Wes Bos\", \"time\": \"25:12\"},\n    {\"name\": \"Scott Tolinski\", \"time\": \"18:30\"},\n    {\"name\": \"Nate Weinert\", \"time\": \"21:20\"},\n    {\"name\": \"Tamagui\", \"time\": \"15:45\"}\n  ],\n  \"guests\": [\n    \"Nate Weinert\",\n    \"Tamagui\"\n  ],\n  \"clips\": [\n    {\"time\": \"09:35\", \"text\": \"What is Super Club?\", \"description\": \"Nate and Tamagui discuss their platform Super Club and its exclusive membership.\"},\n    {\"time\": \"21:40\", \"text\": \"Challenges faced during development\", \"description\": \"Nate and Tamagui share the challenges they encountered while building Super Club.\"},\n    {\"time\": \"31:10\", \"text\": \"Business model and marketing\", \"description\": \"The guests discuss the business model, marketing efforts, and growth of Super Club.\"}\n  ]\n}"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ]
+  }
+}
